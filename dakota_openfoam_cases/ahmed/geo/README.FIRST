@@ -1,0 +1,10 @@
+How to run me:
+
+
+dakota -i dakota_ahmed_geo.in -o run.out > stdout.out
+
+
+
+This case will create only the geometry.
+
+It is inexpensive.

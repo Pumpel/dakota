@@ -1,0 +1,154 @@
+How to run me:
+
+
+
+**************************************************************
+1)
+First you need to design the experiment for this go to the directory dace.
+
+dakota -i test.in
+
+This will generate your experiment and will write a file named table_out.dat, in this file you have the values for the design parameters.  The value of the objective function is 0, because we haven't computed it yet.
+
+**************************************************************
+
+
+
+**************************************************************
+2)
+Now you can go to the directory matlab, there you will need to copy the file ../dace/table_out.dat.  Now open matlab and do the following
+
+
+%TO READ THE EXPERIMENT VALUES AND COMPUTE THE VALUE OF THE BRANIN FUNCTION AND PLOT THE SURFACE
+load -ascii table_out.dat;
+x1=table_out(:,2);
+x2=table_out(:,3);
+f = ( x2 - 5.1 ./ ( 4 * pi^2 ) * x1 .^ 2 + ( 5 / pi ) .* x1 - 6 ) .^ 2 + 10 * ( 1 - 1 / ( 8 * pi ) ) .* cos( x1 ) + 10;
+
+nw=[x1 x2 f];
+
+dlmwrite('branin_table.spd',nw, 'delimiter',' ')
+
+
+This will read the file table_out.dat in matlab and will compute the values of the branin function.  Then it will write a file named branin_table.spd that contains the new data.
+**************************************************************
+
+
+
+**************************************************************
+3)
+Go to the directpry surfpack and copy the file branin_table.spd in this directory. Then,
+
+surfpack rsm.spk
+ 
+This will save the response surface in the file test_data.spd.  
+**************************************************************
+
+
+
+**************************************************************
+4)
+Go back to the matlab directory and copy here the file ../surfpack/test_data.spd.
+
+Then in matlab do the following,
+
+
+
+%READ SURFPACK RESPONSE SURFACE
+load -ascii test_data.spd
+ 
+x1=test_data(:,1);
+x2=test_data(:,2);
+f =test_data(:,3);
+
+x=unique(x1);  % turn x1 into a unique range of values
+y=unique(x2);  % turn y1 into a unique range of values
+
+z=zeros(length(y),length(x)); % preallocate space for the z surface
+
+  for m=1:length(x)
+   for n=1:length(y)
+     z(n,m)=f(find(x1==x(m) & x2==y(n)));
+     % reorder the z1 column into a rectangular matrix
+   end
+  end
+  
+
+%PLOT SURFPACK RESPONSE SURFACE
+%mesh(x,y,z)
+%surf(x,y,z,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+contourf(x,y,z,50);
+title('Surrogate')
+
+
+
+%PLOT SURFPACK RESPONSE SURFACE WITH THE POINTS WHERE THE DATA WAS SAMPLED
+load -ascii table_out.dat;
+xx1=table_out(:,2);
+xx2=table_out(:,3);
+ff = ( xx2 - 5.1 ./ ( 4 * pi^2 ) * xx1 .^ 2 + ( 5 / pi ) .* xx1 - 6 ) .^ 2 + 10 * ( 1 - 1 / ( 8 * pi ) ) .* cos( xx1 ) + 10;
+
+contourf(x,y,z,50);
+hold on;
+plot(xx1,xx2,'ok','MarkerFaceColor','black','MarkerSize',6)
+
+surf(x,y,z,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+hold on;
+plot3(xx1,xx2,ff,'ok','MarkerFaceColor','black','MarkerSize',6)
+
+
+
+
+
+%TO PLOT THE BRANIN FUNCTION
+
+minX = -5; maxX = 10;
+minY = 0; maxY = 15;
+
+x = linspace(minX,maxX,100);
+y = linspace(minY,maxY,100);
+
+[x1,x2] = meshgrid(x,y);
+
+f = ( x2 - 5.1 ./ ( 4 * pi^2 ) * x1 .^ 2 + ( 5 / pi ) .* x1 - 6 ) .^ 2 + 10 * ( 1 - 1 / ( 8 * pi ) ) .* cos( x1 ) + 10;
+
+surf(x1,x2,f);
+surf(x1,x2,f,'EdgeColor','none')
+surf(x1,x2,f,'EdgeColor','none','FaceColor','interp')
+surf(x1,x2,f,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+surfc(x1,x2,f,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+
+contour(x1,x2,f,50);
+contour3(x1,x2,f,50);
+contour3(x1,x2,f,50,'black');
+contourf(x1,x2,f,50);
+
+
+
+
+ADD THIS POINT YOU CAN COMPARE THE ANALYTICAL BRANIN FUNCTION AND THE RESPONSE SURFACE.
+**************************************************************
+
+
+
+**************************************************************
+NOTE.
+BY THE WAY IF YOU DO NOT HAVE MATLAB YOU CAN SCILAB OR OCTAVE.
+**************************************************************
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+To do some optimization using dakota.  Go to the directory dakota and run:
+
+dakota -i dakota_of.in
+
+
+This file will read the file data1.txt.  In this file you have the dace experiment and the value of the responce function.
+
+Pay attention to the format is not the same as in the file matlab/branin_table.spd.  So you will need to edit this file.
+
+The dakota_of.in is pre-setup with a gradient optimization with multistart.  
+At this point you can use any kind of optimization method.

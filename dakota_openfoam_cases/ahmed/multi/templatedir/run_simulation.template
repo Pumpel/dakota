@@ -1,0 +1,35 @@
+#!/bin/bash
+
+openscad -o geo/ab.stl -D angle={x1} geo/ahmed_body2.scad
+#openscad -o geo/ab.stl -D angle=25 geo/ahmed_body2.scad
+
+cp geo/ab.stl constant/triSurface/
+
+surfaceTransformPoints -scale '(0.001 0.001 0.001)' constant/triSurface/ab.stl constant/triSurface/abscale.stl > log.surfacescale
+
+surfaceFeatureExtract > log.featureextract
+
+blockMesh > log.blockmesh
+
+#snappyHexMesh -overwrite > log.snappy
+
+#checkMesh > log.checkmesh
+
+#simpleFoam > log.simpleFoam
+
+decomposePar > log.decomposepar
+
+
+mpirun -np 4 snappyHexMesh -overwrite -parallel > log.snappy
+mpirun -np 4 checkMesh -parallel > log.checkmesh
+reconstructParMesh -mergeTol 1e-06 -constant
+decomposePar -fields
+
+
+mpirun -np 4 simpleFoam -parallel > log.simpleFoam
+
+reconstructPar -latestTime > log.reconstructPar
+
+rm -rf processor*
+
+yPlusRAS -latestTime > log.yplusras

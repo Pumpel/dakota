@@ -1,0 +1,14 @@
+This is a DOE experiment using rosenbrock function.
+Here we only generate the experiment, we do not do any optimization.
+
+To get the value of the rosenbrock function, we use the rosenbrock solver that comes with dakota (rosenbrock).
+
+
+
+
+
+
+
+
+
+

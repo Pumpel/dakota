@@ -1,0 +1,24 @@
+How to plot the previous cases using gnuplot
+
+reset
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Drag coe."
+splot 'table_out_dace_c1.dat' u 2:3:4 pt 7 ps 1 title 'DACE C1', 'table_out_dace_c2.dat' u 2:3:4 pt 7 ps 1 title 'DACE C2', 'table_out_multi_c1.dat' u 2:3:4 pt 5 ps 1 title 'MULTI C1','table_out_multi_c2.dat' u 2:3:4 pt 5 ps 1 title 'MULTI C2'
+
+
+reset
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Drag coe."
+splot '../dace1_surr1/surfpack/test_data_kriging.spd' pt 7 ps 0.1 title 'Surrogate DACE', '../multi1_surr1/surfpack/test_data_kriging.spd' pt 7 ps 0.1 title 'Surrogate MULTI'
+
+
+
+
+
+NOTE:
+
+coeffs.txt columns:
+
+Curvature - Pos. Max. curvature - Lift - Drag - Moment

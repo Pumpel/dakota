@@ -1,0 +1,20 @@
+This is a parametrical/multidimensional study.
+
+
+
+
+
+
+To plot using gnuplot
+
+reset
+set isosample 40
+#set hidden3d
+set xrange [-2:2]
+set yrange [-2:2]
+
+splot (1-x)**2 + 100*(y-x**2)**2
+
+splot (1-x)**2 + 100*(y-x**2)**2, 'rosen_multidim.dat' u 3:4:5 pt 7, '<echo "1 1 0" ' pt 7 ps 1 lc rgb 'red'
+
+

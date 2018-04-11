@@ -1,0 +1,127 @@
+# Usage:
+#   dakota -i xxx.in -o run.out > stdout.out
+
+
+
+################################################################################
+environment
+    	graphics
+    	tabular_data
+        tabular_data_file = 'table_out.dat'
+    	#custom_annotated header eval_id	#No interface column
+################################################################################
+    
+
+
+################################################################################    
+method
+     
+   	moga
+  	#output silent
+   	output verbose
+       
+
+   	max_function_evaluations = 500  
+  	#max_function_evaluations = 50 
+   	seed = 10983
+   	population_size = 100
+  	#population_size = 20
+  
+  	#Specific to Surrogate-Based Global Method
+  	#final_solutions = 100
+      
+   	initialization_type unique_random
+   	print_each_pop
+
+  	#crossover_type multi_point_parameterized_binary = 2
+  	#crossover_rate = 0.8
+  	##############################
+  	#crossover_type shuffle_random
+  	#num_offspring = 2 
+  	#num_parents = 2
+  	#crossover_rate = 0.8
+    
+  	#mutation_type offset_normal
+  	#mutation_scale = 0.1
+  	##############################
+  	#mutation_type replace_uniform
+  	#mutation_rate = 0.1
+
+  	#shrinkage_percentage = 0.9
+   
+	#SET HERE PARAMETERS FOR MOGA   
+	#    fitness_type domination_count
+	#    niching_type distance 0.05 0.05
+	#    replacement_type below_limit = 6
+	#   #replacement_type roulette_wheel
+	#    convergence_type metric_tracker
+	#    percent_change = 0.05
+	#    num_generations = 10
+	#    postprocessor_type orthogonal_distance 0.05 0.05   
+
+
+	#linear_inequality_constraint_matrix 0 1 1 0
+        #linear_inequality_lower_bounds -2 -2
+        #linear_inequality_upper_bounds  1.5 1
+################################################################################
+
+
+  
+################################################################################
+variables
+	#continuous_design = 1
+	#cdv_initial_point   -1.8     
+	#cdv_lower_bounds    -2.0    
+	#cdv_upper_bounds     3.0     
+	#cdv_descriptor       'x1'     
+	#
+	continuous_design = 2
+	cdv_initial_point   -1.8     4.    
+	cdv_lower_bounds    -2.0     2
+	cdv_upper_bounds     3.0      5  
+	cdv_descriptor       'x1'   'banana' 
+################################################################################
+
+
+
+################################################################################
+interface
+	fork
+	asynchronous
+	#evaluation_concurrency = 8
+	evaluation_concurrency = 1
+	analysis_driver = 'simulator_script'
+	parameters_file = 'params.in'
+	results_file    = 'results.out'
+	work_directory directory_tag
+
+        copy_files = 'templatedir/*'
+
+	  
+# uncomment to leave params.in and results.out files in work_dir subdirectories
+ 	named 'workdir' file_save  directory_save
+	aprepro
+	  
+# when using conmin_frcg (above) with analytic_gradients (below), 
+# need to turn off the active set vector as the interface does not parse it.
+ 	deactivate active_set_vector
+################################################################################
+
+
+
+################################################################################	  
+responses
+	num_objective_functions = 2
+
+	#GA does not need gradients
+	no_gradients
+	  
+# to instead use analytic gradients returned by the simulator comment the
+# preceding two lines and uncomment the following:
+##	analytic_gradients
+
+	no_hessians
+
+
+	sense 'max' 'max'
+################################################################################

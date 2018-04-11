@@ -1,0 +1,11 @@
+This is an optimization case using evolutionary algorithms.
+Here we use coliny_ea method.
+
+To get the value of the rosenbrock function, we use the rosenbrock solver that comes with dakota (rosenbrock).
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+
+################################################################################
+environment
+	#graphics
+  	tabular_data
+    	tabular_data_file = 'table_out.dat'
+	#custom_annotated header eval_id	#No interface column  	
+
+	top_method_pointer = 'PS'
+################################################################################
+
+  
+
+################################################################################  
+method
+  	id_method = 'PS'
+  	pareto_set
+    	opt_method_pointer = 'OPT'
+    	multi_objective_weight_sets =
+        1.   0.   
+        0.   1.   
+        0.5   0.5   
+################################################################################
+
+
+
+################################################################################  
+method
+
+  	id_method = 'OPT'
+
+        #optpp_cg
+        #optpp_fd_newton
+        #optpp_g_newton
+        #optpp_newton
+        #optpp_pds
+        #optpp_q_newton
+
+
+	#conmin_frcg
+  	conmin_mfd
+
+    	#max_iterations = 50
+   	#convergence_tolerance = 1e-4
+   
+        #linear_inequality_constraint_matrix  1 0
+	#				      0 1
+					      
+        #linear_inequality_lower_bounds 1 1
+        #linear_inequality_upper_bounds 9 6
+################################################################################
+
+
+
+################################################################################
+variables
+  	continuous_design = 2
+    	initial_point    -6           	8 
+    	upper_bounds     10		10    
+    	lower_bounds     -10   	 	-10
+    	descriptors      'x1'   	'x2'
+################################################################################
+
+
+
+################################################################################
+interface
+	fork
+	#asynchronous
+	#evaluation_concurrency = 2
+	analysis_driver = 'simulator_script'
+	parameters_file = 'params.in'
+	results_file    = 'results.out'
+	work_directory directory_tag
+
+        copy_files = 'templatedir/*'
+
+
+# uncomment to leave params.in and results.out files in work_dir subdirectories
+ 	#named 'workdir' file_save  directory_save
+
+	aprepro
+# when using conmin_frcg (above) with analytic_gradients (below), 
+# need to turn off the active set vector as the inteface does not parse it.
+## 	  deactivate active_set_vector
+################################################################################
+
+
+
+################################################################################	  
+responses
+  	objective_functions = 2
+  	nonlinear_inequality_constraints = 0
+
+	#upper_bounds = 0 0
+	#lower_bounds = 0 0
+
+        weights = .5 .5 
+
+	#no_gradients
+
+ 	numerical_gradients
+ 	
+ 	method_source dakota
+	#interval_type forward
+	interval_type central
+
+	#fd_gradient_step_size = 1.e-5
+	#fd_gradient_step_size = 1.e-4
+	#fd_gradient_step_size = 1.e-3
+	#fd_gradient_step_size = 1.e-2
+	#fd_gradient_step_size = 1.e-1
+
+# to instead use analytic gradients returned by the simulator comment the
+# preceding two lines and uncomment the following:
+##	analytic_gradients
+
+	no_hessians
+	#numerical_hessians
+
+	sense 'min' 'min'	
+################################################################################
+

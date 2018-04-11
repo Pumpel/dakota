@@ -1,0 +1,43 @@
+How to run me:
+
+
+dakota -i dakota_of.in -o run.out > stdout.out
+
+
+
+This case will run a multidimensional study with 8 by 5 partitions (54 samples) and
+two design variables.
+
+
+
+
+
+How to plot using gnuplot
+
+
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Lift coe."
+splot [][] 'coeffs.txt' u 1:2:3 pt 7
+
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Drag coe."
+splot [][] 'coeffs.txt' u 1:2:4 pt 7
+
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Moment coe."
+splot [][] 'coeffs.txt' u 1:2:5 pt 7
+
+set xlabel "Lift"
+set ylabel "Moment"
+set zlabel "Curvature"
+splot [][] 'coeffs.txt' u 3:5:1 pt 7
+
+
+NOTE:
+
+coeffs.txt columns:
+
+Curvature - Pos. Max. curvature - Lift - Drag - Moment

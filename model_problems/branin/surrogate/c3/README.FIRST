@@ -1,0 +1,30 @@
+To run the optimization case:
+
+dakota -i dakota_of.in
+
+
+This will run a multistart gradient optimization in the surrogate.
+
+You can use any method, remember at this point you are doing the optimization at the surrogate level, so the cost is low.
+
+Do not erase the file data1.txt, here you have the input data use it by datako_of.in in order to construct the surrogate.  In the directory data you have a backup.
+
+In the directory data you will find some solutions and the surrogate data.  You can plot the data using the following instructions in matlab:
+
+
+
+
+
+To plot the analytical solution:
+
+reset
+set isosample 40
+#set hidden3d
+set xrange [-5:10]
+set yrange [0:15]
+
+#splot (y-(5.1/(4*3.14159*3.14159))*x**2 + (5/3.14159)*x - 6)**2 + 10*(1-1/(8*3.14159))*cos(x)+10
+
+splot (y-(5.1/(4*3.14159*3.14159))*x**2 + (5/3.14159)*x - 6)**2 + 10*(1-1/(8*3.14159))*cos(x)+10 title 'branin analytical','table_out.dat' u 3:4:5 pt 7 lc rgb 'black', '<echo "-3.14159 12.275 0.397887" ' pt 7 lc rgb 'red' title 'minimum', '<echo "3.14159 2.275 0.397887" ' pt 7 lc rgb 'red' title '','<echo "9.42478 2.475 0.397887" ' pt 7 lc rgb 'red' title ''
+
+

@@ -1,0 +1,33 @@
+To plot the results in gnuplot follow these instructions.
+
+The data to read with these instructions is located in the directory ./data.
+
+
+
+
+To plot the surrogate computed with surfpack:
+
+splot 'data/test_data.spd' u 1:2:3 pt 7 ps 0.1
+
+
+
+
+
+To plot the analytical solution:
+
+reset
+set isosample 40
+set hidden3d
+set xrange [-5:10]
+set yrange [0:15]
+
+splot (y-(5.1/(4*3.14159*3.14159))*x**2 + (5/3.14159)*x - 6)**2 + 10*(1-1/(8*3.14159))*cos(x)+10
+
+
+
+
+
+To plot both:
+
+splot (y-(5.1/(4*3.14159*3.14159))*x**2 + (5/3.14159)*x - 6)**2 + 10*(1-1/(8*3.14159))*cos(x)+10 title 'analytical', 'data/test_data.spd' u 1:2:3 pt 7 ps 0.1 title 'surrogate'
+

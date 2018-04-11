@@ -1,0 +1,99 @@
+How to add noise to rosenbrock function:
+
+
+
+%POST-PROCESSING IN MATLAB
+%TO PLOT THE ROSENBROCK FUNCTION
+
+minX = -2; maxX = 2;
+minY = -2; maxY = 2;
+
+x = linspace(minX,maxX,100);
+y = linspace(minY,maxY,100);
+
+[x1,x2] = meshgrid(x,y);
+
+f = 100*(x2 - x1.^2).^2 + (x1 - 1).^2;
+
+n=length(x);
+fn = 100*(x2 - x1.^2).^2 + (x1 - 1).^2 + randn(n,n)*100.7;
+
+
+clf
+
+figure(1)
+surf(x,y,f,'EdgeColor','none','FaceColor','interp','FaceLighting','phong');
+hold on;
+plot(-1.2,1.0,'ok','MarkerFaceColor','green','MarkerSize',8);
+plot(1.0,1.0,'ok','MarkerFaceColor','red','MarkerSize',8);
+figure(2)
+surf(x,y,fn,'EdgeColor','none','FaceColor','interp','FaceLighting','phong');
+hold on;
+plot(-1.2,1.0,'ok','MarkerFaceColor','green','MarkerSize',8);
+
+
+
+figure(1)
+contourf(x1,x2,f,30);
+hold on;
+plot(-1.2,1.0,'ok','MarkerFaceColor','green','MarkerSize',8);
+plot(1.0,1.0,'ok','MarkerFaceColor','red','MarkerSize',8);
+figure(2)
+contourf(x1,x2,fn,10);
+hold on;
+plot(-1.2,1.0,'ok','MarkerFaceColor','green','MarkerSize',8);
+
+
+
+fn = awgn(x1,10,'measured')
+contourf(x1,x2,fn,10);
+surf(x,y,fn,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+
+
+
+
+
+
+contourf(x1,x2,f,30);
+hold on;
+plot(-1.2,1.0,'ok','MarkerFaceColor','green','MarkerSize',8)
+plot(1.0,1.0,'ok','MarkerFaceColor','red','MarkerSize',8)
+
+
+contourf(x1,x2,fn,20);
+hold on;
+plot(-1.2,1.0,'ok','MarkerFaceColor','green','MarkerSize',8)
+plot(1.0,1.0,'ok','MarkerFaceColor','red','MarkerSize',8)
+
+
+
+surf(x,y,f,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+hold on
+contour3(x1,x2,f,50,'black')
+
+alpha(0.5);
+
+
+
+surf(x,y,fn,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+hold on
+contour3(x1,x2,fn,20,'black')
+
+alpha(0.5);
+
+
+
+
+
+
+mesh(x1,x2,f);
+
+
+
+
+
+
+
+
+
+

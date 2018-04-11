@@ -1,0 +1,34 @@
+#!/bin/bash
+
+
+#openscad -o geo/out.stl -D curvature=0 -D curvature_position=0 -D airfoil_thickness=12 geo/wing_naca4.scad 
+openscad -o geo/out.stl -D curvature={x1} -D curvature_position={x2} -D airfoil_thickness=12 geo/wing_naca4.scad 
+
+
+cp geo/out.stl constant/triSurface/
+
+#surfaceTransformPoints -scale '(1 1 1)' constant/triSurface/out.stl constant/triSurface/outscale.stl > log.surfacescale
+
+surfaceFeatureExtract > log.featureextract
+
+foamCleanPolyMesh
+
+blockMesh > log.blockmesh
+
+snappyHexMesh -overwrite > log.snappy
+
+extrudeMesh > log.extrudemesh
+
+checkMesh > log.checkmesh
+
+simpleFoam > log.simpleFoam
+
+#decomposePar > log.decomposepar
+
+#mpirun -np 2 simpleFoam -parallel > log.simpleFoam
+
+#reconstructPar -latestTime > log.reconstructPar
+
+#rm -rf processor*
+
+#yPlusRAS -latestTime > log.yplusras

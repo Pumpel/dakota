@@ -1,0 +1,13 @@
+This is an optimization case using a derivative free method.
+Here we use coliny_pattern_search method.
+
+To get the value of the rosenbrock function, we use the rosenbrock solver that comes with dakota (rosenbrock).
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+load -ascii finaldata1.dat
+
+x=finaldata1(:,1);
+f1=finaldata1(:,2);
+f2=finaldata1(:,3);
+
+xx = linspace(-10,10,100);
+ff1=xx.^2;
+ff2=(xx-2).^2;
+
+
+
+[val1 ind1] = min(f1);
+[val2 ind2] = max(f1);
+
+[val3 ind3] = min(f2);
+[val4 ind4] = max(f2);
+
+
+
+%plot(x(ind1),f1(ind1),'ok','MarkerFaceColor','red')
+%hold on
+%plot(x(ind2),f1(ind2),'ok','MarkerFaceColor','red')
+
+%plot(x(ind3),f2(ind3),'ok','MarkerFaceColor','blue')
+%hold on
+%plot(x(ind4),f2(ind4),'ok','MarkerFaceColor','blue')
+
+
+
+
+%plot(x,f1)
+%hold on
+%plot(x,f2)
+%legend('Objective function f_1 = x^2','Objective function f_2 = (x-2)^2')
+%xlabel('Design variable (x)')
+%ylabel('Quantity of interest (f_1, f_2)')
+%axis([-10 10 -1 6])
+
+plot(xx,ff1,'-r')
+hold on
+plot(xx,ff2,'b')
+legend('Objective function f_1 = x^2','Objective function f_2 = (x-2)^2')
+xlabel('Design variable (x)')
+ylabel('Quantity of interest (f_1, f_2)')
+axis([-10 10 -50 150])
+grid on
+
+
+
+%figure(1)
+%xxx = linspace(1,57,57);
+%plot(xxx,x,'o')
+
+%figure(2)
+%plot(f1,f2,'-ok','MarkerFaceColor','red')
+
+
+
+%figure(1)
+%plot(xx,ff1,'-r')
+%hold on
+%plot(xx,ff2,'-b')
+
+
+
+figure(2)
+plot(x,f1,'-r','LineWidth',3)
+hold on
+plot(x,f2,'b','LineWidth',3)
+plot(xx,ff1,'-r')
+plot(xx,ff2,'-b')
+legend('Objective function f_1 = x^2','Objective function f_2 = (x-2)^2')
+xlabel('Design variable (x)')
+ylabel('Quantity of interest (f_1, f_2)')
+grid on
+
+axis([-1 3 -1 6])
+
+
+%figure(2)
+%plot(x,f1,'-r','LineWidth',3)
+%hold on
+%plot(x,f2,'b','LineWidth',3)
+%plot(xx,ff1,'--r')
+%plot(xx,ff2,'--b')
+
+%xlabel('Design variable (x)')
+%ylabel('Quantity of interest (f_1, f_2)')
+%legend('Objective function f_1 = x^2','Objective function f_2 = (x-2)^2')
+%grid on
+
+%axis([-1 3 -1 6])
+
+%plot(x(ind1),f1(ind1),'ok','MarkerFaceColor','red')
+%plot(x(ind2),f1(ind2),'ok','MarkerFaceColor','red')
+
+%plot(x(ind3),f2(ind3),'ok','MarkerFaceColor','blue')
+%plot(x(ind4),f2(ind4),'ok','MarkerFaceColor','blue')
+
+
+
+
+
+figure(1)
+plot(f1,f2,'-ok','MarkerFaceColor','yellow','MarkerEdgeColor','black')
+xlabel('Objective function f_1 = x^2')
+ylabel('Objective function f_2 = (x-2)^2')
+hold on
+plot(5e-06,4.009122,'ok','MarkerFaceColor','magenta')
+plot(4.040911,0.000104,'ok','MarkerFaceColor','cyan')
+legend('Pareto front', 'Extremum 1', 'Extremum 2')
+grid on
+
+figure(2)
+plot(x,f1,'-ok','MarkerFaceColor','red','MarkerEdgeColor','black')
+hold on
+plot(x,f2,'-ok','MarkerFaceColor','blue','MarkerEdgeColor','black')
+%legend('Objective function f_1 = x^2','Objective function f_2 = (x-2)^2','Extremum 1', 'Extremum 2')
+xlabel('Design variable (x)')
+ylabel('Quantity of interest (f_1, f_2)')
+
+plot(x(ind1),f1(ind1),'ok','MarkerFaceColor','magenta')
+plot(x(ind2),f1(ind2),'ok','MarkerFaceColor','cyan')
+
+plot(x(ind3),f2(ind3),'ok','MarkerFaceColor','cyan')
+plot(x(ind4),f2(ind4),'ok','MarkerFaceColor','magenta')
+
+legend('Objective function f_1 = x^2','Objective function f_2 = (x-2)^2','Extremum 1', 'Extremum 2')
+grid on
+axis([-1 3 -1 6])
+
+
+
+
+
+%plot(x,f1,'ok','MarkerFaceColor','red','MarkerSize',6)
+%hold on
+%plot(x,f2,'ok','MarkerFaceColor','blue','MarkerSize',6)
+%plot(xx,ff1)
+%plot(xx,ff2)

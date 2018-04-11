@@ -1,0 +1,3796 @@
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.2
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.1
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.3
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:07:24
+Host   : "dagobah"
+PID    : 11235
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.1
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.1/processor0"
+Reading database "workdir.1/processor1"
+Reading database "workdir.1/processor2"
+Reading database "workdir.1/processor3"
+Time = constant
+
+Reading points from "workdir.1/processor0" for time = constant
+
+Reading points from "workdir.1/processor1" for time = constant
+
+Reading points from "workdir.1/processor2" for time = constant
+
+Reading points from "workdir.1/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.1/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.1/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.1/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.1/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.1/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.1/processor0"
+Writing pointProcAddressing to "workdir.1/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.1/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.1/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.1/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.1/processor1"
+Writing pointProcAddressing to "workdir.1/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.1/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.1/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.1/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.1/processor2"
+Writing pointProcAddressing to "workdir.1/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.1/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.1/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.1/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.1/processor3"
+Writing pointProcAddressing to "workdir.1/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.1/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.1/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.1/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:07:25
+Host   : "dagobah"
+PID    : 11241
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.1
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:07:25
+Host   : "dagobah"
+PID    : 11242
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.3
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.3/processor0"
+Reading database "workdir.3/processor1"
+Reading database "workdir.3/processor2"
+Reading database "workdir.3/processor3"
+Time = constant
+
+Reading points from "workdir.3/processor0" for time = constant
+
+Reading points from "workdir.3/processor1" for time = constant
+
+Reading points from "workdir.3/processor2" for time = constant
+
+Reading points from "workdir.3/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.3/processor0" for time = constant
+
+Adding to master mesh
+
+Time = 0
+
+Reading mesh to add from "workdir.3/processor1" for time = constant
+
+Adding to master mesh
+
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+
+Reading mesh to add from "workdir.3/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.3/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.3/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.3/processor0"
+Writing pointProcAddressing to "workdir.3/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.3/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.3/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.3/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.3/processor1"
+Writing pointProcAddressing to "workdir.3/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.3/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.3/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.3/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.3/processor2"
+Writing pointProcAddressing to "workdir.3/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.3/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.3/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.3/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.3/processor3"
+Writing pointProcAddressing to "workdir.3/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.3/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.3/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.3/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:07:26
+Host   : "dagobah"
+PID    : 11248
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.3
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:07:27
+Host   : "dagobah"
+PID    : 11259
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.2
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.2/processor0"
+Reading database "workdir.2/processor1"
+Reading database "workdir.2/processor2"
+Reading database "workdir.2/processor3"
+Time = constant
+
+Reading points from "workdir.2/processor0" for time = constant
+
+Reading points from "workdir.2/processor1" for time = constant
+
+Reading points from "workdir.2/processor2" for time = constant
+
+Reading points from "workdir.2/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.2/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.2/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.2/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.2/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.2/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.2/processor0"
+Writing pointProcAddressing to "workdir.2/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.2/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.2/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.2/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.2/processor1"
+Writing pointProcAddressing to "workdir.2/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.2/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.2/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.2/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.2/processor2"
+Writing pointProcAddressing to "workdir.2/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.2/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.2/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.2/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.2/processor3"
+Writing pointProcAddressing to "workdir.2/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.2/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.2/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.2/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:07:28
+Host   : "dagobah"
+PID    : 11260
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.2
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.4
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:17:25
+Host   : "dagobah"
+PID    : 11344
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.4/processor0"
+Reading database "workdir.4/processor1"
+Reading database "workdir.4/processor2"
+Reading database "workdir.4/processor3"
+Time = constant
+
+Reading points from "workdir.4/processor0" for time = constant
+
+Reading points from "workdir.4/processor1" for time = constant
+
+Reading points from "workdir.4/processor2" for time = constant
+
+Reading points from "workdir.4/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.4/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.4/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.4/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.4/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.4/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.4/processor0"
+Writing pointProcAddressing to "workdir.4/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.4/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.4/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.4/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.4/processor1"
+Writing pointProcAddressing to "workdir.4/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.4/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.4/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.4/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.4/processor2"
+Writing pointProcAddressing to "workdir.4/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.4/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.4/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.4/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.4/processor3"
+Writing pointProcAddressing to "workdir.4/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.4/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.4/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.4/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:17:27
+Host   : "dagobah"
+PID    : 11345
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.5
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:21:07
+Host   : "dagobah"
+PID    : 11382
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.5
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.5/processor0"
+Reading database "workdir.5/processor1"
+Reading database "workdir.5/processor2"
+Reading database "workdir.5/processor3"
+Time = constant
+
+Reading points from "workdir.5/processor0" for time = constant
+
+Reading points from "workdir.5/processor1" for time = constant
+
+Reading points from "workdir.5/processor2" for time = constant
+
+Reading points from "workdir.5/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.5/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.5/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.5/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.5/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.5/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.5/processor0"
+Writing pointProcAddressing to "workdir.5/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.5/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.5/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.5/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.5/processor1"
+Writing pointProcAddressing to "workdir.5/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.5/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.5/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.5/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.5/processor2"
+Writing pointProcAddressing to "workdir.5/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.5/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.5/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.5/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.5/processor3"
+Writing pointProcAddressing to "workdir.5/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.5/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.5/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.5/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:21:09
+Host   : "dagobah"
+PID    : 11383
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.5
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.6
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:22:49
+Host   : "dagobah"
+PID    : 11417
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.6
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.6/processor0"
+Reading database "workdir.6/processor1"
+Reading database "workdir.6/processor2"
+Reading database "workdir.6/processor3"
+Time = constant
+
+Reading points from "workdir.6/processor0" for time = constant
+
+Reading points from "workdir.6/processor1" for time = constant
+
+Reading points from "workdir.6/processor2" for time = constant
+
+Reading points from "workdir.6/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.6/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.6/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.6/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.6/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.6/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.6/processor0"
+Writing pointProcAddressing to "workdir.6/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.6/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.6/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.6/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.6/processor1"
+Writing pointProcAddressing to "workdir.6/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.6/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.6/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.6/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.6/processor2"
+Writing pointProcAddressing to "workdir.6/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.6/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.6/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.6/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.6/processor3"
+Writing pointProcAddressing to "workdir.6/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.6/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.6/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.6/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:22:50
+Host   : "dagobah"
+PID    : 11418
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.6
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.7
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:29:08
+Host   : "dagobah"
+PID    : 11482
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.7
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.7/processor0"
+Reading database "workdir.7/processor1"
+Reading database "workdir.7/processor2"
+Reading database "workdir.7/processor3"
+Time = constant
+
+Reading points from "workdir.7/processor0" for time = constant
+
+Reading points from "workdir.7/processor1" for time = constant
+
+Reading points from "workdir.7/processor2" for time = constant
+
+Reading points from "workdir.7/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.7/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.7/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.7/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.7/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.7/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.7/processor0"
+Writing pointProcAddressing to "workdir.7/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.7/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.7/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.7/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.7/processor1"
+Writing pointProcAddressing to "workdir.7/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.7/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.7/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.7/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.7/processor2"
+Writing pointProcAddressing to "workdir.7/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.7/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.7/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.7/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.7/processor3"
+Writing pointProcAddressing to "workdir.7/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.7/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.7/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.7/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:29:09
+Host   : "dagobah"
+PID    : 11483
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.7
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.8
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.9
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:38:05
+Host   : "dagobah"
+PID    : 12233
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.8
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.8/processor0"
+Reading database "workdir.8/processor1"
+Reading database "workdir.8/processor2"
+Reading database "workdir.8/processor3"
+Time = constant
+
+Reading points from "workdir.8/processor0" for time = constant
+
+Reading points from "workdir.8/processor1" for time = constant
+
+Reading points from "workdir.8/processor2" for time = constant
+
+Reading points from "workdir.8/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.8/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.8/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.8/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.8/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.8/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.8/processor0"
+Writing pointProcAddressing to "workdir.8/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.8/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.8/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.8/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.8/processor1"
+Writing pointProcAddressing to "workdir.8/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.8/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.8/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.8/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.8/processor2"
+Writing pointProcAddressing to "workdir.8/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.8/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.8/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.8/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.8/processor3"
+Writing pointProcAddressing to "workdir.8/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.8/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.8/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.8/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:38:06
+Host   : "dagobah"
+PID    : 12234
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.8
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:38:38
+Host   : "dagobah"
+PID    : 12589
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.9
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.9/processor0"
+Reading database "workdir.9/processor1"
+Reading database "workdir.9/processor2"
+Reading database "workdir.9/processor3"
+Time = constant
+
+Reading points from "workdir.9/processor0" for time = constant
+
+Reading points from "workdir.9/processor1" for time = constant
+
+Reading points from "workdir.9/processor2" for time = constant
+
+Reading points from "workdir.9/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.9/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.9/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.9/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.9/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.9/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.9/processor0"
+Writing pointProcAddressing to "workdir.9/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.9/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.9/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.9/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.9/processor1"
+Writing pointProcAddressing to "workdir.9/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.9/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.9/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.9/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.9/processor2"
+Writing pointProcAddressing to "workdir.9/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.9/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.9/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.9/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.9/processor3"
+Writing pointProcAddressing to "workdir.9/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.9/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.9/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.9/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:38:39
+Host   : "dagobah"
+PID    : 12590
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.9
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.10
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:40:05
+Host   : "dagobah"
+PID    : 12963
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.10
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.10/processor0"
+Reading database "workdir.10/processor1"
+Reading database "workdir.10/processor2"
+Reading database "workdir.10/processor3"
+Time = constant
+
+Reading points from "workdir.10/processor0" for time = constant
+
+Reading points from "workdir.10/processor1" for time = constant
+
+Reading points from "workdir.10/processor2" for time = constant
+
+Reading points from "workdir.10/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.10/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.10/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.10/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.10/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.10/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.10/processor0"
+Writing pointProcAddressing to "workdir.10/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.10/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.10/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.10/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.10/processor1"
+Writing pointProcAddressing to "workdir.10/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.10/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.10/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.10/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.10/processor2"
+Writing pointProcAddressing to "workdir.10/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.10/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.10/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.10/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.10/processor3"
+Writing pointProcAddressing to "workdir.10/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.10/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.10/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.10/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:40:06
+Host   : "dagobah"
+PID    : 12972
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.10
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.11
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:50:53
+Host   : "dagobah"
+PID    : 13414
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.11/processor0"
+Reading database "workdir.11/processor1"
+Reading database "workdir.11/processor2"
+Reading database "workdir.11/processor3"
+Time = constant
+
+Reading points from "workdir.11/processor0" for time = constant
+
+Reading points from "workdir.11/processor1" for time = constant
+
+Reading points from "workdir.11/processor2" for time = constant
+
+Reading points from "workdir.11/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.11/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.11/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.11/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.11/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.11/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.11/processor0"
+Writing pointProcAddressing to "workdir.11/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.11/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.11/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.11/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.11/processor1"
+Writing pointProcAddressing to "workdir.11/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.11/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.11/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.11/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.11/processor2"
+Writing pointProcAddressing to "workdir.11/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.11/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.11/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.11/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.11/processor3"
+Writing pointProcAddressing to "workdir.11/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.11/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.11/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.11/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:50:54
+Host   : "dagobah"
+PID    : 13426
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.12
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:52:43
+Host   : "dagobah"
+PID    : 13901
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.12
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.12/processor0"
+Reading database "workdir.12/processor1"
+Reading database "workdir.12/processor2"
+Reading database "workdir.12/processor3"
+Time = constant
+
+Reading points from "workdir.12/processor0" for time = constant
+
+Reading points from "workdir.12/processor1" for time = constant
+
+Reading points from "workdir.12/processor2" for time = constant
+
+Reading points from "workdir.12/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.12/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.12/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.12/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.12/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.12/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.12/processor0"
+Writing pointProcAddressing to "workdir.12/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.12/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.12/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.12/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.12/processor1"
+Writing pointProcAddressing to "workdir.12/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.12/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.12/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.12/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.12/processor2"
+Writing pointProcAddressing to "workdir.12/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.12/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.12/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.12/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.12/processor3"
+Writing pointProcAddressing to "workdir.12/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.12/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.12/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.12/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:52:45
+Host   : "dagobah"
+PID    : 13902
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.12
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.13
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 15:55:22
+Host   : "dagobah"
+PID    : 13974
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.13
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.13/processor0"
+Reading database "workdir.13/processor1"
+Reading database "workdir.13/processor2"
+Reading database "workdir.13/processor3"
+Time = constant
+
+Reading points from "workdir.13/processor0" for time = constant
+
+Reading points from "workdir.13/processor1" for time = constant
+
+Reading points from "workdir.13/processor2" for time = constant
+
+Reading points from "workdir.13/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.13/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.13/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.13/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.13/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.13/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.13/processor0"
+Writing pointProcAddressing to "workdir.13/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.13/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.13/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.13/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.13/processor1"
+Writing pointProcAddressing to "workdir.13/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.13/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.13/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.13/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.13/processor2"
+Writing pointProcAddressing to "workdir.13/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.13/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.13/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.13/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.13/processor3"
+Writing pointProcAddressing to "workdir.13/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.13/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.13/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.13/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 15:55:23
+Host   : "dagobah"
+PID    : 13975
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.13
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.14
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:00:15
+Host   : "dagobah"
+PID    : 14109
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.14
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.14/processor0"
+Reading database "workdir.14/processor1"
+Reading database "workdir.14/processor2"
+Reading database "workdir.14/processor3"
+Time = constant
+
+Reading points from "workdir.14/processor0" for time = constant
+
+Reading points from "workdir.14/processor1" for time = constant
+
+Reading points from "workdir.14/processor2" for time = constant
+
+Reading points from "workdir.14/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.14/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.14/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.14/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.14/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.14/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.14/processor0"
+Writing pointProcAddressing to "workdir.14/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.14/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.14/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.14/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.14/processor1"
+Writing pointProcAddressing to "workdir.14/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.14/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.14/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.14/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.14/processor2"
+Writing pointProcAddressing to "workdir.14/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.14/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.14/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.14/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.14/processor3"
+Writing pointProcAddressing to "workdir.14/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.14/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.14/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.14/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:00:17
+Host   : "dagobah"
+PID    : 14110
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.14
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.15
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:08:28
+Host   : "dagobah"
+PID    : 14154
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.15
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.15/processor0"
+Reading database "workdir.15/processor1"
+Reading database "workdir.15/processor2"
+Reading database "workdir.15/processor3"
+Time = constant
+
+Reading points from "workdir.15/processor0" for time = constant
+
+Reading points from "workdir.15/processor1" for time = constant
+
+Reading points from "workdir.15/processor2" for time = constant
+
+Reading points from "workdir.15/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.15/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.15/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.15/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.15/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.15/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.15/processor0"
+Writing pointProcAddressing to "workdir.15/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.15/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.15/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.15/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.15/processor1"
+Writing pointProcAddressing to "workdir.15/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.15/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.15/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.15/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.15/processor2"
+Writing pointProcAddressing to "workdir.15/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.15/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.15/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.15/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.15/processor3"
+Writing pointProcAddressing to "workdir.15/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.15/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.15/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.15/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:08:30
+Host   : "dagobah"
+PID    : 14155
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.15
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.16
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:09:47
+Host   : "dagobah"
+PID    : 14199
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.16
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.16/processor0"
+Reading database "workdir.16/processor1"
+Reading database "workdir.16/processor2"
+Reading database "workdir.16/processor3"
+Time = constant
+
+Reading points from "workdir.16/processor0" for time = constant
+
+Reading points from "workdir.16/processor1" for time = constant
+
+Reading points from "workdir.16/processor2" for time = constant
+
+Reading points from "workdir.16/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -4.1633363e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.16/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.16/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.16/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.16/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.16/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.16/processor0"
+Writing pointProcAddressing to "workdir.16/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.16/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.16/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.16/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.16/processor1"
+Writing pointProcAddressing to "workdir.16/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.16/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.16/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.16/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.16/processor2"
+Writing pointProcAddressing to "workdir.16/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.16/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.16/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.16/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.16/processor3"
+Writing pointProcAddressing to "workdir.16/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.16/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.16/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.16/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:09:48
+Host   : "dagobah"
+PID    : 14200
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.16
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.17
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:12:14
+Host   : "dagobah"
+PID    : 14236
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.17
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.17/processor0"
+Reading database "workdir.17/processor1"
+Reading database "workdir.17/processor2"
+Reading database "workdir.17/processor3"
+Time = constant
+
+Reading points from "workdir.17/processor0" for time = constant
+
+Reading points from "workdir.17/processor1" for time = constant
+
+Reading points from "workdir.17/processor2" for time = constant
+
+Reading points from "workdir.17/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.17/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.17/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.17/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.17/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.17/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.17/processor0"
+Writing pointProcAddressing to "workdir.17/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.17/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.17/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.17/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.17/processor1"
+Writing pointProcAddressing to "workdir.17/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.17/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.17/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.17/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.17/processor2"
+Writing pointProcAddressing to "workdir.17/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.17/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.17/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.17/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.17/processor3"
+Writing pointProcAddressing to "workdir.17/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.17/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.17/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.17/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:12:16
+Host   : "dagobah"
+PID    : 14240
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.17
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.18
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:20:16
+Host   : "dagobah"
+PID    : 14325
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.18
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.18/processor0"
+Reading database "workdir.18/processor1"
+Reading database "workdir.18/processor2"
+Reading database "workdir.18/processor3"
+Time = constant
+
+Reading points from "workdir.18/processor0" for time = constant
+
+Reading points from "workdir.18/processor1" for time = constant
+
+Reading points from "workdir.18/processor2" for time = constant
+
+Reading points from "workdir.18/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.18/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.18/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.18/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.18/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.18/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.18/processor0"
+Writing pointProcAddressing to "workdir.18/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.18/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.18/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.18/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.18/processor1"
+Writing pointProcAddressing to "workdir.18/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.18/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.18/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.18/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.18/processor2"
+Writing pointProcAddressing to "workdir.18/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.18/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.18/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.18/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.18/processor3"
+Writing pointProcAddressing to "workdir.18/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.18/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.18/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.18/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:20:17
+Host   : "dagobah"
+PID    : 14326
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.18
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.19
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:23:04
+Host   : "dagobah"
+PID    : 14386
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.19
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.19/processor0"
+Reading database "workdir.19/processor1"
+Reading database "workdir.19/processor2"
+Reading database "workdir.19/processor3"
+Time = constant
+
+Reading points from "workdir.19/processor0" for time = constant
+
+Reading points from "workdir.19/processor1" for time = constant
+
+Reading points from "workdir.19/processor2" for time = constant
+
+Reading points from "workdir.19/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.19/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.19/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.19/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.19/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.19/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.19/processor0"
+Writing pointProcAddressing to "workdir.19/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.19/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.19/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.19/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.19/processor1"
+Writing pointProcAddressing to "workdir.19/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.19/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.19/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.19/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.19/processor2"
+Writing pointProcAddressing to "workdir.19/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.19/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.19/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.19/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.19/processor3"
+Writing pointProcAddressing to "workdir.19/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.19/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.19/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.19/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:23:05
+Host   : "dagobah"
+PID    : 14387
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.19
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.20
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:26:38
+Host   : "dagobah"
+PID    : 14427
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.20
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.20/processor0"
+Reading database "workdir.20/processor1"
+Reading database "workdir.20/processor2"
+Reading database "workdir.20/processor3"
+Time = constant
+
+Reading points from "workdir.20/processor0" for time = constant
+
+Reading points from "workdir.20/processor1" for time = constant
+
+Reading points from "workdir.20/processor2" for time = constant
+
+Reading points from "workdir.20/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.20/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.20/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.20/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.20/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.20/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.20/processor0"
+Writing pointProcAddressing to "workdir.20/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.20/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.20/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.20/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.20/processor1"
+Writing pointProcAddressing to "workdir.20/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.20/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.20/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.20/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.20/processor2"
+Writing pointProcAddressing to "workdir.20/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.20/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.20/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.20/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.20/processor3"
+Writing pointProcAddressing to "workdir.20/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.20/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.20/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.20/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:26:39
+Host   : "dagobah"
+PID    : 14428
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.20
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.21
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:29:36
+Host   : "dagobah"
+PID    : 14464
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.21
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.21/processor0"
+Reading database "workdir.21/processor1"
+Reading database "workdir.21/processor2"
+Reading database "workdir.21/processor3"
+Time = constant
+
+Reading points from "workdir.21/processor0" for time = constant
+
+Reading points from "workdir.21/processor1" for time = constant
+
+Reading points from "workdir.21/processor2" for time = constant
+
+Reading points from "workdir.21/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.21/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.21/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.21/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.21/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.21/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.21/processor0"
+Writing pointProcAddressing to "workdir.21/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.21/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.21/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.21/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.21/processor1"
+Writing pointProcAddressing to "workdir.21/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.21/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.21/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.21/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.21/processor2"
+Writing pointProcAddressing to "workdir.21/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.21/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.21/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.21/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.21/processor3"
+Writing pointProcAddressing to "workdir.21/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.21/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.21/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.21/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:29:37
+Host   : "dagobah"
+PID    : 14465
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.21
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.22
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:36:21
+Host   : "dagobah"
+PID    : 15094
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.22
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.22/processor0"
+Reading database "workdir.22/processor1"
+Reading database "workdir.22/processor2"
+Reading database "workdir.22/processor3"
+Time = constant
+
+Reading points from "workdir.22/processor0" for time = constant
+
+Reading points from "workdir.22/processor1" for time = constant
+
+Reading points from "workdir.22/processor2" for time = constant
+
+Reading points from "workdir.22/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.22/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.22/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.22/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.22/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.22/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.22/processor0"
+Writing pointProcAddressing to "workdir.22/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.22/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.22/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.22/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.22/processor1"
+Writing pointProcAddressing to "workdir.22/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.22/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.22/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.22/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.22/processor2"
+Writing pointProcAddressing to "workdir.22/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.22/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.22/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.22/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.22/processor3"
+Writing pointProcAddressing to "workdir.22/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.22/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.22/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.22/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:36:23
+Host   : "dagobah"
+PID    : 15095
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.22
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.23
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.24
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:38:59
+Host   : "dagobah"
+PID    : 15152
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.23
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.23/processor0"
+Reading database "workdir.23/processor1"
+Reading database "workdir.23/processor2"
+Reading database "workdir.23/processor3"
+Time = constant
+
+Reading points from "workdir.23/processor0" for time = constant
+
+Reading points from "workdir.23/processor1" for time = constant
+
+Reading points from "workdir.23/processor2" for time = constant
+
+Reading points from "workdir.23/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.23/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.23/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.23/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.23/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.23/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.23/processor0"
+Writing pointProcAddressing to "workdir.23/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.23/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.23/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.23/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.23/processor1"
+Writing pointProcAddressing to "workdir.23/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.23/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.23/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.23/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.23/processor2"
+Writing pointProcAddressing to "workdir.23/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.23/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.23/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.23/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.23/processor3"
+Writing pointProcAddressing to "workdir.23/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.23/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.23/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.23/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:39:00
+Host   : "dagobah"
+PID    : 15153
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.23
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:39:20
+Host   : "dagobah"
+PID    : 15164
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.24
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.24/processor0"
+Reading database "workdir.24/processor1"
+Reading database "workdir.24/processor2"
+Reading database "workdir.24/processor3"
+Time = constant
+
+Reading points from "workdir.24/processor0" for time = constant
+
+Reading points from "workdir.24/processor1" for time = constant
+
+Reading points from "workdir.24/processor2" for time = constant
+
+Reading points from "workdir.24/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -5.5511151e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.24/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.24/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.24/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.24/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.24/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.24/processor0"
+Writing pointProcAddressing to "workdir.24/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.24/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.24/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.24/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.24/processor1"
+Writing pointProcAddressing to "workdir.24/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.24/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.24/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.24/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.24/processor2"
+Writing pointProcAddressing to "workdir.24/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.24/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.24/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.24/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.24/processor3"
+Writing pointProcAddressing to "workdir.24/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.24/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.24/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.24/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:39:21
+Host   : "dagobah"
+PID    : 15165
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.24
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.25
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:49:17
+Host   : "dagobah"
+PID    : 15237
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.25
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.25/processor0"
+Reading database "workdir.25/processor1"
+Reading database "workdir.25/processor2"
+Reading database "workdir.25/processor3"
+Time = constant
+
+Reading points from "workdir.25/processor0" for time = constant
+
+Reading points from "workdir.25/processor1" for time = constant
+
+Reading points from "workdir.25/processor2" for time = constant
+
+Reading points from "workdir.25/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.9388939e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.25/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.25/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.25/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.25/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.25/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.25/processor0"
+Writing pointProcAddressing to "workdir.25/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.25/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.25/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.25/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.25/processor1"
+Writing pointProcAddressing to "workdir.25/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.25/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.25/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.25/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.25/processor2"
+Writing pointProcAddressing to "workdir.25/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.25/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.25/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.25/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.25/processor3"
+Writing pointProcAddressing to "workdir.25/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.25/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.25/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.25/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:49:18
+Host   : "dagobah"
+PID    : 15238
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.25
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.26
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : reconstructParMesh -mergeTol 1e-06 -constant
+Date   : Feb 01 2016
+Time   : 16:51:41
+Host   : "dagobah"
+PID    : 15419
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.26
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-06
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "workdir.26/processor0"
+Reading database "workdir.26/processor1"
+Reading database "workdir.26/processor2"
+Reading database "workdir.26/processor3"
+Time = constant
+
+Reading points from "workdir.26/processor0" for time = constant
+
+Reading points from "workdir.26/processor1" for time = constant
+
+Reading points from "workdir.26/processor2" for time = constant
+
+Reading points from "workdir.26/processor3" for time = constant
+
+Overall mesh bounding box  : (-4 -1 -6.2450045e-17) (6 1 2)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.0392305e-05
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "workdir.26/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.26/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.26/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "workdir.26/processor3" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.26/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "workdir.26/processor0"
+Writing pointProcAddressing to "workdir.26/processor0/constant/polyMesh"
+Writing faceProcAddressing to "workdir.26/processor0/constant/polyMesh"
+Writing cellProcAddressing to "workdir.26/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.26/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "workdir.26/processor1"
+Writing pointProcAddressing to "workdir.26/processor1/constant/polyMesh"
+Writing faceProcAddressing to "workdir.26/processor1/constant/polyMesh"
+Writing cellProcAddressing to "workdir.26/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.26/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "workdir.26/processor2"
+Writing pointProcAddressing to "workdir.26/processor2/constant/polyMesh"
+Writing faceProcAddressing to "workdir.26/processor2/constant/polyMesh"
+Writing cellProcAddressing to "workdir.26/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.26/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "workdir.26/processor3"
+Writing pointProcAddressing to "workdir.26/processor3/constant/polyMesh"
+Writing faceProcAddressing to "workdir.26/processor3/constant/polyMesh"
+Writing cellProcAddressing to "workdir.26/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "workdir.26/processor3/constant/polyMesh"
+
+End.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : decomposePar -fields
+Date   : Feb 01 2016
+Time   : 16:51:42
+Host   : "dagobah"
+PID    : 15420
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/ahmed/multi/multi1/workdir.26
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End.
+

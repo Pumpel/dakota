@@ -1,0 +1,2903 @@
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.1
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2812 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2812 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:06:26
+Host   : "dagobah"
+PID    : 11387
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.1
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8702 points.
+
+Processing tag:2412
+Starting reading cells at line 17427.
+First occurrence of element type 11 for cell 1 at line 17428
+First occurrence of element type 41 for cell 313 at line 19309
+First occurrence of element type 44 for cell 17098 at line 36089
+First occurrence of element type 112 for cell 8703 at line 53493
+Read 8390 cells and 17092 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 70275.
+For group 6 named prof_extruded trying to read 132 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 8390 reversed boundary faces out of 17092
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	132
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16780 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.1
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.4
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.3
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.2
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.5
+************************************
+runSalome running on dagobah
+runSalome running on dagobah
+runSalome running on dagobah
+runSalome running on dagobah
+Searching for a free port for naming service: 2813 - OK
+Searching for a free port for naming service: 2814 - OK
+Searching for a free port for naming service: 2815 - OK
+Searching for a free port for naming service: 2816 - OK
+Searching Naming Service +Searching Naming Service +Searching Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2813 - OK
+runSalome running on dagobah
+runSalome running on dagobah
+Searching for a free port for naming service: 2814 - OK
+Searching for a free port for naming service: 2815 - OK
+Searching Naming Service +runSalome running on dagobah
+Searching for a free port for naming service: 2816 - OK
+ found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service +Searching Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:07:02
+Host   : "dagobah"
+PID    : 12074
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.5
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8972 points.
+
+Processing tag:2412
+Starting reading cells at line 17967.
+First occurrence of element type 11 for cell 1 at line 17968
+First occurrence of element type 41 for cell 320 at line 19891
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:07:02
+Host   : "dagobah"
+PID    : 12075
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+First occurrence of element type 44 for cell 17631 at line 37197
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:07:02
+Host   : "dagobah"
+PID    : 12076
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.2
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+First occurrence of element type 112 for cell 8973 at line 55141
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+Read 8808 points.
+
+Processing tag:2412
+Starting reading cells at line 17639.
+First occurrence of element type 11 for cell 1 at line 17640
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:07:02
+Host   : "dagobah"
+PID    : 12077
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.3
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+First occurrence of element type 41 for cell 320 at line 19563
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8652 points.
+
+Processing tag:2412
+Starting reading cells at line 17327.
+First occurrence of element type 11 for cell 1 at line 17328
+First occurrence of element type 41 for cell 317 at line 19233
+First occurrence of element type 44 for cell 17303 at line 36541
+Read 8653 cells and 17625 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 72449.
+For group 6 named prof_extruded trying to read 139 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+First occurrence of element type 44 for cell 16994 at line 35905
+Read 8698 points.
+
+Processing tag:2412
+Starting reading cells at line 17419.
+First occurrence of element type 11 for cell 1 at line 17420
+First occurrence of element type 41 for cell 318 at line 19331
+First occurrence of element type 112 for cell 8809 at line 54157
+Found 8653 reversed boundary faces out of 17625
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	139
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+First occurrence of element type 112 for cell 8653 at line 53209
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 17306 undefined faces in mesh; adding to default patch.
+First occurrence of element type 44 for cell 17085 at line 36093
+Read 8489 cells and 17297 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 71137.
+For group 6 named prof_extruded trying to read 139 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+End
+
+First occurrence of element type 112 for cell 8699 at line 53489
+Found 8489 reversed boundary faces out of 17297
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+Read 8336 cells and 16988 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 69883.
+For group 6 named prof_extruded trying to read 136 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	139
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16978 undefined faces in mesh; adding to default patch.
+Found 8336 reversed boundary faces out of 16988
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	136
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+Read 8381 cells and 17079 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 70253.
+For group 6 named prof_extruded trying to read 137 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16672 undefined faces in mesh; adding to default patch.
+End
+
+Found 8381 reversed boundary faces out of 17079
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	137
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+End
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16762 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.2
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.3
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.4
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.5
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.6
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2817 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2817 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:07:40
+Host   : "dagobah"
+PID    : 12316
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.6
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8562 points.
+
+Processing tag:2412
+Starting reading cells at line 17147.
+First occurrence of element type 11 for cell 1 at line 17148
+First occurrence of element type 41 for cell 307 at line 18993
+First occurrence of element type 44 for cell 16824 at line 35505
+First occurrence of element type 112 for cell 8563 at line 52629
+Read 8256 cells and 16818 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 69143.
+For group 6 named prof_extruded trying to read 126 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 8256 reversed boundary faces out of 16818
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	126
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16512 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.6
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.7
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2818 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2818 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:08:18
+Host   : "dagobah"
+PID    : 12516
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.7
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8378 points.
+
+Processing tag:2412
+Starting reading cells at line 16779.
+First occurrence of element type 11 for cell 1 at line 16780
+First occurrence of element type 41 for cell 290 at line 18523
+First occurrence of element type 44 for cell 16473 at line 34701
+First occurrence of element type 112 for cell 8379 at line 51457
+Read 8089 cells and 16467 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 67637.
+For group 6 named prof_extruded trying to read 109 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 8089 reversed boundary faces out of 16467
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	109
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16178 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.7
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.8
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2819 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2819 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:08:47
+Host   : "dagobah"
+PID    : 12700
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.8
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8150 points.
+
+Processing tag:2412
+Starting reading cells at line 16323.
+First occurrence of element type 11 for cell 1 at line 16324
+First occurrence of element type 41 for cell 286 at line 18043
+First occurrence of element type 44 for cell 16021 at line 33773
+First occurrence of element type 112 for cell 8151 at line 50073
+Read 7865 cells and 16015 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 65805.
+For group 6 named prof_extruded trying to read 105 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 7865 reversed boundary faces out of 16015
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	105
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 15730 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.8
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.9
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.12
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.11
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.10
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2820 - OK
+runSalome running on dagobah
+runSalome running on dagobah
+runSalome running on dagobah
+Searching for a free port for naming service: 2821 - OK
+Searching for a free port for naming service: 2822 - OK
+Searching for a free port for naming service: 2823 - OK
+Searching Naming Service +Searching Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2820 - OK
+runSalome running on dagobah
+Searching for a free port for naming service: 2821 - OK
+runSalome running on dagobah
+Searching for a free port for naming service: 2822 - OK
+runSalome running on dagobah
+Searching Naming Service +Searching for a free port for naming service: 2823 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:09:17
+Host   : "dagobah"
+PID    : 13398
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.9
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8326 points.
+
+Processing tag:2412
+Starting reading cells at line 16675.
+First occurrence of element type 11 for cell 1 at line 16676
+First occurrence of element type 41 for cell 295 at line 18449
+First occurrence of element type 44 for cell 16364 at line 34513
+First occurrence of element type 112 for cell 8327 at line 51165
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:09:17
+Host   : "dagobah"
+PID    : 13399
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.10
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8032 cells and 16358 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 67231.
+For group 6 named prof_extruded trying to read 114 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 8032 reversed boundary faces out of 16358
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	114
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+Read 8300 points.
+
+Processing tag:2412
+Starting reading cells at line 16623.
+First occurrence of element type 11 for cell 1 at line 16624
+First occurrence of element type 41 for cell 294 at line 18391
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16064 undefined faces in mesh; adding to default patch.
+First occurrence of element type 44 for cell 16313 at line 34405
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+End
+
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:09:17
+Host   : "dagobah"
+PID    : 13400
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.12
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+First occurrence of element type 112 for cell 8301 at line 51005
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:09:17
+Host   : "dagobah"
+PID    : 13403
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8007 cells and 16307 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 67021.
+For group 6 named prof_extruded trying to read 113 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Read 8260 points.
+
+Processing tag:2412
+Starting reading cells at line 16543.
+First occurrence of element type 11 for cell 1 at line 16544
+First occurrence of element type 41 for cell 288 at line 18275
+Read 8210 points.
+
+Processing tag:2412
+Starting reading cells at line 16443.
+First occurrence of element type 11 for cell 1 at line 16444
+First occurrence of element type 41 for cell 289 at line 18181
+Found 8007 reversed boundary faces out of 16307
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	113
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+First occurrence of element type 44 for cell 16239 at line 34221
+First occurrence of element type 44 for cell 16138 at line 34025
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16014 undefined faces in mesh; adding to default patch.
+First occurrence of element type 112 for cell 8261 at line 50741
+First occurrence of element type 112 for cell 8211 at line 50445
+End
+
+Read 7922 cells and 16132 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 66291.
+For group 6 named prof_extruded trying to read 108 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Read 7973 cells and 16233 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 66689.
+For group 6 named prof_extruded trying to read 107 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 7922 reversed boundary faces out of 16132
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+Found 7973 reversed boundary faces out of 16233
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	108
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	107
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 15844 undefined faces in mesh; adding to default patch.
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 15946 undefined faces in mesh; adding to default patch.
+End
+
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.9
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.12
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.11
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.10
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.13
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2824 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2824 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:09:52
+Host   : "dagobah"
+PID    : 13632
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.13
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 7980 points.
+
+Processing tag:2412
+Starting reading cells at line 15983.
+First occurrence of element type 11 for cell 1 at line 15984
+First occurrence of element type 41 for cell 280 at line 17667
+First occurrence of element type 44 for cell 15687 at line 33069
+First occurrence of element type 112 for cell 7981 at line 49029
+Read 7701 cells and 15681 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 64433.
+For group 6 named prof_extruded trying to read 99 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 7701 reversed boundary faces out of 15681
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	99
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 15402 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.13
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.14
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2826 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2826 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:10:24
+Host   : "dagobah"
+PID    : 13814
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.14
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 7952 points.
+
+Processing tag:2412
+Starting reading cells at line 15927.
+First occurrence of element type 11 for cell 1 at line 15928
+First occurrence of element type 41 for cell 278 at line 17599
+First occurrence of element type 44 for cell 15633 at line 32949
+First occurrence of element type 112 for cell 7953 at line 48853
+Read 7675 cells and 15627 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 64205.
+For group 6 named prof_extruded trying to read 97 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 7675 reversed boundary faces out of 15627
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	97
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 15350 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.14
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.15
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2827 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2827 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:10:53
+Host   : "dagobah"
+PID    : 14006
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.15
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8194 points.
+
+Processing tag:2412
+Starting reading cells at line 16411.
+First occurrence of element type 11 for cell 1 at line 16412
+First occurrence of element type 41 for cell 279 at line 18089
+First occurrence of element type 44 for cell 16116 at line 33921
+First occurrence of element type 112 for cell 8195 at line 50309
+Read 7916 cells and 16110 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 66143.
+For group 6 named prof_extruded trying to read 98 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 7916 reversed boundary faces out of 16110
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	98
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 15832 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.15
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.16
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2828 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2828 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:11:22
+Host   : "dagobah"
+PID    : 14205
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.16
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8454 points.
+
+Processing tag:2412
+Starting reading cells at line 16931.
+First occurrence of element type 11 for cell 1 at line 16932
+First occurrence of element type 41 for cell 283 at line 18633
+First occurrence of element type 44 for cell 16632 at line 34977
+First occurrence of element type 112 for cell 8455 at line 51885
+Read 8172 cells and 16626 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 68231.
+For group 6 named prof_extruded trying to read 102 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 8172 reversed boundary faces out of 16626
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	102
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16344 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.16
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.17
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.19
+************************************
+************************************
+************************************
+Running in directory: 
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.20
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.18
+************************************
+************************************
+runSalome running on dagobah
+runSalome running on dagobah
+runSalome running on dagobah
+runSalome running on dagobah
+Searching for a free port for naming service: 2829 - OK
+Searching for a free port for naming service: 2830 - OK
+Searching for a free port for naming service: 2831 - OK
+Searching for a free port for naming service: 2832 - OK
+Searching Naming Service +Searching Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2829 - OK
+runSalome running on dagobah
+Searching for a free port for naming service: 2830 - OK
+runSalome running on dagobah
+Searching Naming Service +Searching for a free port for naming service: 2831 - OK
+runSalome running on dagobah
+Searching Naming Service +Searching for a free port for naming service: 2832 - OK
+ found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:11:52
+Host   : "dagobah"
+PID    : 14892
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.20
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:11:52
+Host   : "dagobah"
+PID    : 14893
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.19
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8288 points.
+
+Processing tag:2412
+Starting reading cells at line 16599.
+First occurrence of element type 11 for cell 1 at line 16600
+First occurrence of element type 41 for cell 283 at line 18301
+First occurrence of element type 44 for cell 16300 at line 34313
+Read 8044 points.
+
+Processing tag:2412
+Starting reading cells at line 16111.
+First occurrence of element type 11 for cell 1 at line 16112
+First occurrence of element type 41 for cell 279 at line 17789
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+First occurrence of element type 112 for cell 8289 at line 50889
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:11:52
+Host   : "dagobah"
+PID    : 14894
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.17
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+First occurrence of element type 44 for cell 15816 at line 33321
+First occurrence of element type 112 for cell 8045 at line 49409
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+Read 8006 cells and 16294 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 66903.
+For group 6 named prof_extruded trying to read 102 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:11:52
+Host   : "dagobah"
+PID    : 14895
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.18
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 8268 points.
+
+Processing tag:2412
+Starting reading cells at line 16559.
+First occurrence of element type 11 for cell 1 at line 16560
+First occurrence of element type 41 for cell 272 at line 18195
+Found 8006 reversed boundary faces out of 16294
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	102
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+First occurrence of element type 44 for cell 16271 at line 34189
+Read 7766 cells and 15810 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 64943.
+For group 6 named prof_extruded trying to read 98 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16012 undefined faces in mesh; adding to default patch.
+Found 7766 reversed boundary faces out of 15810
+Sorting boundary faces according to group (patch)
+First occurrence of element type 112 for cell 8269 at line 50725
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+Read 8784 points.
+
+Processing tag:2412
+Starting reading cells at line 17591.
+First occurrence of element type 11 for cell 1 at line 17592
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	98
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+First occurrence of element type 41 for cell 294 at line 19359
+End
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 15532 undefined faces in mesh; adding to default patch.
+First occurrence of element type 44 for cell 17281 at line 36341
+End
+
+Read 7997 cells and 16265 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 66721.
+For group 6 named prof_extruded trying to read 91 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+First occurrence of element type 112 for cell 8785 at line 53909
+Found 7997 reversed boundary faces out of 16265
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	91
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 15994 undefined faces in mesh; adding to default patch.
+Read 8491 cells and 17275 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 70893.
+For group 6 named prof_extruded trying to read 113 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+End
+
+Found 8491 reversed boundary faces out of 17275
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	113
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 16982 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.19
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.17
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.20
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.18
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.21
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2833 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2833 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:12:23
+Host   : "dagobah"
+PID    : 15120
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.21
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 7688 points.
+
+Processing tag:2412
+Starting reading cells at line 15399.
+First occurrence of element type 11 for cell 1 at line 15400
+First occurrence of element type 41 for cell 257 at line 16945
+First occurrence of element type 44 for cell 15126 at line 31809
+First occurrence of element type 112 for cell 7689 at line 47185
+Read 7432 cells and 15120 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 62051.
+For group 6 named prof_extruded trying to read 76 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 7432 reversed boundary faces out of 15120
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	76
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 14864 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.21
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.22
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2834 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2834 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:12:51
+Host   : "dagobah"
+PID    : 15302
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.22
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 7036 points.
+
+Processing tag:2412
+Starting reading cells at line 14095.
+First occurrence of element type 11 for cell 1 at line 14096
+First occurrence of element type 41 for cell 233 at line 15497
+First occurrence of element type 44 for cell 13846 at line 29105
+First occurrence of element type 112 for cell 7037 at line 43177
+Read 6804 cells and 13840 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 56787.
+For group 6 named prof_extruded trying to read 52 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 6804 reversed boundary faces out of 13840
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	52
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 13608 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.22
+Is the current directory: 
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.23
+************************************
+runSalome running on dagobah
+Searching for a free port for naming service: 2835 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2835 - OK
+Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:13:19
+Host   : "dagobah"
+PID    : 15495
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.23
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 6836 points.
+
+Processing tag:2412
+Starting reading cells at line 13695.
+First occurrence of element type 11 for cell 1 at line 13696
+First occurrence of element type 41 for cell 225 at line 15049
+First occurrence of element type 44 for cell 13454 at line 28273
+First occurrence of element type 112 for cell 6837 at line 41945
+Read 6612 cells and 13448 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 55171.
+For group 6 named prof_extruded trying to read 44 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 6612 reversed boundary faces out of 13448
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	44
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 13224 undefined faces in mesh; adding to default patch.
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.23
+Is the current directory: 
+************************************
+************************************
+************************************
+Running in directory: 
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.27
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.24
+************************************
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.25
+************************************
+************************************
+Running in directory: 
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.26
+************************************
+runSalome running on dagobah
+runSalome running on dagobah
+runSalome running on dagobah
+runSalome running on dagobah
+Searching for a free port for naming service: 2836 - OK
+Searching for a free port for naming service: 2837 - OK
+Searching for a free port for naming service: 2838 - OK
+Searching for a free port for naming service: 2839 - OK
+Searching Naming Service +Searching Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+runSalome running on dagobah
+Searching for a free port for naming service: 2836 - OK
+runSalome running on dagobah
+Searching for a free port for naming service: 2837 - OK
+Searching Naming Service +runSalome running on dagobah
+runSalome running on dagobah
+ found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching for a free port for naming service: 2838 - OK
+Searching Naming Service +Searching for a free port for naming service: 2839 - OK
+ found in 0.1 seconds 
+Searching /Registry in Naming Service +Searching Naming Service +Searching Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.1 seconds 
+Searching /Registry in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+Searching /Kernel/ModulCatalog in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+RunStudy
+Searching /myStudyManager in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Searching /Containers/dagobah/FactoryServer in Naming Service + found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:13:45
+Host   : "dagobah"
+PID    : 16198
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.24
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 6998 points.
+
+Processing tag:2412
+Starting reading cells at line 14019.
+First occurrence of element type 11 for cell 1 at line 14020
+First occurrence of element type 41 for cell 230 at line 15403
+First occurrence of element type 44 for cell 13773 at line 28941
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+First occurrence of element type 112 for cell 6999 at line 42937
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:13:45
+Host   : "dagobah"
+PID    : 16200
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.27
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 6769 cells and 13767 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 56477.
+For group 6 named prof_extruded trying to read 49 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Read 7030 points.
+
+Processing tag:2412
+Starting reading cells at line 14083.
+First occurrence of element type 11 for cell 1 at line 14084
+First occurrence of element type 41 for cell 225 at line 15437
+Found 6769 reversed boundary faces out of 13767
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	49
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+First occurrence of element type 44 for cell 13842 at line 29049
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 13538 undefined faces in mesh; adding to default patch.
+First occurrence of element type 112 for cell 7031 at line 43109
+End
+
+Read 6806 cells and 13836 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 56723.
+For group 6 named prof_extruded trying to read 44 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+ found in 0.5 seconds 
+Start SALOME, elapsed time :   2.1 seconds
+Found 6806 reversed boundary faces out of 13836
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	44
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:13:45
+Host   : "dagobah"
+PID    : 16203
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : ideasUnvToFoam mesh4points.unv
+Date   : Feb 01 2016
+Time   : 13:13:45
+Host   : "dagobah"
+PID    : 16204
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.25
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Case   : /home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.26
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 13612 undefined faces in mesh; adding to default patch.
+End
+
+Read 6942 points.
+
+Processing tag:2412
+Starting reading cells at line 13907.
+First occurrence of element type 11 for cell 1 at line 13908
+First occurrence of element type 41 for cell 227 at line 15273
+Read 6870 points.
+
+Processing tag:2412
+Starting reading cells at line 13763.
+First occurrence of element type 11 for cell 1 at line 13764
+First occurrence of element type 41 for cell 229 at line 15141
+First occurrence of element type 44 for cell 13664 at line 28705
+First occurrence of element type 44 for cell 13518 at line 28425
+First occurrence of element type 112 for cell 6943 at line 42589
+First occurrence of element type 112 for cell 6871 at line 42165
+Read 6716 cells and 13658 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 56023.
+For group 6 named prof_extruded trying to read 46 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Read 6642 cells and 13512 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 55451.
+For group 6 named prof_extruded trying to read 48 patch face indices.
+For group 8 named free_extruded trying to read 100 patch face indices.
+For group 10 named in_extruded trying to read 40 patch face indices.
+For group 12 named out_extruded trying to read 40 patch face indices.
+
+Found 6716 reversed boundary faces out of 13658
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	46
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+Found 6642 reversed boundary faces out of 13512
+Sorting boundary faces according to group (patch)
+0: prof_extruded is patch
+1: free_extruded is patch
+2: in_extruded is patch
+3: out_extruded is patch
+
+Constructing mesh with non-default patches of size:
+    prof_extruded	48
+    free_extruded	100
+    in_extruded	40
+    out_extruded	40
+
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 13432 undefined faces in mesh; adding to default patch.
+--> FOAM Warning : 
+    From function polyMesh::polyMesh(... construct from shapes...)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 627
+    Found 13284 undefined faces in mesh; adding to default patch.
+End
+
+End
+
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.27
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.24
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.25
+Is the current directory: 
+************************************
+************************************
+results.out OK (not empty)
+/home/joegi/OpenFOAM/of_courses/advanced_training_2016/dakota63/dakota_openfoam_cases/blunt_body/grad/grad1/workdir.26
+Is the current directory: 
+************************************
+1
+
+
+
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+            *                                                   *
+            *                    C O N M I N                    *
+            *                                                   *
+            *                FORTRAN PROGRAM FOR                *
+            *                                                   *
+            *         CONSTRAINED FUNCTION MINIMIZATION         *
+            *                                                   *
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+
+
+     CONSTRAINED FUNCTION MINIMIZATION
+
+     CONTROL PARAMETERS
+
+     IPRINT  NDV    ITMAX    NCON    NSIDE  ICNDIR   NSCAL   NFDG
+       2       4     100       0       1       5       0       1
+
+     LINOBJ  ITRM     N1      N2      N3      N4      N5
+       0       3       6       8       5       5      10
+
+         CT              CTMIN           CTL             CTLMIN
+     -0.10000E+00     0.10000E-02    -0.10000E-01     0.10000E-02
+
+         THETA           PHI             DELFUN          DABFUN
+      0.10000E+01     0.50000E+01     0.10000E-03     0.10000E-03
+
+         FDCH            FDCHM           ALPHAX          ABOBJ1
+      0.10000E-04     0.10000E-04     0.10000E+00     0.10000E+00
+
+     LOWER BOUNDS ON DECISION VARIABLES (VLB)
+       1)   -0.15000E+01  0.50000E+00  0.25000E+00 -0.20000E+01
+
+     UPPER BOUNDS ON DECISION VARIABLES (VUB)
+       1)   -0.50000E+00  0.20000E+01  0.12500E+01  0.00000E+00
+
+
+     INITIAL FUNCTION INFORMATION
+
+     OBJ =   0.200942E+01
+
+     DECISION VARIABLES (X-VECTOR)
+       1)   -0.10000E+01  0.10000E+01  0.10000E+01 -0.10000E+01
+ 
+
+
+
+
+     ITER =    1     OBJ =   0.98793E+00
+
+     DECISION VARIABLES (X-VECTOR)
+       1)   -0.12336E+01  0.10990E+01  0.46863E+00 -0.41719E+00
+
+
+
+
+     ITER =    2     OBJ =   0.65657E+00
+
+     DECISION VARIABLES (X-VECTOR)
+       1)   -0.12956E+01  0.11223E+01  0.25000E+00  0.00000E+00
+
+
+
+
+     ITER =    3     OBJ =   0.55263E+00
+
+     DECISION VARIABLES (X-VECTOR)
+       1)   -0.50000E+00  0.50000E+00  0.25000E+00 -0.14755E-14
+
+
+
+
+     ITER =    4     OBJ =   0.55263E+00     NO CHANGE IN OBJ
+
+     DECISION VARIABLES (X-VECTOR)
+       1)   -0.50000E+00  0.50000E+00  0.25000E+00 -0.14755E-14
+
+
+
+
+     ITER =    5     OBJ =   0.55263E+00     NO CHANGE IN OBJ
+
+     DECISION VARIABLES (X-VECTOR)
+       1)   -0.50000E+00  0.50000E+00  0.25000E+00 -0.14755E-14
+
+
+
+
+     ITER =    6     OBJ =   0.55263E+00     NO CHANGE IN OBJ
+
+     DECISION VARIABLES (X-VECTOR)
+       1)   -0.50000E+00  0.50000E+00  0.25000E+00 -0.14755E-14
+1
+
+
+
+    FINAL OPTIMIZATION INFORMATION
+
+     OBJ =   0.552634E+00
+
+     DECISION VARIABLES (X-VECTOR)
+       1)   -0.50000E+00  0.50000E+00  0.25000E+00 -0.14755E-14
+
+     THERE ARE    4 ACTIVE SIDE CONSTRAINTS
+     DECISION VARIABLES AT LOWER OR UPPER BOUNDS (MINUS INDICATES LOWER BOUND)
+         1   -2   -3    4
+
+     TERMINATION CRITERION
+          ABS(1-OBJ(I-1)/OBJ(I)) LESS THAN DELFUN FOR  3 ITERATIONS
+          ABS(OBJ(I)-OBJ(I-1))   LESS THAN DABFUN FOR  3 ITERATIONS
+
+     NUMBER OF ITERATIONS =    6
+
+     OBJECTIVE FUNCTION WAS EVALUATED           11  TIMES
+
+     GRADIENT OF OBJECTIVE WAS CALCULATED        5  TIMES

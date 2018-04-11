@@ -1,0 +1,126 @@
+# Usage:
+#   dakota -i dakota_of.in -o run.out > stdout.out
+
+
+################################################################################
+environment
+    #graphics
+    tabular_data
+        tabular_data_file = 'table_out.dat'
+	#custom_annotated header eval_id	#No interface column
+
+################################################################################
+
+
+
+################################################################################    
+method						    
+		output verbose     
+	
+#Derivative free local methods
+#a good starting point can improve the convergence rate
+#It is taken the default values
+
+		coliny_solis_wets	#Greedy search heuristics
+		#coliny_cobyla		#simplex
+		#coliny_pattern_search	#Pattern search
+
+		#asynch_pattern_search	#Pattern search
+	        
+		#optpp_pds		#simplex
+
+		#mesh_adaptive_search	#Pattern search
+
+
+
+#Derivative free local methods
+#no need of starting point
+#It is taken the default values
+
+		#coliny_ea		#Evolutionary algorithm
+		#soga			#Evolutionary algorithm
+		#moga			#Evolutionary algorithm
+
+		#ncsu_direct		#division of rectangles
+		#coliny_direct		#division of rectangles
+		#genie_direct		#division of rectangles
+
+        	#genie_opt_darts	#division of voronoi (kind of)
+
+
+
+	       #max_function_evaluations = 500
+	       #max_iterations = 10
+	       #convergence_tolerance 0.00001
+	      
+################################################################################
+
+
+    
+################################################################################
+model
+  single
+################################################################################	  
+ 	  
+
+
+################################################################################
+variables  
+  continuous_design = 2
+   #cdv_initial_point     6.0    4.0 
+   #cdv_initial_point     4.0    6.0   
+    upper_bounds      	 10.0  15.0
+    lower_bounds         -5.0  0.0
+    cdv_descriptors       'x1'   'x2'
+################################################################################    
+	
+		
+
+
+################################################################################         
+interface						                           
+          fork
+
+	  #asynchronous
+	  #evaluation_concurrency = 2
+	  analysis_driver = 'simulator_script'
+	  parameters_file = 'params.in'
+	  results_file    = 'results.out'
+	  work_directory directory_tag
+
+          copy_files = 'templatedir/*'
+
+
+# uncomment to leave params.in and results.out files in work_dir subdirectories
+ 	  named 'workdir' file_save  directory_save
+	  aprepro
+
+# when using conmin_frcg (above) with analytic_gradients (below), 
+# need to turn off the active set vector as the interface does not parse it.
+## 	  deactivate active_set_vector
+################################################################################
+	  
+
+
+################################################################################	  
+responses						
+      
+	num_objective_functions= 1			
+	
+	no_gradients	
+	#numerical_gradients
+	#method_source dakota 
+	#interval_type central
+	#interval_type forward
+	    
+	#fd_gradient_step_size =  1.e-6
+	#fd_gradient_step_size =  1.e-5
+	#fd_gradient_step_size =  1.e-4
+	#fd_gradient_step_size =  1.e-3
+	#fd_gradient_step_size =  0.01
+	#fd_gradient_step_size =  0.1
+	
+	no_hessians
+
+	sense 'min'
+################################################################################

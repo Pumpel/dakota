@@ -1,0 +1,15 @@
+How to run me:
+
+
+#This is the base case, here we test salome and openfoam and do some manipulation
+
+
+$HOME/salome/appli_V7_7_1/runAppli -t profile4points.py
+#$HOME/salome/appli_V7_7_1/runAppli -t --portkill
+
+ideasUnvToFoam mesh4points.unv
+
+sed -i '46s/patch/empty/' ./constant/polyMesh/boundary
+#sed -i '28s/patch/symmetryPlane/' ./constant/polyMesh/boundary
+
+simpleFoam

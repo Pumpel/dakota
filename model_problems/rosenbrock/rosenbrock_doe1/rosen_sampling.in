@@ -1,0 +1,96 @@
+# Dakota Input File: rosen_sampling.in
+# Usage:
+#   dakota -i rosen_sampling.in -o rosen_sampling.out > rosen_sampling.stdout
+
+
+
+################################################################################
+environment
+  	graphics
+  	tabular_data
+    	tabular_data_file = 'rosen_sampling.dat'
+	#custom_annotated header eval_id	#No interface column
+################################################################################
+
+
+################################################################################
+method
+    	#POSSIBLE OPTIONS FOR SAMPLING EXPERIMENT  
+    	#sampling
+	#sample_type
+		#incremental_lhs
+		#incremental_random
+		#lhs
+		#random
+
+	#samples = 200
+	#seed = 52 
+	#rng rnum2	
+	#rng mt19937
+
+    	#POSSIBLE OPTIONS FOR DACE EXPERIMENT  
+    	dace
+        #box_behnken
+        central_composite
+        #grid
+        #lhs
+        #oa_lhs
+        #oas
+        #random
+
+	samples = 9
+	#seed    = 52
+
+	#variance_based_decomp
+	#main_effects 
+	#quality_metrics
+	
+        
+    	#POSSIBLE OPTIONS FOR FSU EXPERIMENT 
+        #fsu_cvt
+        #fsu_quasi_mc halton
+        #fsu_quasi_mc hammersley
+	
+	#latinize
+
+	#samples = 20
+	#seed    = 52
+
+
+    	#POSSIBLE OPTIONS FOR PSUADE EXPERIMENT         
+        #psuade_moat
+
+	#samples = 30
+	#seed    = 52
+################################################################################
+
+
+################################################################################
+model
+  	single
+################################################################################
+
+
+################################################################################
+variables
+  	uniform_uncertain = 2
+    	lower_bounds       -2.0  -2.0
+    	upper_bounds        2.0   2.0
+    	descriptors         'x1'  'x2'
+################################################################################
+
+
+################################################################################
+interface
+  analysis_driver = 'rosenbrock'
+    direct
+################################################################################
+
+
+################################################################################
+responses
+  response_functions = 1
+  no_gradients
+  no_hessians
+################################################################################
+

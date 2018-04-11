@@ -1,0 +1,2281 @@
+------------------------------------------
+Restart record    1  (evaluation id    1):
+------------------------------------------
+Parameters:
+                     -1.2000000000000000e+00 x1
+                      1.0000000000000000e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4199999999999999e+01 obj_fn
+
+
+------------------------------------------
+Restart record    2  (evaluation id    2):
+------------------------------------------
+Parameters:
+                     -1.2000119999999999e+00 x1
+                      1.0000000000000000e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4202587295800001e+01 obj_fn
+
+
+------------------------------------------
+Restart record    3  (evaluation id    3):
+------------------------------------------
+Parameters:
+                     -1.1999880000000001e+00 x1
+                      1.0000000000000000e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4197412895799999e+01 obj_fn
+
+
+------------------------------------------
+Restart record    4  (evaluation id    4):
+------------------------------------------
+Parameters:
+                     -1.2000000000000000e+00 x1
+                      1.0000100000000001e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4199120010000001e+01 obj_fn
+
+
+------------------------------------------
+Restart record    5  (evaluation id    5):
+------------------------------------------
+Parameters:
+                     -1.2000000000000000e+00 x1
+                      9.9999000000000005e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4200880009999999e+01 obj_fn
+
+
+------------------------------------------
+Restart record    6  (evaluation id    6):
+------------------------------------------
+Parameters:
+                     -1.1903784362727572e+00 x1
+                      1.0039271688682554e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1860741947499999e+01 obj_fn
+
+
+------------------------------------------
+Restart record    7  (evaluation id    7):
+------------------------------------------
+Parameters:
+                     -1.1518921813637866e+00 x1
+                      1.0196358443412765e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.4069037632500001e+01 obj_fn
+
+
+------------------------------------------
+Restart record    8  (evaluation id    8):
+------------------------------------------
+Parameters:
+                     -1.0288614025079998e+00 x1
+                      1.0698524887721204e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1290401409099999e+00 obj_fn
+
+
+------------------------------------------
+Restart record    9  (evaluation id    9):
+------------------------------------------
+Parameters:
+                     -1.0288716911220250e+00 x1
+                      1.0698524887721204e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1290341011800002e+00 obj_fn
+
+
+------------------------------------------
+Restart record   10  (evaluation id   10):
+------------------------------------------
+Parameters:
+                     -1.0288511138939747e+00 x1
+                      1.0698524887721204e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1290462700099999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   11  (evaluation id   11):
+------------------------------------------
+Parameters:
+                     -1.0288614025079998e+00 x1
+                      1.0698631872970081e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1290643239699998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   12  (evaluation id   12):
+------------------------------------------
+Parameters:
+                     -1.0288614025079998e+00 x1
+                      1.0698417902472326e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1290159807400002e+00 obj_fn
+
+
+------------------------------------------
+Restart record   13  (evaluation id   13):
+------------------------------------------
+Parameters:
+                     -1.0649264764432911e+00 x1
+                      9.2738138093163414e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.5358737477600002e+00 obj_fn
+
+
+------------------------------------------
+Restart record   14  (evaluation id   14):
+------------------------------------------
+Parameters:
+                     -1.0301643575301296e+00 x1
+                      1.0647053082671749e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1227691227600003e+00 obj_fn
+
+
+------------------------------------------
+Restart record   15  (evaluation id   15):
+------------------------------------------
+Parameters:
+                     -1.0301791839421415e+00 x1
+                      1.0646467381572553e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1227683283900003e+00 obj_fn
+
+
+------------------------------------------
+Restart record   16  (evaluation id   16):
+------------------------------------------
+Parameters:
+                     -1.0301894857339808e+00 x1
+                      1.0646467381572553e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1227958643299996e+00 obj_fn
+
+
+------------------------------------------
+Restart record   17  (evaluation id   17):
+------------------------------------------
+Parameters:
+                     -1.0301688821503021e+00 x1
+                      1.0646467381572553e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1227408826299996e+00 obj_fn
+
+
+------------------------------------------
+Restart record   18  (evaluation id   18):
+------------------------------------------
+Parameters:
+                     -1.0301791839421415e+00 x1
+                      1.0646573846246368e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1227755316000003e+00 obj_fn
+
+
+------------------------------------------
+Restart record   19  (evaluation id   19):
+------------------------------------------
+Parameters:
+                     -1.0301791839421415e+00 x1
+                      1.0646360916898738e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1227611478500004e+00 obj_fn
+
+
+------------------------------------------
+Restart record   20  (evaluation id   20):
+------------------------------------------
+Parameters:
+                     -9.9389536166945269e-01 x1
+                      9.9115493104105057e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.9767255669899999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   21  (evaluation id   21):
+------------------------------------------
+Parameters:
+                     -8.4876007257869768e-01 x1
+                      6.9718770257623164e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.4717654556899999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   22  (evaluation id   22):
+------------------------------------------
+Parameters:
+                     -7.2376106835479392e-01 x1
+                      4.4400592257794563e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.6085418964999998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   23  (evaluation id   23):
+------------------------------------------
+Parameters:
+                     -8.4876856017942348e-01 x1
+                      6.9718770257623164e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.4718637296299999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   24  (evaluation id   24):
+------------------------------------------
+Parameters:
+                     -8.4875158497797187e-01 x1
+                      6.9718770257623164e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.4716672240799999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   25  (evaluation id   25):
+------------------------------------------
+Parameters:
+                     -8.4876007257869768e-01 x1
+                      6.9719467445325745e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.4717331027300000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   26  (evaluation id   26):
+------------------------------------------
+Parameters:
+                     -8.4876007257869768e-01 x1
+                      6.9718073069920583e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.4717978183699998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   27  (evaluation id   27):
+------------------------------------------
+Parameters:
+                     -8.2816444155749536e-01 x1
+                      7.0544512981146890e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.3805572851500001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   28  (evaluation id   28):
+------------------------------------------
+Parameters:
+                     -8.3339981300304922e-01 x1
+                      7.0334610702762723e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.3690827940100001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   29  (evaluation id   29):
+------------------------------------------
+Parameters:
+                     -8.3336319954834381e-01 x1
+                      7.0336078649715883e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.3690822174199999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   30  (evaluation id   30):
+------------------------------------------
+Parameters:
+                     -8.3337153318033930e-01 x1
+                      7.0336078649715883e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.3690881626900002e+00 obj_fn
+
+
+------------------------------------------
+Restart record   31  (evaluation id   31):
+------------------------------------------
+Parameters:
+                     -8.3335486591634833e-01 x1
+                      7.0336078649715883e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.3690763106200001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   32  (evaluation id   32):
+------------------------------------------
+Parameters:
+                     -8.3336319954834381e-01 x1
+                      7.0336782010502386e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.3690946951499998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   33  (evaluation id   33):
+------------------------------------------
+Parameters:
+                     -8.3336319954834381e-01 x1
+                      7.0335375288929380e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.3690697495799999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   34  (evaluation id   34):
+------------------------------------------
+Parameters:
+                     -7.6763658972457050e-01 x1
+                      5.9204700790552556e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.1253125505999999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   35  (evaluation id   35):
+------------------------------------------
+Parameters:
+                     -5.0473015042947722e-01 x1
+                      1.4679189353899225e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.4297626148100000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   36  (evaluation id   36):
+------------------------------------------
+Parameters:
+                     -6.4449426372946295e-01 x1
+                      3.8349467806787496e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.8059832061400001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   37  (evaluation id   37):
+------------------------------------------
+Parameters:
+                     -6.4450070867210019e-01 x1
+                      3.8349467806787496e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.8060573760100000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   38  (evaluation id   38):
+------------------------------------------
+Parameters:
+                     -6.4448781878682571e-01 x1
+                      3.8349467806787496e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.8059090506900000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   39  (evaluation id   39):
+------------------------------------------
+Parameters:
+                     -6.4449426372946295e-01 x1
+                      3.8349851301465565e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.8059587573900000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   40  (evaluation id   40):
+------------------------------------------
+Parameters:
+                     -6.4449426372946295e-01 x1
+                      3.8349084312109427e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.8060076578299999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   41  (evaluation id   41):
+------------------------------------------
+Parameters:
+                     -5.6669838395558569e-01 x1
+                      2.8637214733686950e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.5754732700799998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   42  (evaluation id   42):
+------------------------------------------
+Parameters:
+                     -4.0843801630950949e-01 x1
+                      8.8795521622463680e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.5925047419600000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   43  (evaluation id   43):
+------------------------------------------
+Parameters:
+                     -4.8642720829849601e-01 x1
+                      1.8615938867625639e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4640066825800000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   44  (evaluation id   44):
+------------------------------------------
+Parameters:
+                     -4.8643207257057897e-01 x1
+                      1.8615938867625639e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4640688959700001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   45  (evaluation id   45):
+------------------------------------------
+Parameters:
+                     -4.8642234402641304e-01 x1
+                      1.8615938867625639e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4639444741899998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   46  (evaluation id   46):
+------------------------------------------
+Parameters:
+                     -4.8642720829849601e-01 x1
+                      1.8616125027014316e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4639878986900001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   47  (evaluation id   47):
+------------------------------------------
+Parameters:
+                     -4.8642720829849601e-01 x1
+                      1.8615752708236963e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4640254671699999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   48  (evaluation id   48):
+------------------------------------------
+Parameters:
+                     -4.6926786306729668e-01 x1
+                      1.9969758603752533e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.2008335143800002e+00 obj_fn
+
+
+------------------------------------------
+Restart record   49  (evaluation id   49):
+------------------------------------------
+Parameters:
+                     -4.5353977684225172e-01 x1
+                      2.1210656391871871e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1168844301099998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   50  (evaluation id   50):
+------------------------------------------
+Parameters:
+                     -4.5225696236603907e-01 x1
+                      2.1311866521529282e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1164158810100000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   51  (evaluation id   51):
+------------------------------------------
+Parameters:
+                     -4.5226148493566271e-01 x1
+                      2.1311866521529282e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1164219969600002e+00 obj_fn
+
+
+------------------------------------------
+Restart record   52  (evaluation id   52):
+------------------------------------------
+Parameters:
+                     -4.5225243979641544e-01 x1
+                      2.1311866521529282e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1164097683700001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   53  (evaluation id   53):
+------------------------------------------
+Parameters:
+                     -4.5225696236603907e-01 x1
+                      2.1312079640194498e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1164195395599998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   54  (evaluation id   54):
+------------------------------------------
+Parameters:
+                     -4.5225696236603907e-01 x1
+                      2.1311653402864067e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1164122233599998e+00 obj_fn
+
+
+------------------------------------------
+Restart record   55  (evaluation id   55):
+------------------------------------------
+Parameters:
+                     -3.6004098870067541e-01 x1
+                      1.2364675006203896e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.8532908368300001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   56  (evaluation id   56):
+------------------------------------------
+Parameters:
+                      8.8229059607792260e-03 x1
+                     -2.3424091055097651e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.4729598897000002e+00 obj_fn
+
+
+------------------------------------------
+Restart record   57  (evaluation id   57):
+------------------------------------------
+Parameters:
+                     -3.0698440217734230e-01 x1
+                      7.2168961355244254e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7569187560499999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   58  (evaluation id   58):
+------------------------------------------
+Parameters:
+                     -3.0698747202136406e-01 x1
+                      7.2168961355244254e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7569351005600000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   59  (evaluation id   59):
+------------------------------------------
+Parameters:
+                     -3.0698133233332053e-01 x1
+                      7.2168961355244254e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7569024123500001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   60  (evaluation id   60):
+------------------------------------------
+Parameters:
+                     -3.0698440217734230e-01 x1
+                      7.2169683044857810e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7569155704999999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   61  (evaluation id   61):
+------------------------------------------
+Parameters:
+                     -3.0698440217734230e-01 x1
+                      7.2168239665630698e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7569219417099999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   62  (evaluation id   62):
+------------------------------------------
+Parameters:
+                     -2.1708896215328163e-01 x1
+                      2.5619723987205766e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.5275644900800001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   63  (evaluation id   63):
+------------------------------------------
+Parameters:
+                     -2.6585832871466708e-02 x1
+                     -7.3025717671679841e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.5975269844600000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   64  (evaluation id   64):
+------------------------------------------
+Parameters:
+                     -1.2945796951850527e-01 x1
+                     -1.9756947797939781e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.4090194213100000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   65  (evaluation id   65):
+------------------------------------------
+Parameters:
+                     -1.2945926409820047e-01 x1
+                     -1.9756947797939781e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.4090247936400000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   66  (evaluation id   66):
+------------------------------------------
+Parameters:
+                     -1.2945667493881008e-01 x1
+                     -1.9756947797939781e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.4090140490300000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   67  (evaluation id   67):
+------------------------------------------
+Parameters:
+                     -1.2945796951850527e-01 x1
+                     -1.9757145367417760e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.4090208642199999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   68  (evaluation id   68):
+------------------------------------------
+Parameters:
+                     -1.2945796951850527e-01 x1
+                     -1.9756750228461802e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.4090179784100001e+00 obj_fn
+
+
+------------------------------------------
+Restart record   69  (evaluation id   69):
+------------------------------------------
+Parameters:
+                     -1.1421499575376663e-01 x1
+                      7.0690397356417550e-03 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2450463448600000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   70  (evaluation id   70):
+------------------------------------------
+Parameters:
+                     -1.0870926445930745e-01 x1
+                      1.6758532176419705e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2316774112300000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   71  (evaluation id   71):
+------------------------------------------
+Parameters:
+                     -1.0837173761058339e-01 x1
+                      1.7352542976140861e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2316329979100000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   72  (evaluation id   72):
+------------------------------------------
+Parameters:
+                     -1.0837282132795949e-01 x1
+                      1.7352542976140861e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2316351367800000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   73  (evaluation id   73):
+------------------------------------------
+Parameters:
+                     -1.0837065389320728e-01 x1
+                      1.7352542976140861e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2316308590500000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   74  (evaluation id   74):
+------------------------------------------
+Parameters:
+                     -1.0837173761058339e-01 x1
+                      1.7352716501570623e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2316331925399999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   75  (evaluation id   75):
+------------------------------------------
+Parameters:
+                     -1.0837173761058339e-01 x1
+                      1.7352369450711100e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2316328032799999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   76  (evaluation id   76):
+------------------------------------------
+Parameters:
+                     -2.0244604863944832e-02 x1
+                     -5.4165257071577232e-03 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.0442937121800000e+00 obj_fn
+
+
+------------------------------------------
+Restart record   77  (evaluation id   77):
+------------------------------------------
+Parameters:
+                      3.3226392612260935e-01 x1
+                     -9.6492800440352064e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.7263062737999997e+00 obj_fn
+
+
+------------------------------------------
+Restart record   78  (evaluation id   78):
+------------------------------------------
+Parameters:
+                      2.5472330813007593e-02 x1
+                     -1.7228234723166522e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.8166315677899996e-01 obj_fn
+
+
+------------------------------------------
+Restart record   79  (evaluation id   79):
+------------------------------------------
+Parameters:
+                      2.5472585536315723e-02 x1
+                     -1.7228234723166522e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.8166270670699995e-01 obj_fn
+
+
+------------------------------------------
+Restart record   80  (evaluation id   80):
+------------------------------------------
+Parameters:
+                      2.5472076089699463e-02 x1
+                     -1.7228234723166522e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.8166360685200005e-01 obj_fn
+
+
+------------------------------------------
+Restart record   81  (evaluation id   81):
+------------------------------------------
+Parameters:
+                      2.5472330813007593e-02 x1
+                     -1.7228407005513754e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.8166377276299999e-01 obj_fn
+
+
+------------------------------------------
+Restart record   82  (evaluation id   82):
+------------------------------------------
+Parameters:
+                      2.5472330813007593e-02 x1
+                     -1.7228062440819290e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.8166254080100002e-01 obj_fn
+
+
+------------------------------------------
+Restart record   83  (evaluation id   83):
+------------------------------------------
+Parameters:
+                      9.0493839374157337e-02 x1
+                     -4.2161092926465520e-03 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.4259046472499999e-01 obj_fn
+
+
+------------------------------------------
+Restart record   84  (evaluation id   84):
+------------------------------------------
+Parameters:
+                      2.6038920959303091e-01 x1
+                      2.9783407425326060e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.9156956905199996e-01 obj_fn
+
+
+------------------------------------------
+Restart record   85  (evaluation id   85):
+------------------------------------------
+Parameters:
+                      2.5840003375531234e-01 x1
+                      2.9385332910038378e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.8973616082599998e-01 obj_fn
+
+
+------------------------------------------
+Restart record   86  (evaluation id   86):
+------------------------------------------
+Parameters:
+                      2.5840261775564988e-01 x1
+                      2.9385332910038378e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.8974231340900005e-01 obj_fn
+
+
+------------------------------------------
+Restart record   87  (evaluation id   87):
+------------------------------------------
+Parameters:
+                      2.5839744975497481e-01 x1
+                      2.9385332910038378e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.8973000871300005e-01 obj_fn
+
+
+------------------------------------------
+Restart record   88  (evaluation id   88):
+------------------------------------------
+Parameters:
+                      2.5840003375531234e-01 x1
+                      2.9385626763367478e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.8973396367899997e-01 obj_fn
+
+
+------------------------------------------
+Restart record   89  (evaluation id   89):
+------------------------------------------
+Parameters:
+                      2.5840003375531234e-01 x1
+                      2.9385039056709278e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.8973835799000005e-01 obj_fn
+
+
+------------------------------------------
+Restart record   90  (evaluation id   90):
+------------------------------------------
+Parameters:
+                      2.5306599647776434e-01 x1
+                      4.6136223382068964e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      5.8997351661599995e-01 obj_fn
+
+
+------------------------------------------
+Restart record   91  (evaluation id   91):
+------------------------------------------
+Parameters:
+                      2.4876505156143988e-01 x1
+                      5.9642813882071231e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      5.6485626208299999e-01 obj_fn
+
+
+------------------------------------------
+Restart record   92  (evaluation id   92):
+------------------------------------------
+Parameters:
+                      2.4871664833188334e-01 x1
+                      5.9794818293477742e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      5.6485316012900000e-01 obj_fn
+
+
+------------------------------------------
+Restart record   93  (evaluation id   93):
+------------------------------------------
+Parameters:
+                      2.4871913549836666e-01 x1
+                      5.9794818293477742e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      5.6484993415800000e-01 obj_fn
+
+
+------------------------------------------
+Restart record   94  (evaluation id   94):
+------------------------------------------
+Parameters:
+                      2.4871416116540002e-01 x1
+                      5.9794818293477742e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      5.6485638642299996e-01 obj_fn
+
+
+------------------------------------------
+Restart record   95  (evaluation id   95):
+------------------------------------------
+Parameters:
+                      2.4871664833188334e-01 x1
+                      5.9795416241660675e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      5.6485291319399999e-01 obj_fn
+
+
+------------------------------------------
+Restart record   96  (evaluation id   96):
+------------------------------------------
+Parameters:
+                      2.4871664833188334e-01 x1
+                      5.9794220345294809e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      5.6485340713499999e-01 obj_fn
+
+
+------------------------------------------
+Restart record   97  (evaluation id   97):
+------------------------------------------
+Parameters:
+                      3.2342472223040580e-01 x1
+                      9.8692541978776804e-02 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.6124810919499998e-01 obj_fn
+
+
+------------------------------------------
+Restart record   98  (evaluation id   98):
+------------------------------------------
+Parameters:
+                      6.2225701782449572e-01 x1
+                      2.5428343671997311e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.9094719578599999e+00 obj_fn
+
+
+------------------------------------------
+Restart record   99  (evaluation id   99):
+------------------------------------------
+Parameters:
+                      3.7224052929384049e-01 x1
+                      1.2410912248395173e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1497344426100002e-01 obj_fn
+
+
+------------------------------------------
+Restart record  100  (evaluation id  100):
+------------------------------------------
+Parameters:
+                      3.7224425169913344e-01 x1
+                      1.2410912248395173e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1497678262999999e-01 obj_fn
+
+
+------------------------------------------
+Restart record  101  (evaluation id  101):
+------------------------------------------
+Parameters:
+                      3.7223680688854754e-01 x1
+                      1.2410912248395173e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1497010753500002e-01 obj_fn
+
+
+------------------------------------------
+Restart record  102  (evaluation id  102):
+------------------------------------------
+Parameters:
+                      3.7224052929384049e-01 x1
+                      1.2411036357517657e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1496985669600001e-01 obj_fn
+
+
+------------------------------------------
+Restart record  103  (evaluation id  103):
+------------------------------------------
+Parameters:
+                      3.7224052929384049e-01 x1
+                      1.2410788139272688e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.1497703213400000e-01 obj_fn
+
+
+------------------------------------------
+Restart record  104  (evaluation id  104):
+------------------------------------------
+Parameters:
+                      4.0558411759605822e-01 x1
+                      1.6316120690765709e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.5350907023599998e-01 obj_fn
+
+
+------------------------------------------
+Restart record  105  (evaluation id  105):
+------------------------------------------
+Parameters:
+                      4.3650667312051689e-01 x1
+                      1.9937777238323182e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.2533875322000000e-01 obj_fn
+
+
+------------------------------------------
+Restart record  106  (evaluation id  106):
+------------------------------------------
+Parameters:
+                      4.5244188400338670e-01 x1
+                      2.1804112664093750e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.1760869629999999e-01 obj_fn
+
+
+------------------------------------------
+Restart record  107  (evaluation id  107):
+------------------------------------------
+Parameters:
+                      4.5244640842222672e-01 x1
+                      2.1804112664093750e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.1759282226300001e-01 obj_fn
+
+
+------------------------------------------
+Restart record  108  (evaluation id  108):
+------------------------------------------
+Parameters:
+                      4.5243735958454667e-01 x1
+                      2.1804112664093750e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.1762457362099999e-01 obj_fn
+
+
+------------------------------------------
+Restart record  109  (evaluation id  109):
+------------------------------------------
+Parameters:
+                      4.5244188400338670e-01 x1
+                      2.1804330705220390e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.1761451300900001e-01 obj_fn
+
+
+------------------------------------------
+Restart record  110  (evaluation id  110):
+------------------------------------------
+Parameters:
+                      4.5244188400338670e-01 x1
+                      2.1803894622967110e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.1760288054199998e-01 obj_fn
+
+
+------------------------------------------
+Restart record  111  (evaluation id  111):
+------------------------------------------
+Parameters:
+                      4.6391464285259360e-01 x1
+                      2.0931941398764814e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.9086542143400002e-01 obj_fn
+
+
+------------------------------------------
+Restart record  112  (evaluation id  112):
+------------------------------------------
+Parameters:
+                      4.6234944268376799e-01 x1
+                      2.1050929571503410e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.9012939016200001e-01 obj_fn
+
+
+------------------------------------------
+Restart record  113  (evaluation id  113):
+------------------------------------------
+Parameters:
+                      4.6231003340278859e-01 x1
+                      2.1053925506736537e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.9012894735500000e-01 obj_fn
+
+
+------------------------------------------
+Restart record  114  (evaluation id  114):
+------------------------------------------
+Parameters:
+                      4.6231465650312259e-01 x1
+                      2.1053925506736537e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.9012670595099999e-01 obj_fn
+
+
+------------------------------------------
+Restart record  115  (evaluation id  115):
+------------------------------------------
+Parameters:
+                      4.6230541030245459e-01 x1
+                      2.1053925506736537e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.9013119248300001e-01 obj_fn
+
+
+------------------------------------------
+Restart record  116  (evaluation id  116):
+------------------------------------------
+Parameters:
+                      4.6231003340278859e-01 x1
+                      2.1054136045991603e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.9012760400499998e-01 obj_fn
+
+
+------------------------------------------
+Restart record  117  (evaluation id  117):
+------------------------------------------
+Parameters:
+                      4.6231003340278859e-01 x1
+                      2.1053714967481471e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.9013029159100001e-01 obj_fn
+
+
+------------------------------------------
+Restart record  118  (evaluation id  118):
+------------------------------------------
+Parameters:
+                      5.0589004446215480e-01 x1
+                      2.5039916416765684e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.4719784376900000e-01 obj_fn
+
+
+------------------------------------------
+Restart record  119  (evaluation id  119):
+------------------------------------------
+Parameters:
+                      6.8021008869961963e-01 x1
+                      4.0983880056882283e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.8154574988399997e-01 obj_fn
+
+
+------------------------------------------
+Restart record  120  (evaluation id  120):
+------------------------------------------
+Parameters:
+                      5.6686047313145860e-01 x1
+                      3.0616500005176556e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1060998640699999e-01 obj_fn
+
+
+------------------------------------------
+Restart record  121  (evaluation id  121):
+------------------------------------------
+Parameters:
+                      5.6686614173618988e-01 x1
+                      3.0616500005176556e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1062457302199999e-01 obj_fn
+
+
+------------------------------------------
+Restart record  122  (evaluation id  122):
+------------------------------------------
+Parameters:
+                      5.6685480452672732e-01 x1
+                      3.0616500005176556e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1059540831099999e-01 obj_fn
+
+
+------------------------------------------
+Restart record  123  (evaluation id  123):
+------------------------------------------
+Parameters:
+                      5.6686047313145860e-01 x1
+                      3.0616806170176608e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1060070087200000e-01 obj_fn
+
+
+------------------------------------------
+Restart record  124  (evaluation id  124):
+------------------------------------------
+Parameters:
+                      5.6686047313145860e-01 x1
+                      3.0616193840176503e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.1061927381600001e-01 obj_fn
+
+
+------------------------------------------
+Restart record  125  (evaluation id  125):
+------------------------------------------
+Parameters:
+                      5.9154737943143310e-01 x1
+                      3.3962177074312161e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7745600213599999e-01 obj_fn
+
+
+------------------------------------------
+Restart record  126  (evaluation id  126):
+------------------------------------------
+Parameters:
+                      6.6412095610281596e-01 x1
+                      4.3797664289445737e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.1376337301700000e-01 obj_fn
+
+
+------------------------------------------
+Restart record  127  (evaluation id  127):
+------------------------------------------
+Parameters:
+                      7.1954850489083422e-01 x1
+                      5.1309447123840779e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.0820483298799997e-02 obj_fn
+
+
+------------------------------------------
+Restart record  128  (evaluation id  128):
+------------------------------------------
+Parameters:
+                      7.1955570037588312e-01 x1
+                      5.1309447123840779e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.0826099858800002e-02 obj_fn
+
+
+------------------------------------------
+Restart record  129  (evaluation id  129):
+------------------------------------------
+Parameters:
+                      7.1954130940578531e-01 x1
+                      5.1309447123840779e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.0814888383899997e-02 obj_fn
+
+
+------------------------------------------
+Restart record  130  (evaluation id  130):
+------------------------------------------
+Parameters:
+                      7.1954850489083422e-01 x1
+                      5.1309960218312023e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.0815708427099994e-02 obj_fn
+
+
+------------------------------------------
+Restart record  131  (evaluation id  131):
+------------------------------------------
+Parameters:
+                      7.1954850489083422e-01 x1
+                      5.1308934029369535e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.0825263435800002e-02 obj_fn
+
+
+------------------------------------------
+Restart record  132  (evaluation id  132):
+------------------------------------------
+Parameters:
+                      7.1100470044560049e-01 x1
+                      5.2330580278750449e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.1512443372900000e-01 obj_fn
+
+
+------------------------------------------
+Restart record  133  (evaluation id  133):
+------------------------------------------
+Parameters:
+                      7.1818028390491562e-01 x1
+                      5.1472973316524662e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      7.9533272670800001e-02 obj_fn
+
+
+------------------------------------------
+Restart record  134  (evaluation id  134):
+------------------------------------------
+Parameters:
+                      7.1818701664737561e-01 x1
+                      5.1472168636760107e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      7.9533241233799998e-02 obj_fn
+
+
+------------------------------------------
+Restart record  135  (evaluation id  135):
+------------------------------------------
+Parameters:
+                      7.1819419851754207e-01 x1
+                      5.1472168636760107e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      7.9531413508100002e-02 obj_fn
+
+
+------------------------------------------
+Restart record  136  (evaluation id  136):
+------------------------------------------
+Parameters:
+                      7.1817983477720915e-01 x1
+                      5.1472168636760107e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      7.9535090367999994e-02 obj_fn
+
+
+------------------------------------------
+Restart record  137  (evaluation id  137):
+------------------------------------------
+Parameters:
+                      7.1818701664737561e-01 x1
+                      5.1472683358446469e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      7.9532141447599999e-02 obj_fn
+
+
+------------------------------------------
+Restart record  138  (evaluation id  138):
+------------------------------------------
+Parameters:
+                      7.1818701664737561e-01 x1
+                      5.1471653915073745e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      7.9534346318700003e-02 obj_fn
+
+
+------------------------------------------
+Restart record  139  (evaluation id  139):
+------------------------------------------
+Parameters:
+                      7.4633049731736456e-01 x1
+                      5.5535286371401082e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.4622565299299994e-02 obj_fn
+
+
+------------------------------------------
+Restart record  140  (evaluation id  140):
+------------------------------------------
+Parameters:
+                      8.5890441999732048e-01 x1
+                      7.1787757309964983e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      5.9267465773899998e-02 obj_fn
+
+
+------------------------------------------
+Restart record  141  (evaluation id  141):
+------------------------------------------
+Parameters:
+                      8.1234904660644869e-01 x1
+                      6.5066486210438335e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.3761937945000003e-02 obj_fn
+
+
+------------------------------------------
+Restart record  142  (evaluation id  142):
+------------------------------------------
+Parameters:
+                      8.1235717009691477e-01 x1
+                      6.5066486210438335e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.3783313232500003e-02 obj_fn
+
+
+------------------------------------------
+Restart record  143  (evaluation id  143):
+------------------------------------------
+Parameters:
+                      8.1234092311598260e-01 x1
+                      6.5066486210438335e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.3740597871999999e-02 obj_fn
+
+
+------------------------------------------
+Restart record  144  (evaluation id  144):
+------------------------------------------
+Parameters:
+                      8.1234904660644869e-01 x1
+                      6.5067136875300435e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.3749909938999999e-02 obj_fn
+
+
+------------------------------------------
+Restart record  145  (evaluation id  145):
+------------------------------------------
+Parameters:
+                      8.1234904660644869e-01 x1
+                      6.5065835545576234e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      4.3773974418200003e-02 obj_fn
+
+
+------------------------------------------
+Restart record  146  (evaluation id  146):
+------------------------------------------
+Parameters:
+                      8.2471832069164641e-01 x1
+                      6.7298384919759346e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.5873823890699999e-02 obj_fn
+
+
+------------------------------------------
+Restart record  147  (evaluation id  147):
+------------------------------------------
+Parameters:
+                      8.7419541703243731e-01 x1
+                      7.6225979757043383e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.6210102766000000e-02 obj_fn
+
+
+------------------------------------------
+Restart record  148  (evaluation id  148):
+------------------------------------------
+Parameters:
+                      9.0060317547790414e-01 x1
+                      8.0990967709006634e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.0018121030600000e-02 obj_fn
+
+
+------------------------------------------
+Restart record  149  (evaluation id  149):
+------------------------------------------
+Parameters:
+                      9.0061218150965894e-01 x1
+                      8.0990967709006634e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.0020173758700001e-02 obj_fn
+
+
+------------------------------------------
+Restart record  150  (evaluation id  150):
+------------------------------------------
+Parameters:
+                      9.0059416944614934e-01 x1
+                      8.0990967709006634e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.0016121131900001e-02 obj_fn
+
+
+------------------------------------------
+Restart record  151  (evaluation id  151):
+------------------------------------------
+Parameters:
+                      9.0060317547790414e-01 x1
+                      8.0991777618683725e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.0016222030500000e-02 obj_fn
+
+
+------------------------------------------
+Restart record  152  (evaluation id  152):
+------------------------------------------
+Parameters:
+                      9.0060317547790414e-01 x1
+                      8.0990157799329543e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.0020033149900000e-02 obj_fn
+
+
+------------------------------------------
+Restart record  153  (evaluation id  153):
+------------------------------------------
+Parameters:
+                      8.9634947819390354e-01 x1
+                      8.1435782693418424e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.2658113438700000e-02 obj_fn
+
+
+------------------------------------------
+Restart record  154  (evaluation id  154):
+------------------------------------------
+Parameters:
+                      9.0031216775836720e-01 x1
+                      8.1021398787098720e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.9497751004300004e-03 obj_fn
+
+
+------------------------------------------
+Restart record  155  (evaluation id  155):
+------------------------------------------
+Parameters:
+                      9.0031294683198515e-01 x1
+                      8.1021317318297326e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.9497746080900000e-03 obj_fn
+
+
+------------------------------------------
+Restart record  156  (evaluation id  156):
+------------------------------------------
+Parameters:
+                      9.0032194996145343e-01 x1
+                      8.1021317318297326e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.9491415161200008e-03 obj_fn
+
+
+------------------------------------------
+Restart record  157  (evaluation id  157):
+------------------------------------------
+Parameters:
+                      9.0030394370251687e-01 x1
+                      8.1021317318297326e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.9504604345699993e-03 obj_fn
+
+
+------------------------------------------
+Restart record  158  (evaluation id  158):
+------------------------------------------
+Parameters:
+                      9.0031294683198515e-01 x1
+                      8.1022127531470511e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.9492136521599998e-03 obj_fn
+
+
+------------------------------------------
+Restart record  159  (evaluation id  159):
+------------------------------------------
+Parameters:
+                      9.0031294683198515e-01 x1
+                      8.1020507105124140e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.9503486929299993e-03 obj_fn
+
+
+------------------------------------------
+Restart record  160  (evaluation id  160):
+------------------------------------------
+Parameters:
+                      9.1032906319871087e-01 x1
+                      8.2829193777482346e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.0574471413399993e-03 obj_fn
+
+
+------------------------------------------
+Restart record  161  (evaluation id  161):
+------------------------------------------
+Parameters:
+                      9.5039352866561377e-01 x1
+                      9.0060699614222439e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.1582178356300001e-03 obj_fn
+
+
+------------------------------------------
+Restart record  162  (evaluation id  162):
+------------------------------------------
+Parameters:
+                      9.6572756520702963e-01 x1
+                      9.2828443385611048e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.0627598188700000e-03 obj_fn
+
+
+------------------------------------------
+Restart record  163  (evaluation id  163):
+------------------------------------------
+Parameters:
+                      9.6573722248268168e-01 x1
+                      9.2828443385611048e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.0783430389899999e-03 obj_fn
+
+
+------------------------------------------
+Restart record  164  (evaluation id  164):
+------------------------------------------
+Parameters:
+                      9.6571790793137757e-01 x1
+                      9.2828443385611048e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.0472465312300001e-03 obj_fn
+
+
+------------------------------------------
+Restart record  165  (evaluation id  165):
+------------------------------------------
+Parameters:
+                      9.6572756520702963e-01 x1
+                      9.2829371670044902e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.0547010940700000e-03 obj_fn
+
+
+------------------------------------------
+Restart record  166  (evaluation id  166):
+------------------------------------------
+Parameters:
+                      9.6572756520702963e-01 x1
+                      9.2827515101177194e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.0708357779000001e-03 obj_fn
+
+
+------------------------------------------
+Restart record  167  (evaluation id  167):
+------------------------------------------
+Parameters:
+                      9.7714857243794007e-01 x1
+                      9.5174413304407079e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.4678729832700000e-03 obj_fn
+
+
+------------------------------------------
+Restart record  168  (evaluation id  168):
+------------------------------------------
+Parameters:
+                      9.9391970648890637e-01 x1
+                      9.8619343790150782e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.2020037179400002e-04 obj_fn
+
+
+------------------------------------------
+Restart record  169  (evaluation id  169):
+------------------------------------------
+Parameters:
+                      1.0102001605059208e+00 x1
+                      1.0196348451399946e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7964962890599999e-04 obj_fn
+
+
+------------------------------------------
+Restart record  170  (evaluation id  170):
+------------------------------------------
+Parameters:
+                      1.0102102625075258e+00 x1
+                      1.0196348451399946e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.8344688269600001e-04 obj_fn
+
+
+------------------------------------------
+Restart record  171  (evaluation id  171):
+------------------------------------------
+Parameters:
+                      1.0101900585043158e+00 x1
+                      1.0196348451399946e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7593592904399999e-04 obj_fn
+
+
+------------------------------------------
+Restart record  172  (evaluation id  172):
+------------------------------------------
+Parameters:
+                      1.0102001605059208e+00 x1
+                      1.0196450414884459e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.7788684141900000e-04 obj_fn
+
+
+------------------------------------------
+Restart record  173  (evaluation id  173):
+------------------------------------------
+Parameters:
+                      1.0102001605059208e+00 x1
+                      1.0196246487915432e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.8143320949900001e-04 obj_fn
+
+
+------------------------------------------
+Restart record  174  (evaluation id  174):
+------------------------------------------
+Parameters:
+                      1.0057861851920769e+00 x1
+                      1.0216996613056422e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.0221981953900000e-02 obj_fn
+
+
+------------------------------------------
+Restart record  175  (evaluation id  175):
+------------------------------------------
+Parameters:
+                      1.0098336222667079e+00 x1
+                      1.0198063082832707e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.6879594539400003e-05 obj_fn
+
+
+------------------------------------------
+Restart record  176  (evaluation id  176):
+------------------------------------------
+Parameters:
+                      1.0098347585486962e+00 x1
+                      1.0198057767412363e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.6878794477499999e-05 obj_fn
+
+
+------------------------------------------
+Restart record  177  (evaluation id  177):
+------------------------------------------
+Parameters:
+                      1.0098448568962817e+00 x1
+                      1.0198057767412363e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.6957847934499999e-05 obj_fn
+
+
+------------------------------------------
+Restart record  178  (evaluation id  178):
+------------------------------------------
+Parameters:
+                      1.0098246602011107e+00 x1
+                      1.0198057767412363e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.6883137215800002e-05 obj_fn
+
+
+------------------------------------------
+Restart record  179  (evaluation id  179):
+------------------------------------------
+Parameters:
+                      1.0098347585486962e+00 x1
+                      1.0198159747990037e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.6969834980700006e-05 obj_fn
+
+
+------------------------------------------
+Restart record  180  (evaluation id  180):
+------------------------------------------
+Parameters:
+                      1.0098347585486962e+00 x1
+                      1.0197955786834689e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.6808554050900006e-05 obj_fn
+
+
+------------------------------------------
+Restart record  181  (evaluation id  181):
+------------------------------------------
+Parameters:
+                      9.8430527556639036e-01 x1
+                      9.6812598261256766e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.9974481748100000e-04 obj_fn
+
+
+------------------------------------------
+Restart record  182  (evaluation id  182):
+------------------------------------------
+Parameters:
+                      1.0007381276112950e+00 x1
+                      1.0013913022125043e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2758204770300000e-06 obj_fn
+
+
+------------------------------------------
+Restart record  183  (evaluation id  183):
+------------------------------------------
+Parameters:
+                      1.0003039987875273e+00 x1
+                      1.0005124873828743e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.0064011178100000e-06 obj_fn
+
+
+------------------------------------------
+Restart record  184  (evaluation id  184):
+------------------------------------------
+Parameters:
+                      1.0003140018275152e+00 x1
+                      1.0005124873828743e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.4352769480999999e-06 obj_fn
+
+
+------------------------------------------
+Restart record  185  (evaluation id  185):
+------------------------------------------
+Parameters:
+                      1.0002939957475394e+00 x1
+                      1.0005124873828743e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      6.5782655954600005e-07 obj_fn
+
+
+------------------------------------------
+Restart record  186  (evaluation id  186):
+------------------------------------------
+Parameters:
+                      1.0003039987875273e+00 x1
+                      1.0005224925077483e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      8.2510816503100005e-07 obj_fn
+
+
+------------------------------------------
+Restart record  187  (evaluation id  187):
+------------------------------------------
+Parameters:
+                      1.0003039987875273e+00 x1
+                      1.0005024822580004e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      1.2077145753299999e-06 obj_fn
+
+
+------------------------------------------
+Restart record  188  (evaluation id  188):
+------------------------------------------
+Parameters:
+                      9.7327488677367691e-01 x1
+                      9.6551480010794777e-01 x2
+
+Active response data:
+Active set vector = { 1 }
+                      3.4023383065400002e-02 obj_fn
+
+
+------------------------------------------
+Restart record  189  (evaluation id  189):
+------------------------------------------
+Parameters:
+                      1.0000337076734302e+00 x1
+                      1.0001625105179477e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      9.0542375423399997e-07 obj_fn
+
+
+------------------------------------------
+Restart record  190  (evaluation id  190):
+------------------------------------------
+Parameters:
+                      1.0001651993552887e+00 x1
+                      1.0003327678596827e+00 x2
+
+Active response data:
+Active set vector = { 1 }
+                      2.7839257007399999e-08 obj_fn
+
+
+Restart file processing completed: 190 evaluations retrieved.

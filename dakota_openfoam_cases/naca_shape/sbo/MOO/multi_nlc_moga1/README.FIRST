@@ -1,0 +1,99 @@
+How to run me:
+
+
+dakota -i dakota_of.in -o run.out > stdout.out
+
+
+
+This is a surrogate based optimization case.
+
+The objective function are drag and lift.  This is multi objective optimization.
+
+In this case we use a genetic algorithms to find the global optimal value (MOGA).
+
+First we build the surrogate using the information in the file data1.txt, this data was
+obtained from the multidimensional experiment.
+
+Using this data we build the surrogate or response surface and now we can do the optimization
+in this level.  
+
+To build the surrogate you can use any method, but the best one is the kriging interpolation.
+
+
+
+
+
+
+
+How to plot using gnuplot
+
+splot 'finaldata1.dat' u 1:2:3 pt 7 ps 1, 'table_out.dat' u 2:3:4 pt 7 ps 0.5
+splot 'finaldata1.dat' u 1:2:4 pt 7 ps 1, 'table_out.dat' u 2:3:5 pt 7 ps 0.5
+splot 'finaldata1.dat' u 1:2:3 pt 7 ps 1, 'finaldata1.dat' u 1:2:4 pt 7 ps 1
+
+splot 'discards.dat' u 1:2:3 pt 7 ps 1, 'discards.dat' u 1:2:4 pt 7 ps 1
+
+splot 'population_0.dat' u 1:2:3 pt 3 ps 1,'population_10.dat' u 1:2:3 pt 2 ps 1,'population_20.dat' u 1:2:3 pt 1 ps 1, 'population_30.dat' u 1:2:3 pt 1 ps 1, 'population_50.dat' u 1:2:3 pt 1 ps 1, 'finaldata1.dat' u 1:2:3 pt 7 ps 1
+
+splot 'population_0.dat' u 1:2:4 pt 3 ps 1,'population_10.dat' u 1:2:4 pt 2 ps 1,'population_20.dat' u 1:2:4 pt 1 ps 1, 'population_30.dat' u 1:2:4 pt 1 ps 1, 'population_50.dat' u 1:2:4 pt 1 ps 1, 'finaldata1.dat' u 1:2:4 pt 7 ps 1
+
+reset
+set xlabel "drag coe"
+set ylabel "lift coe"
+plot 'finaldata1.dat' u 3:4 pt 7 ps 1
+
+reset
+set xlabel "drag coe"
+set ylabel "lift coe"
+plot 'table_out.dat' u 4:5 pt 7 ps 0.5
+
+
+reset
+set xlabel "drag coe"
+set ylabel "lift coe"
+plot 'finaldata1.dat' u 3:4 pt 7 ps 1 , 'table_out.dat' u 4:5 pt 7 ps 0.2
+
+reset
+plot 'table_out.dat' u 4:5:2 pt 7 ps 0.5 lc palette 
+
+reset
+set xlabel "curvature"
+set ylabel "pos. max. cur."
+set zlabel "cl"
+splot 'table_out.dat' u 2:3:5:4 pt 7 ps 0.5 lc palette, 'finaldata1.dat' u 1:2:4 w p pt 7
+
+reset
+set xlabel "cd"
+set ylabel "cl"
+set zlabel "Curvature"
+splot 'table_out.dat' u 4:5:2:3 pt 7 ps 0.5 lc palette title "pos. max. cur", 'finaldata1.dat' u 3:4:1 w p pt 7 ps 0.2
+
+reset
+set xlabel "cd"
+set ylabel "cl"
+set zlabel "Curvature"
+splot 'table_out.dat' u 4:5:2:3 pt 7 ps 0.5 lc palette title "pos. max. cur", 'finaldata1.dat' u 3:4:1 w l
+
+reset
+set xlabel "drag coe"
+set ylabel "lift coe"
+set zlabel "Curvature"
+splot 'finaldata1.dat' u 3:4:1 pt 7 ps 0.5
+
+reset
+set xlabel "drag coe"
+set ylabel "lift coe"
+set zlabel "Position Max. curvature"
+splot 'finaldata1.dat' u 3:4:2 pt 7 ps 0.5
+
+reset
+set xlabel "drag coe"
+set ylabel "lift coe"
+splot 'finaldata1.dat' u 3:4:1 pt 7 ps 0.5 title "curvature",'finaldata1.dat' u 3:4:2 pt 7 ps 0.5 title "pos. max. cur"
+
+
+NOTE:
+
+coeffs.txt columns:
+
+Curvature - Pos. Max. curvature - Lift - Drag - Moment

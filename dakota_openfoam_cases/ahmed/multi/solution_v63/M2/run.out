@@ -1,0 +1,554 @@
+Dakota version 6.3 released November 15 2015.
+Subversion revision 3842 built Feb  1 2016 09:00:47.
+Running serial Dakota executable in serial mode.
+Start time: Mon Feb  1 15:06:41 2016
+
+------------------------
+Begin DAKOTA input file
+dakota_of_ahmed_multi.in
+------------------------
+# Usage:
+#   dakota -i dakota_of_ahmed_multi.in -o run.out > stdout.out
+
+
+
+environment
+    #graphics
+    tabular_data
+        tabular_data_file = 'table_out.dat'
+
+    
+    
+method
+  multidim_parameter_study
+    partitions = 25
+    
+model
+  single
+
+  
+variables
+  continuous_design = 1
+    lower_bounds      0.0      
+    upper_bounds     25.0     
+    descriptors       'x1'  
+	  
+	  
+
+interface
+	fork
+	  asynchronous
+#	  evaluation_concurrency = 8
+	  evaluation_concurrency = 3
+	  analysis_driver = 'simulator_script'
+	  parameters_file = 'params.in'
+	  results_file    = 'results.out'
+	  work_directory directory_tag
+
+          copy_files = 'templatedir/*'
+
+	  
+# uncomment to leave params.in and results.out files in work_dir subdirectories
+	  named 'workdir' file_save  directory_save
+	  aprepro
+	  
+## when using conmin_frcg (above) with analytic_gradients (below), 
+## need to turn off the active set vector as the interface does not parse it.
+ 	  deactivate active_set_vector
+	
+	
+responses
+  num_objective_functions = 1
+  no_gradients
+  no_hessians
+
+---------------------
+End DAKOTA input file
+---------------------
+
+Using Dakota input file 'dakota_of_ahmed_multi.in'
+Writing new restart file dakota.rst
+
+>>>>> Executing environment.
+
+>>>>> Running multidim_parameter_study iterator.
+
+Multidimensional parameter study variable partitions of
+                                    25
+
+---------------------
+Begin Evaluation    1
+---------------------
+Parameters for evaluation 1:
+                      0.0000000000e+00 x1
+
+(Asynchronous job 1 added to queue)
+
+---------------------
+Begin Evaluation    2
+---------------------
+Parameters for evaluation 2:
+                      1.0000000000e+00 x1
+
+(Asynchronous job 2 added to queue)
+
+---------------------
+Begin Evaluation    3
+---------------------
+Parameters for evaluation 3:
+                      2.0000000000e+00 x1
+
+(Asynchronous job 3 added to queue)
+
+---------------------
+Begin Evaluation    4
+---------------------
+Parameters for evaluation 4:
+                      3.0000000000e+00 x1
+
+(Asynchronous job 4 added to queue)
+
+---------------------
+Begin Evaluation    5
+---------------------
+Parameters for evaluation 5:
+                      4.0000000000e+00 x1
+
+(Asynchronous job 5 added to queue)
+
+---------------------
+Begin Evaluation    6
+---------------------
+Parameters for evaluation 6:
+                      5.0000000000e+00 x1
+
+(Asynchronous job 6 added to queue)
+
+---------------------
+Begin Evaluation    7
+---------------------
+Parameters for evaluation 7:
+                      6.0000000000e+00 x1
+
+(Asynchronous job 7 added to queue)
+
+---------------------
+Begin Evaluation    8
+---------------------
+Parameters for evaluation 8:
+                      7.0000000000e+00 x1
+
+(Asynchronous job 8 added to queue)
+
+---------------------
+Begin Evaluation    9
+---------------------
+Parameters for evaluation 9:
+                      8.0000000000e+00 x1
+
+(Asynchronous job 9 added to queue)
+
+---------------------
+Begin Evaluation   10
+---------------------
+Parameters for evaluation 10:
+                      9.0000000000e+00 x1
+
+(Asynchronous job 10 added to queue)
+
+---------------------
+Begin Evaluation   11
+---------------------
+Parameters for evaluation 11:
+                      1.0000000000e+01 x1
+
+(Asynchronous job 11 added to queue)
+
+---------------------
+Begin Evaluation   12
+---------------------
+Parameters for evaluation 12:
+                      1.1000000000e+01 x1
+
+(Asynchronous job 12 added to queue)
+
+---------------------
+Begin Evaluation   13
+---------------------
+Parameters for evaluation 13:
+                      1.2000000000e+01 x1
+
+(Asynchronous job 13 added to queue)
+
+---------------------
+Begin Evaluation   14
+---------------------
+Parameters for evaluation 14:
+                      1.3000000000e+01 x1
+
+(Asynchronous job 14 added to queue)
+
+---------------------
+Begin Evaluation   15
+---------------------
+Parameters for evaluation 15:
+                      1.4000000000e+01 x1
+
+(Asynchronous job 15 added to queue)
+
+---------------------
+Begin Evaluation   16
+---------------------
+Parameters for evaluation 16:
+                      1.5000000000e+01 x1
+
+(Asynchronous job 16 added to queue)
+
+---------------------
+Begin Evaluation   17
+---------------------
+Parameters for evaluation 17:
+                      1.6000000000e+01 x1
+
+(Asynchronous job 17 added to queue)
+
+---------------------
+Begin Evaluation   18
+---------------------
+Parameters for evaluation 18:
+                      1.7000000000e+01 x1
+
+(Asynchronous job 18 added to queue)
+
+---------------------
+Begin Evaluation   19
+---------------------
+Parameters for evaluation 19:
+                      1.8000000000e+01 x1
+
+(Asynchronous job 19 added to queue)
+
+---------------------
+Begin Evaluation   20
+---------------------
+Parameters for evaluation 20:
+                      1.9000000000e+01 x1
+
+(Asynchronous job 20 added to queue)
+
+---------------------
+Begin Evaluation   21
+---------------------
+Parameters for evaluation 21:
+                      2.0000000000e+01 x1
+
+(Asynchronous job 21 added to queue)
+
+---------------------
+Begin Evaluation   22
+---------------------
+Parameters for evaluation 22:
+                      2.1000000000e+01 x1
+
+(Asynchronous job 22 added to queue)
+
+---------------------
+Begin Evaluation   23
+---------------------
+Parameters for evaluation 23:
+                      2.2000000000e+01 x1
+
+(Asynchronous job 23 added to queue)
+
+---------------------
+Begin Evaluation   24
+---------------------
+Parameters for evaluation 24:
+                      2.3000000000e+01 x1
+
+(Asynchronous job 24 added to queue)
+
+---------------------
+Begin Evaluation   25
+---------------------
+Parameters for evaluation 25:
+                      2.4000000000e+01 x1
+
+(Asynchronous job 25 added to queue)
+
+---------------------
+Begin Evaluation   26
+---------------------
+Parameters for evaluation 26:
+                      2.5000000000e+01 x1
+
+(Asynchronous job 26 added to queue)
+
+Blocking synchronize of 26 asynchronous evaluations
+First pass: initiating 3 local asynchronous jobs
+Initiating evaluation 1
+nonblocking fork: simulator_script params.in results.out
+Initiating evaluation 2
+nonblocking fork: simulator_script params.in results.out
+Initiating evaluation 3
+nonblocking fork: simulator_script params.in results.out
+Second pass: scheduling 23 remaining local asynchronous jobs
+Waiting on completed jobs
+Evaluation 1 has completed
+Initiating evaluation 4
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 3 has completed
+Initiating evaluation 5
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 2 has completed
+Initiating evaluation 6
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 4 has completed
+Initiating evaluation 7
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 5 has completed
+Initiating evaluation 8
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 6 has completed
+Initiating evaluation 9
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 7 has completed
+Initiating evaluation 10
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 10 has completed
+Initiating evaluation 11
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 8 has completed
+Initiating evaluation 12
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 9 has completed
+Initiating evaluation 13
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 11 has completed
+Initiating evaluation 14
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 12 has completed
+Initiating evaluation 15
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 14 has completed
+Initiating evaluation 16
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 13 has completed
+Initiating evaluation 17
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 15 has completed
+Initiating evaluation 18
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 16 has completed
+Initiating evaluation 19
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 17 has completed
+Initiating evaluation 20
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 18 has completed
+Initiating evaluation 21
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 19 has completed
+Initiating evaluation 22
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 20 has completed
+Initiating evaluation 23
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 21 has completed
+Initiating evaluation 24
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 23 has completed
+Initiating evaluation 25
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 24 has completed
+Initiating evaluation 26
+nonblocking fork: simulator_script params.in results.out
+Waiting on completed jobs
+Evaluation 22 has completed
+Waiting on completed jobs
+Evaluation 25 has completed
+Waiting on completed jobs
+Evaluation 26 has completed
+
+Active response data for evaluation 1:
+Active set vector = { 1 }
+                      3.9493100000e-01 obj_fn
+
+
+Active response data for evaluation 2:
+Active set vector = { 1 }
+                      3.9475800000e-01 obj_fn
+
+
+Active response data for evaluation 3:
+Active set vector = { 1 }
+                      3.9242800000e-01 obj_fn
+
+
+Active response data for evaluation 4:
+Active set vector = { 1 }
+                      3.8097000000e-01 obj_fn
+
+
+Active response data for evaluation 5:
+Active set vector = { 1 }
+                      3.8218500000e-01 obj_fn
+
+
+Active response data for evaluation 6:
+Active set vector = { 1 }
+                      3.8511000000e-01 obj_fn
+
+
+Active response data for evaluation 7:
+Active set vector = { 1 }
+                      3.8096400000e-01 obj_fn
+
+
+Active response data for evaluation 8:
+Active set vector = { 1 }
+                     -1.6454200000e+07 obj_fn
+
+
+Active response data for evaluation 9:
+Active set vector = { 1 }
+                      6.5653700000e+04 obj_fn
+
+
+Active response data for evaluation 10:
+Active set vector = { 1 }
+                      3.6262900000e-01 obj_fn
+
+
+Active response data for evaluation 11:
+Active set vector = { 1 }
+                      3.7550200000e-01 obj_fn
+
+
+Active response data for evaluation 12:
+Active set vector = { 1 }
+                      1.5688400000e+07 obj_fn
+
+
+Active response data for evaluation 13:
+Active set vector = { 1 }
+                      3.7672700000e-01 obj_fn
+
+
+Active response data for evaluation 14:
+Active set vector = { 1 }
+                      3.7471600000e-01 obj_fn
+
+
+Active response data for evaluation 15:
+Active set vector = { 1 }
+                      1.3083400000e+12 obj_fn
+
+
+Active response data for evaluation 16:
+Active set vector = { 1 }
+                      3.7366000000e-01 obj_fn
+
+
+Active response data for evaluation 17:
+Active set vector = { 1 }
+                      3.7422300000e-01 obj_fn
+
+
+Active response data for evaluation 18:
+Active set vector = { 1 }
+                      2.1370900000e+04 obj_fn
+
+
+Active response data for evaluation 19:
+Active set vector = { 1 }
+                      3.7885800000e-01 obj_fn
+
+
+Active response data for evaluation 20:
+Active set vector = { 1 }
+                      3.7822800000e-01 obj_fn
+
+
+Active response data for evaluation 21:
+Active set vector = { 1 }
+                      3.7829600000e-01 obj_fn
+
+
+Active response data for evaluation 22:
+Active set vector = { 1 }
+                      3.8271000000e-01 obj_fn
+
+
+Active response data for evaluation 23:
+Active set vector = { 1 }
+                      3.8270600000e-01 obj_fn
+
+
+Active response data for evaluation 24:
+Active set vector = { 1 }
+                      3.8175600000e-01 obj_fn
+
+
+Active response data for evaluation 25:
+Active set vector = { 1 }
+                      3.8455700000e-01 obj_fn
+
+
+Active response data for evaluation 26:
+Active set vector = { 1 }
+                      3.8602200000e-01 obj_fn
+
+<<<<< Function evaluation summary: 26 total (26 new, 0 duplicate)
+<<<<< Best parameters          =
+                      7.0000000000e+00 x1
+<<<<< Best objective function  =
+                     -1.6454200000e+07
+<<<<< Best data captured at function evaluation 8
+
+Simple Correlation Matrix among all inputs and outputs:
+                       x1       obj_fn 
+          x1  1.00000e+00 
+      obj_fn  4.00014e-02  1.00000e+00 
+
+Partial Correlation Matrix between input and output:
+                   obj_fn 
+          x1  4.00014e-02 
+
+Simple Rank Correlation Matrix among all inputs and outputs:
+                       x1       obj_fn 
+          x1  1.00000e+00 
+      obj_fn -1.04957e-01  1.00000e+00 
+
+Partial Rank Correlation Matrix between input and output:
+                   obj_fn 
+          x1 -1.04957e-01 
+
+
+<<<<< Iterator multidim_parameter_study completed.
+<<<<< Environment execution completed.
+DAKOTA execution time in seconds:
+  Total CPU        =   0.056102 [parent =      0.056, child =   0.000102]
+  Total wall clock =    6740.41

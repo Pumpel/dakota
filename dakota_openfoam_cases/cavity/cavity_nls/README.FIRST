@@ -1,0 +1,16 @@
+How to run me:
+
+dakota -i dakota_nls.in -o run.out > stdout.out | tail -f stdout.out
+
+or
+
+dakota -i dakota_nls.in -o run.out 
+
+
+
+This case will run a calibration study to find the optimal value for a given input set in the file cal.dat.  
+
+There are two design variables defined but only one is used.
+
+
+

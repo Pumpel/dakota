@@ -1,0 +1,939 @@
+JEGA Genetic Algorithm Optimization Software v2.7.0
+Run started Mon Feb  1 18:15:21 2016
+
+Global Log initialized using "verbose" as default level.
+Global Log logging to file JEGAGlobal.log
+Global Log logging to console window
+18:15:21: quiet- JEGA Front End: Random seed = 10983
+18:15:21: verbose- Design Target: Design variable x1 added.  1 design variables now in target.
+18:15:21: verbose- Design Target: Design variable banana added.  2 design variables now in target.
+18:15:21: verbose- Design Target: Objective Non-Linear Maximize obj_fn_1 added.  1 objectives now in target.
+18:15:21: verbose- Design Target: Objective Non-Linear Maximize obj_fn_2 added.  2 objectives now in target.
+18:15:21: verbose- JEGA Front End: Creating a MOGA
+18:15:21: debug-  Matching Group: Trying "Domination Count Operator Group".
+18:15:21: verbose- Domination Count Operator Group: Contains Converger "metric_tracker".
+18:15:21: verbose- Domination Count Operator Group: Contains Crosser "shuffle_random".
+18:15:21: verbose- Domination Count Operator Group: Contains FitnessAssessor "domination_count".
+18:15:21: verbose- Domination Count Operator Group: Contains Initializer "unique_random".
+18:15:21: verbose- Domination Count Operator Group: Contains MainLoop "duplicate_free".
+18:15:21: verbose- Domination Count Operator Group: Contains Mutator "replace_uniform".
+18:15:21: verbose- Domination Count Operator Group: Contains Selector "below_limit".
+18:15:21: verbose- Domination Count Operator Group: Contains PostProcessor "null_postprocessor".
+18:15:21: verbose- Domination Count Operator Group: Contains NichePressureApplicator "null_niching".
+18:15:21: debug-  Matching Group: "Domination Count Operator Group" match succeeded.
+18:15:21: quiet- : Matched new set to a group that is not the current group.  Adopting the new group.
+18:15:21: verbose- Domination Count Operator Group: Contains Converger "metric_tracker".
+18:15:21: verbose- Domination Count Operator Group: Contains Crosser "shuffle_random".
+18:15:21: verbose- Domination Count Operator Group: Contains FitnessAssessor "domination_count".
+18:15:21: verbose- Domination Count Operator Group: Contains Initializer "unique_random".
+18:15:21: verbose- Domination Count Operator Group: Contains MainLoop "duplicate_free".
+18:15:21: verbose- Domination Count Operator Group: Contains Mutator "replace_uniform".
+18:15:21: verbose- Domination Count Operator Group: Contains Selector "below_limit".
+18:15:21: verbose- Domination Count Operator Group: Contains PostProcessor "null_postprocessor".
+18:15:21: verbose- Domination Count Operator Group: Contains NichePressureApplicator "null_niching".
+18:15:21: verbose- moga: The name of this GA is now moga
+18:15:21: verbose- moga: The print each population flag is now set to 1
+18:15:21: verbose- moga: The print final data flag is now set to 1
+18:15:21: verbose- moga: The print discards flag is now set to 1
+18:15:21: verbose- moga: The name of the file to which final data will be written is now finaldata1.dat
+18:15:21: verbose- moga: The data directory is now set to ./
+18:15:21: verbose- metric_tracker: Number of generations tracked now = 15
+18:15:21: verbose- metric_tracker: Max allowable % change now = 0.0001
+18:15:21: verbose- metric_tracker: Maximum allowable generations now = 18446744073709551615
+18:15:21: verbose- metric_tracker: Maximum allowable evaluations now = 500
+18:15:21: quiet- Error encountered while retrieving parameter named "method.max_time" of type "d" from parameter database reading: Parameter not found for tag: method.max_time
+18:15:21: verbose- metric_tracker: The maximum allowable amount of time was not found in the parameter database.  Using the current value of 1.79769e+308
+18:15:21: verbose- metric_tracker: Maximum allowable time now = 1.79769e+308 seconds 
+18:15:21: verbose- shuffle_random: Number of children per mating now = 2
+18:15:21: verbose- shuffle_random: Number of parents per mating now = 2
+18:15:21: verbose- shuffle_random: Crossover rate now = 0.75
+18:15:21: verbose- DAKOTA JEGA Evaluator: Maximum allowable evaluations now = 500
+18:15:21: verbose- DAKOTA JEGA Evaluator: The evaluation concurrency is now 1
+18:15:21: verbose- unique_random: Desired initial population size now = 100
+18:15:21: verbose- null_niching: Niched design caching now set to true.
+18:15:21: verbose- replace_uniform: Mutation rate now = 0.1
+18:15:21: verbose- below_limit: Limiting value now = 6
+18:15:21: verbose- below_limit: Shrinkage percentage now = 0.9
+18:15:21: verbose- below_limit: Minimum selections now = 2
+18:15:21: verbose- moga: About to perform algorithm execution.
+18:15:21: verbose- unique_random: 100 unique random designs created.
+18:15:58: verbose- moga: Wrote designs file ".//population_0.dat".
+18:15:58: verbose- below_limit: Performed 90 total selections.
+18:15:58: verbose- moga: 10 of 100 population members were not selected to continue.  0 of 0 offspring were immediately rejected.
+18:15:58: verbose- metric_tracker: Operating on 90 total designs and 1 "best fitness" designs.
+18:15:58: verbose- metric_tracker: Pushed metric value of 0 onto the convergence stack.
+18:15:58: quiet- duplicate_free: 1 generation so far.
+18:15:58: quiet- duplicate_free: 100 evaluations so far.
+18:15:58: verbose- duplicate_free: 90 members in population so far.
+18:15:58: verbose- moga: Wrote designs file ".//population_1.dat".
+18:15:58: verbose- shuffle_random: 68 children created.
+18:15:58: verbose- replace_uniform: Performed 9 total mutations.
+18:15:58: verbose- duplicate_free: flushed 12 duplicate offspring designs after application of the variational operators.
+18:15:58: verbose- duplicate_free: flushed 28 offspring designs that duplicate existing population members.
+18:16:11: verbose- below_limit: Performed 81 total selections.
+18:16:11: verbose- moga: 32 of 90 population members were not selected to continue.  12 of 35 offspring were immediately rejected.
+18:16:11: verbose- metric_tracker: Operating on 81 total designs and 1 "best fitness" designs.
+18:16:11: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:16:11: verbose- metric_tracker: Population density increased by 269.396%.
+18:16:11: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:16:11: verbose- metric_tracker: Pushed metric value of 2.69396 onto the convergence stack.
+18:16:11: quiet- duplicate_free: 2 generations so far.
+18:16:11: quiet- duplicate_free: 135 evaluations so far.
+18:16:11: verbose- duplicate_free: 81 members in population so far.
+18:16:11: verbose- moga: Wrote designs file ".//population_2.dat".
+18:16:11: verbose- shuffle_random: 60 children created.
+18:16:11: verbose- replace_uniform: Performed 8 total mutations.
+18:16:11: verbose- duplicate_free: flushed 9 duplicate offspring designs after application of the variational operators.
+18:16:11: verbose- duplicate_free: flushed 22 offspring designs that duplicate existing population members.
+18:16:24: verbose- below_limit: Performed 73 total selections.
+18:16:24: verbose- moga: 31 of 81 population members were not selected to continue.  14 of 37 offspring were immediately rejected.
+18:16:24: verbose- metric_tracker: Operating on 73 total designs and 2 "best fitness" designs.
+18:16:24: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:16:24: verbose- metric_tracker: Population density increased by 324.134%.
+18:16:24: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:16:24: verbose- metric_tracker: Pushed metric value of 3.24134 onto the convergence stack.
+18:16:24: quiet- duplicate_free: 3 generations so far.
+18:16:24: quiet- duplicate_free: 172 evaluations so far.
+18:16:24: verbose- duplicate_free: 73 members in population so far.
+18:16:24: verbose- moga: Wrote designs file ".//population_3.dat".
+18:16:24: verbose- shuffle_random: 54 children created.
+18:16:24: verbose- replace_uniform: Performed 7 total mutations.
+18:16:24: verbose- duplicate_free: flushed 14 duplicate offspring designs after application of the variational operators.
+18:16:24: verbose- duplicate_free: flushed 17 offspring designs that duplicate existing population members.
+18:16:34: verbose- below_limit: Performed 66 total selections.
+18:16:34: verbose- moga: 26 of 73 population members were not selected to continue.  11 of 30 offspring were immediately rejected.
+18:16:34: verbose- metric_tracker: Operating on 66 total designs and 2 "best fitness" designs.
+18:16:34: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:16:34: verbose- metric_tracker: Population density increased by 822.401%.
+18:16:34: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:16:34: verbose- metric_tracker: Pushed metric value of 8.22401 onto the convergence stack.
+18:16:34: quiet- duplicate_free: 4 generations so far.
+18:16:34: quiet- duplicate_free: 202 evaluations so far.
+18:16:34: verbose- duplicate_free: 66 members in population so far.
+18:16:34: verbose- moga: Wrote designs file ".//population_4.dat".
+18:16:34: verbose- shuffle_random: 50 children created.
+18:16:34: verbose- replace_uniform: Performed 7 total mutations.
+18:16:34: verbose- duplicate_free: flushed 17 duplicate offspring designs after application of the variational operators.
+18:16:34: verbose- duplicate_free: flushed 16 offspring designs that duplicate existing population members.
+18:16:42: verbose- below_limit: Performed 59 total selections.
+18:16:42: verbose- moga: 22 of 66 population members were not selected to continue.  8 of 23 offspring were immediately rejected.
+18:16:42: verbose- metric_tracker: Operating on 59 total designs and 1 "best fitness" designs.
+18:16:42: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:16:42: verbose- metric_tracker: Population density increased by 77.996%.
+18:16:42: verbose- metric_tracker: 100% of the previous "best fitness" population is dominated by designs in the current "best fitness" population.
+18:16:42: verbose- metric_tracker: Pushed metric value of 1.77996 onto the convergence stack.
+18:16:42: quiet- duplicate_free: 5 generations so far.
+18:16:42: quiet- duplicate_free: 225 evaluations so far.
+18:16:42: verbose- duplicate_free: 59 members in population so far.
+18:16:42: verbose- moga: Wrote designs file ".//population_5.dat".
+18:16:42: verbose- shuffle_random: 44 children created.
+18:16:42: verbose- replace_uniform: Performed 6 total mutations.
+18:16:42: verbose- duplicate_free: flushed 13 duplicate offspring designs after application of the variational operators.
+18:16:42: verbose- duplicate_free: flushed 16 offspring designs that duplicate existing population members.
+18:16:49: verbose- below_limit: Performed 53 total selections.
+18:16:49: verbose- moga: 18 of 59 population members were not selected to continue.  7 of 19 offspring were immediately rejected.
+18:16:49: verbose- metric_tracker: Operating on 53 total designs and 2 "best fitness" designs.
+18:16:49: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:16:49: verbose- metric_tracker: Population density increased by 718.919%.
+18:16:49: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:16:49: verbose- metric_tracker: Pushed metric value of 7.18919 onto the convergence stack.
+18:16:49: quiet- duplicate_free: 6 generations so far.
+18:16:49: quiet- duplicate_free: 244 evaluations so far.
+18:16:49: verbose- duplicate_free: 53 members in population so far.
+18:16:49: verbose- moga: Wrote designs file ".//population_6.dat".
+18:16:49: verbose- shuffle_random: 40 children created.
+18:16:49: verbose- replace_uniform: Performed 5 total mutations.
+18:16:49: verbose- duplicate_free: flushed 11 duplicate offspring designs after application of the variational operators.
+18:16:49: verbose- duplicate_free: flushed 17 offspring designs that duplicate existing population members.
+18:16:54: verbose- below_limit: Performed 48 total selections.
+18:16:54: verbose- moga: 13 of 53 population members were not selected to continue.  8 of 16 offspring were immediately rejected.
+18:16:54: verbose- metric_tracker: Operating on 48 total designs and 2 "best fitness" designs.
+18:16:54: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:16:54: verbose- metric_tracker: Population density increased by 12.171%.
+18:16:54: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:16:54: verbose- metric_tracker: Pushed metric value of 0.121706 onto the convergence stack.
+18:16:54: quiet- duplicate_free: 7 generations so far.
+18:16:54: quiet- duplicate_free: 260 evaluations so far.
+18:16:54: verbose- duplicate_free: 48 members in population so far.
+18:16:54: verbose- moga: Wrote designs file ".//population_7.dat".
+18:16:54: verbose- shuffle_random: 36 children created.
+18:16:54: verbose- replace_uniform: Performed 5 total mutations.
+18:16:54: verbose- duplicate_free: flushed 11 duplicate offspring designs after application of the variational operators.
+18:16:54: verbose- duplicate_free: flushed 20 offspring designs that duplicate existing population members.
+18:16:58: verbose- below_limit: Performed 43 total selections.
+18:16:58: verbose- moga: 10 of 48 population members were not selected to continue.  4 of 9 offspring were immediately rejected.
+18:16:58: verbose- metric_tracker: Operating on 43 total designs and 3 "best fitness" designs.
+18:16:58: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:16:58: verbose- metric_tracker: Population density increased by 64.458%.
+18:16:58: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:16:58: verbose- metric_tracker: Pushed metric value of 0.644579 onto the convergence stack.
+18:16:58: quiet- duplicate_free: 8 generations so far.
+18:16:58: quiet- duplicate_free: 269 evaluations so far.
+18:16:58: verbose- duplicate_free: 43 members in population so far.
+18:16:58: verbose- moga: Wrote designs file ".//population_8.dat".
+18:16:58: verbose- shuffle_random: 32 children created.
+18:16:58: verbose- replace_uniform: Performed 4 total mutations.
+18:16:58: verbose- duplicate_free: flushed 10 duplicate offspring designs after application of the variational operators.
+18:16:58: verbose- duplicate_free: flushed 16 offspring designs that duplicate existing population members.
+18:17:00: verbose- below_limit: Performed 39 total selections.
+18:17:00: verbose- moga: 11 of 43 population members were not selected to continue.  1 of 8 offspring were immediately rejected.
+18:17:00: verbose- metric_tracker: Operating on 39 total designs and 5 "best fitness" designs.
+18:17:00: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:00: verbose- metric_tracker: Population density increased by 2584.66%.
+18:17:00: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:00: verbose- metric_tracker: Pushed metric value of 25.8466 onto the convergence stack.
+18:17:00: quiet- duplicate_free: 9 generations so far.
+18:17:00: quiet- duplicate_free: 277 evaluations so far.
+18:17:00: verbose- duplicate_free: 39 members in population so far.
+18:17:00: verbose- moga: Wrote designs file ".//population_9.dat".
+18:17:00: verbose- shuffle_random: 30 children created.
+18:17:00: verbose- replace_uniform: Performed 4 total mutations.
+18:17:00: verbose- duplicate_free: flushed 10 duplicate offspring designs after application of the variational operators.
+18:17:00: verbose- duplicate_free: flushed 14 offspring designs that duplicate existing population members.
+18:17:03: verbose- below_limit: Performed 35 total selections.
+18:17:03: verbose- moga: 9 of 39 population members were not selected to continue.  4 of 9 offspring were immediately rejected.
+18:17:03: verbose- metric_tracker: Operating on 35 total designs and 7 "best fitness" designs.
+18:17:03: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:03: verbose- metric_tracker: Population density decreased by 10.256%.
+18:17:03: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:03: verbose- metric_tracker: Pushed metric value of 0.102564 onto the convergence stack.
+18:17:03: quiet- duplicate_free: 10 generations so far.
+18:17:03: quiet- duplicate_free: 286 evaluations so far.
+18:17:03: verbose- duplicate_free: 35 members in population so far.
+18:17:03: verbose- moga: Wrote designs file ".//population_10.dat".
+18:17:03: verbose- shuffle_random: 26 children created.
+18:17:03: verbose- replace_uniform: Performed 4 total mutations.
+18:17:03: verbose- duplicate_free: flushed 8 duplicate offspring designs after application of the variational operators.
+18:17:03: verbose- duplicate_free: flushed 14 offspring designs that duplicate existing population members.
+18:17:06: verbose- below_limit: Performed 32 total selections.
+18:17:06: verbose- moga: 8 of 35 population members were not selected to continue.  3 of 8 offspring were immediately rejected.
+18:17:06: verbose- metric_tracker: Operating on 32 total designs and 9 "best fitness" designs.
+18:17:06: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:06: verbose- metric_tracker: Population density increased by 547.318%.
+18:17:06: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:06: verbose- metric_tracker: Pushed metric value of 5.47318 onto the convergence stack.
+18:17:06: quiet- duplicate_free: 11 generations so far.
+18:17:06: quiet- duplicate_free: 294 evaluations so far.
+18:17:06: verbose- duplicate_free: 32 members in population so far.
+18:17:06: verbose- moga: Wrote designs file ".//population_11.dat".
+18:17:06: verbose- shuffle_random: 24 children created.
+18:17:06: verbose- replace_uniform: Performed 3 total mutations.
+18:17:06: verbose- duplicate_free: flushed 8 duplicate offspring designs after application of the variational operators.
+18:17:06: verbose- duplicate_free: flushed 14 offspring designs that duplicate existing population members.
+18:17:08: verbose- below_limit: Performed 29 total selections.
+18:17:08: verbose- moga: 6 of 32 population members were not selected to continue.  1 of 4 offspring were immediately rejected.
+18:17:08: verbose- metric_tracker: Operating on 29 total designs and 10 "best fitness" designs.
+18:17:08: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:08: verbose- metric_tracker: Population density decreased by 1.377%.
+18:17:08: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:08: verbose- metric_tracker: Pushed metric value of 0.0137731 onto the convergence stack.
+18:17:08: quiet- duplicate_free: 12 generations so far.
+18:17:08: quiet- duplicate_free: 298 evaluations so far.
+18:17:08: verbose- duplicate_free: 29 members in population so far.
+18:17:08: verbose- moga: Wrote designs file ".//population_12.dat".
+18:17:08: verbose- shuffle_random: 22 children created.
+18:17:08: verbose- replace_uniform: Performed 3 total mutations.
+18:17:08: verbose- duplicate_free: flushed 5 duplicate offspring designs after application of the variational operators.
+18:17:08: verbose- duplicate_free: flushed 12 offspring designs that duplicate existing population members.
+18:17:10: verbose- below_limit: Performed 26 total selections.
+18:17:10: verbose- moga: 9 of 29 population members were not selected to continue.  2 of 8 offspring were immediately rejected.
+18:17:10: verbose- metric_tracker: Operating on 26 total designs and 13 "best fitness" designs.
+18:17:10: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:10: verbose- metric_tracker: Population density decreased by 10.345%.
+18:17:10: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:10: verbose- metric_tracker: Pushed metric value of 0.103448 onto the convergence stack.
+18:17:10: quiet- duplicate_free: 13 generations so far.
+18:17:10: quiet- duplicate_free: 306 evaluations so far.
+18:17:10: verbose- duplicate_free: 26 members in population so far.
+18:17:10: verbose- moga: Wrote designs file ".//population_13.dat".
+18:17:10: verbose- shuffle_random: 20 children created.
+18:17:10: verbose- replace_uniform: Performed 3 total mutations.
+18:17:10: verbose- duplicate_free: flushed 4 duplicate offspring designs after application of the variational operators.
+18:17:10: verbose- duplicate_free: flushed 12 offspring designs that duplicate existing population members.
+18:17:14: verbose- below_limit: Performed 23 total selections.
+18:17:14: verbose- moga: 6 of 26 population members were not selected to continue.  3 of 6 offspring were immediately rejected.
+18:17:14: verbose- metric_tracker: Operating on 23 total designs and 14 "best fitness" designs.
+18:17:14: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:14: verbose- metric_tracker: Population density increased by 62.666%.
+18:17:14: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:14: verbose- metric_tracker: Pushed metric value of 0.626655 onto the convergence stack.
+18:17:14: quiet- duplicate_free: 14 generations so far.
+18:17:14: quiet- duplicate_free: 312 evaluations so far.
+18:17:14: verbose- duplicate_free: 23 members in population so far.
+18:17:14: verbose- moga: Wrote designs file ".//population_14.dat".
+18:17:14: verbose- shuffle_random: 18 children created.
+18:17:14: verbose- replace_uniform: Performed 2 total mutations.
+18:17:14: verbose- duplicate_free: flushed 9 duplicate offspring designs after application of the variational operators.
+18:17:14: verbose- duplicate_free: flushed 8 offspring designs that duplicate existing population members.
+18:17:15: verbose- below_limit: Performed 21 total selections.
+18:17:15: verbose- moga: 3 of 23 population members were not selected to continue.  1 of 2 offspring were immediately rejected.
+18:17:15: verbose- metric_tracker: Operating on 21 total designs and 15 "best fitness" designs.
+18:17:15: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:15: verbose- metric_tracker: Population density increased by 10.764%.
+18:17:15: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:15: verbose- metric_tracker: Pushed metric value of 0.107641 onto the convergence stack.
+18:17:15: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:15: quiet- duplicate_free: 15 generations so far.
+18:17:15: quiet- duplicate_free: 314 evaluations so far.
+18:17:15: verbose- duplicate_free: 21 members in population so far.
+18:17:15: verbose- moga: Wrote designs file ".//population_15.dat".
+18:17:15: verbose- shuffle_random: 16 children created.
+18:17:15: verbose- replace_uniform: Performed 2 total mutations.
+18:17:15: verbose- duplicate_free: flushed 5 duplicate offspring designs after application of the variational operators.
+18:17:15: verbose- duplicate_free: flushed 8 offspring designs that duplicate existing population members.
+18:17:16: verbose- below_limit: Performed 19 total selections.
+18:17:16: verbose- moga: 3 of 21 population members were not selected to continue.  4 of 5 offspring were immediately rejected.
+18:17:16: verbose- metric_tracker: Operating on 19 total designs and 16 "best fitness" designs.
+18:17:16: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:16: verbose- metric_tracker: Population density decreased by 9.524%.
+18:17:16: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:16: verbose- metric_tracker: Pushed metric value of 0.0952381 onto the convergence stack.
+18:17:16: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:16: quiet- duplicate_free: 16 generations so far.
+18:17:16: quiet- duplicate_free: 319 evaluations so far.
+18:17:16: verbose- duplicate_free: 19 members in population so far.
+18:17:16: verbose- moga: Wrote designs file ".//population_16.dat".
+18:17:16: verbose- shuffle_random: 14 children created.
+18:17:16: verbose- replace_uniform: Performed 2 total mutations.
+18:17:16: verbose- duplicate_free: flushed 6 duplicate offspring designs after application of the variational operators.
+18:17:16: verbose- duplicate_free: flushed 7 offspring designs that duplicate existing population members.
+18:17:17: verbose- below_limit: Performed 18 total selections.
+18:17:17: verbose- moga: 3 of 19 population members were not selected to continue.  1 of 3 offspring were immediately rejected.
+18:17:18: verbose- metric_tracker: Operating on 18 total designs and 18 "best fitness" designs.
+18:17:18: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:18: verbose- metric_tracker: Population density decreased by 100%.
+18:17:18: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:18: verbose- metric_tracker: Pushed metric value of 1 onto the convergence stack.
+18:17:18: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:18: quiet- duplicate_free: 17 generations so far.
+18:17:18: quiet- duplicate_free: 322 evaluations so far.
+18:17:18: verbose- duplicate_free: 18 members in population so far.
+18:17:18: verbose- moga: Wrote designs file ".//population_17.dat".
+18:17:18: verbose- shuffle_random: 14 children created.
+18:17:18: verbose- replace_uniform: Performed 2 total mutations.
+18:17:18: verbose- duplicate_free: flushed 4 duplicate offspring designs after application of the variational operators.
+18:17:18: verbose- duplicate_free: flushed 10 offspring designs that duplicate existing population members.
+18:17:18: verbose- below_limit: Performed 19 total selections.
+18:17:18: verbose- moga: 0 of 18 population members were not selected to continue.  1 of 2 offspring were immediately rejected.
+18:17:18: verbose- metric_tracker: Operating on 19 total designs and 19 "best fitness" designs.
+18:17:18: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:18: verbose- metric_tracker: Population density increased by 5.556%.
+18:17:18: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:18: verbose- metric_tracker: Pushed metric value of 0.0555556 onto the convergence stack.
+18:17:18: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:18: quiet- duplicate_free: 18 generations so far.
+18:17:18: quiet- duplicate_free: 324 evaluations so far.
+18:17:18: verbose- duplicate_free: 19 members in population so far.
+18:17:18: verbose- moga: Wrote designs file ".//population_18.dat".
+18:17:18: verbose- shuffle_random: 14 children created.
+18:17:18: verbose- replace_uniform: Performed 2 total mutations.
+18:17:18: verbose- duplicate_free: flushed 4 duplicate offspring designs after application of the variational operators.
+18:17:18: verbose- duplicate_free: flushed 10 offspring designs that duplicate existing population members.
+18:17:19: verbose- below_limit: Performed 20 total selections.
+18:17:19: verbose- moga: 0 of 19 population members were not selected to continue.  1 of 2 offspring were immediately rejected.
+18:17:19: verbose- metric_tracker: Operating on 20 total designs and 20 "best fitness" designs.
+18:17:19: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:19: verbose- metric_tracker: Population density increased by 5.263%.
+18:17:19: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:19: verbose- metric_tracker: Pushed metric value of 0.0526316 onto the convergence stack.
+18:17:19: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:19: quiet- duplicate_free: 19 generations so far.
+18:17:19: quiet- duplicate_free: 326 evaluations so far.
+18:17:19: verbose- duplicate_free: 20 members in population so far.
+18:17:19: verbose- moga: Wrote designs file ".//population_19.dat".
+18:17:19: verbose- shuffle_random: 16 children created.
+18:17:19: verbose- replace_uniform: Performed 2 total mutations.
+18:17:19: verbose- duplicate_free: flushed 6 duplicate offspring designs after application of the variational operators.
+18:17:19: verbose- duplicate_free: flushed 10 offspring designs that duplicate existing population members.
+18:17:20: verbose- below_limit: Performed 21 total selections.
+18:17:20: verbose- moga: 0 of 20 population members were not selected to continue.  1 of 2 offspring were immediately rejected.
+18:17:20: verbose- metric_tracker: Operating on 21 total designs and 21 "best fitness" designs.
+18:17:20: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:20: verbose- metric_tracker: Population density increased by 5%.
+18:17:20: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:20: verbose- metric_tracker: Pushed metric value of 0.05 onto the convergence stack.
+18:17:20: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:20: quiet- duplicate_free: 20 generations so far.
+18:17:20: quiet- duplicate_free: 328 evaluations so far.
+18:17:20: verbose- duplicate_free: 21 members in population so far.
+18:17:20: verbose- moga: Wrote designs file ".//population_20.dat".
+18:17:20: verbose- shuffle_random: 16 children created.
+18:17:20: verbose- replace_uniform: Performed 2 total mutations.
+18:17:20: verbose- duplicate_free: flushed 7 duplicate offspring designs after application of the variational operators.
+18:17:20: verbose- duplicate_free: flushed 9 offspring designs that duplicate existing population members.
+18:17:20: verbose- below_limit: Performed 21 total selections.
+18:17:20: verbose- moga: 0 of 21 population members were not selected to continue.  2 of 2 offspring were immediately rejected.
+18:17:20: verbose- metric_tracker: Operating on 21 total designs and 21 "best fitness" designs.
+18:17:20: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:20: verbose- metric_tracker: Population density did not change this generation.
+18:17:20: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:20: verbose- metric_tracker: Pushed metric value of 0 onto the convergence stack.
+18:17:20: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:20: quiet- duplicate_free: 21 generations so far.
+18:17:20: quiet- duplicate_free: 330 evaluations so far.
+18:17:20: verbose- duplicate_free: 21 members in population so far.
+18:17:20: verbose- moga: Wrote designs file ".//population_21.dat".
+18:17:20: verbose- shuffle_random: 16 children created.
+18:17:20: verbose- replace_uniform: Performed 2 total mutations.
+18:17:20: verbose- duplicate_free: flushed 8 duplicate offspring designs after application of the variational operators.
+18:17:20: verbose- duplicate_free: flushed 8 offspring designs that duplicate existing population members.
+18:17:21: verbose- below_limit: Performed 22 total selections.
+18:17:21: verbose- moga: 0 of 21 population members were not selected to continue.  1 of 2 offspring were immediately rejected.
+18:17:21: verbose- metric_tracker: Operating on 22 total designs and 22 "best fitness" designs.
+18:17:21: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:21: verbose- metric_tracker: Population density increased by 4.762%.
+18:17:21: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:21: verbose- metric_tracker: Pushed metric value of 0.047619 onto the convergence stack.
+18:17:21: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:21: quiet- duplicate_free: 22 generations so far.
+18:17:21: quiet- duplicate_free: 332 evaluations so far.
+18:17:21: verbose- duplicate_free: 22 members in population so far.
+18:17:21: verbose- moga: Wrote designs file ".//population_22.dat".
+18:17:21: verbose- shuffle_random: 16 children created.
+18:17:21: verbose- replace_uniform: Performed 2 total mutations.
+18:17:21: verbose- duplicate_free: flushed 6 duplicate offspring designs after application of the variational operators.
+18:17:21: verbose- duplicate_free: flushed 10 offspring designs that duplicate existing population members.
+18:17:22: verbose- below_limit: Performed 23 total selections.
+18:17:22: verbose- moga: 0 of 22 population members were not selected to continue.  1 of 2 offspring were immediately rejected.
+18:17:22: verbose- metric_tracker: Operating on 23 total designs and 23 "best fitness" designs.
+18:17:22: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:22: verbose- metric_tracker: Population density increased by 4.545%.
+18:17:22: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:22: verbose- metric_tracker: Pushed metric value of 0.0454545 onto the convergence stack.
+18:17:22: verbose- metric_tracker: Current max percentage progress is 2584.66%.
+18:17:22: quiet- duplicate_free: 23 generations so far.
+18:17:22: quiet- duplicate_free: 334 evaluations so far.
+18:17:22: verbose- duplicate_free: 23 members in population so far.
+18:17:22: verbose- moga: Wrote designs file ".//population_23.dat".
+18:17:22: verbose- shuffle_random: 18 children created.
+18:17:22: verbose- replace_uniform: Performed 2 total mutations.
+18:17:22: verbose- duplicate_free: flushed 7 duplicate offspring designs after application of the variational operators.
+18:17:22: verbose- duplicate_free: flushed 11 offspring designs that duplicate existing population members.
+18:17:23: verbose- below_limit: Performed 24 total selections.
+18:17:23: verbose- moga: 0 of 23 population members were not selected to continue.  1 of 2 offspring were immediately rejected.
+18:17:23: verbose- metric_tracker: Operating on 24 total designs and 24 "best fitness" designs.
+18:17:23: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:23: verbose- metric_tracker: Population density increased by 4.348%.
+18:17:23: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:23: verbose- metric_tracker: Pushed metric value of 0.0434783 onto the convergence stack.
+18:17:23: verbose- metric_tracker: Current max percentage progress is 547.318%.
+18:17:23: quiet- duplicate_free: 24 generations so far.
+18:17:23: quiet- duplicate_free: 336 evaluations so far.
+18:17:23: verbose- duplicate_free: 24 members in population so far.
+18:17:23: verbose- moga: Wrote designs file ".//population_24.dat".
+18:17:23: verbose- shuffle_random: 18 children created.
+18:17:23: verbose- replace_uniform: Performed 2 total mutations.
+18:17:23: verbose- duplicate_free: flushed 8 duplicate offspring designs after application of the variational operators.
+18:17:23: verbose- duplicate_free: flushed 10 offspring designs that duplicate existing population members.
+18:17:25: verbose- below_limit: Performed 25 total selections.
+18:17:25: verbose- moga: 0 of 24 population members were not selected to continue.  1 of 2 offspring were immediately rejected.
+18:17:25: verbose- metric_tracker: Operating on 25 total designs and 25 "best fitness" designs.
+18:17:25: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:25: verbose- metric_tracker: Population density increased by 4.167%.
+18:17:25: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:25: verbose- metric_tracker: Pushed metric value of 0.0416667 onto the convergence stack.
+18:17:25: verbose- metric_tracker: Current max percentage progress is 547.318%.
+18:17:25: quiet- duplicate_free: 25 generations so far.
+18:17:25: quiet- duplicate_free: 338 evaluations so far.
+18:17:25: verbose- duplicate_free: 25 members in population so far.
+18:17:25: verbose- moga: Wrote designs file ".//population_25.dat".
+18:17:25: verbose- shuffle_random: 18 children created.
+18:17:25: verbose- replace_uniform: Performed 3 total mutations.
+18:17:25: verbose- duplicate_free: flushed 9 duplicate offspring designs after application of the variational operators.
+18:17:25: verbose- duplicate_free: flushed 9 offspring designs that duplicate existing population members.
+18:17:26: verbose- below_limit: Performed 26 total selections.
+18:17:26: verbose- moga: 0 of 25 population members were not selected to continue.  2 of 3 offspring were immediately rejected.
+18:17:26: verbose- metric_tracker: Operating on 26 total designs and 26 "best fitness" designs.
+18:17:26: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:26: verbose- metric_tracker: Population density increased by 4%.
+18:17:26: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:26: verbose- metric_tracker: Pushed metric value of 0.04 onto the convergence stack.
+18:17:26: verbose- metric_tracker: Current max percentage progress is 100%.
+18:17:26: quiet- duplicate_free: 26 generations so far.
+18:17:26: quiet- duplicate_free: 341 evaluations so far.
+18:17:26: verbose- duplicate_free: 26 members in population so far.
+18:17:26: verbose- moga: Wrote designs file ".//population_26.dat".
+18:17:26: verbose- shuffle_random: 20 children created.
+18:17:26: verbose- replace_uniform: Performed 3 total mutations.
+18:17:26: verbose- duplicate_free: flushed 10 duplicate offspring designs after application of the variational operators.
+18:17:26: verbose- duplicate_free: flushed 10 offspring designs that duplicate existing population members.
+18:17:27: verbose- below_limit: Performed 28 total selections.
+18:17:27: verbose- moga: 0 of 26 population members were not selected to continue.  1 of 3 offspring were immediately rejected.
+18:17:27: verbose- metric_tracker: Operating on 28 total designs and 28 "best fitness" designs.
+18:17:27: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:27: verbose- metric_tracker: Population density increased by 7.692%.
+18:17:27: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:27: verbose- metric_tracker: Pushed metric value of 0.0769231 onto the convergence stack.
+18:17:27: verbose- metric_tracker: Current max percentage progress is 100%.
+18:17:27: quiet- duplicate_free: 27 generations so far.
+18:17:27: quiet- duplicate_free: 344 evaluations so far.
+18:17:27: verbose- duplicate_free: 28 members in population so far.
+18:17:27: verbose- moga: Wrote designs file ".//population_27.dat".
+18:17:27: verbose- shuffle_random: 22 children created.
+18:17:27: verbose- replace_uniform: Performed 3 total mutations.
+18:17:27: verbose- duplicate_free: flushed 8 duplicate offspring designs after application of the variational operators.
+18:17:27: verbose- duplicate_free: flushed 14 offspring designs that duplicate existing population members.
+18:17:28: verbose- below_limit: Performed 30 total selections.
+18:17:28: verbose- moga: 0 of 28 population members were not selected to continue.  0 of 2 offspring were immediately rejected.
+18:17:28: verbose- metric_tracker: Operating on 30 total designs and 30 "best fitness" designs.
+18:17:28: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:28: verbose- metric_tracker: Population density increased by 7.143%.
+18:17:28: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:28: verbose- metric_tracker: Pushed metric value of 0.0714286 onto the convergence stack.
+18:17:28: verbose- metric_tracker: Current max percentage progress is 100%.
+18:17:28: quiet- duplicate_free: 28 generations so far.
+18:17:28: quiet- duplicate_free: 346 evaluations so far.
+18:17:28: verbose- duplicate_free: 30 members in population so far.
+18:17:28: verbose- moga: Wrote designs file ".//population_28.dat".
+18:17:28: verbose- shuffle_random: 22 children created.
+18:17:28: verbose- replace_uniform: Performed 3 total mutations.
+18:17:28: verbose- duplicate_free: flushed 8 duplicate offspring designs after application of the variational operators.
+18:17:28: verbose- duplicate_free: flushed 14 offspring designs that duplicate existing population members.
+18:17:29: verbose- below_limit: Performed 32 total selections.
+18:17:29: verbose- moga: 0 of 30 population members were not selected to continue.  1 of 3 offspring were immediately rejected.
+18:17:29: verbose- metric_tracker: Operating on 32 total designs and 32 "best fitness" designs.
+18:17:29: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:29: verbose- metric_tracker: Population density increased by 6.667%.
+18:17:29: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:29: verbose- metric_tracker: Pushed metric value of 0.0666667 onto the convergence stack.
+18:17:29: verbose- metric_tracker: Current max percentage progress is 100%.
+18:17:29: quiet- duplicate_free: 29 generations so far.
+18:17:29: quiet- duplicate_free: 349 evaluations so far.
+18:17:29: verbose- duplicate_free: 32 members in population so far.
+18:17:29: verbose- moga: Wrote designs file ".//population_29.dat".
+18:17:29: verbose- shuffle_random: 24 children created.
+18:17:29: verbose- replace_uniform: Performed 3 total mutations.
+18:17:29: verbose- duplicate_free: flushed 13 duplicate offspring designs after application of the variational operators.
+18:17:29: verbose- duplicate_free: flushed 11 offspring designs that duplicate existing population members.
+18:17:30: verbose- below_limit: Performed 34 total selections.
+18:17:30: verbose- moga: 0 of 32 population members were not selected to continue.  1 of 3 offspring were immediately rejected.
+18:17:30: verbose- metric_tracker: Operating on 34 total designs and 34 "best fitness" designs.
+18:17:30: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:30: verbose- metric_tracker: Population density increased by 6.25%.
+18:17:30: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:30: verbose- metric_tracker: Pushed metric value of 0.0625 onto the convergence stack.
+18:17:30: verbose- metric_tracker: Current max percentage progress is 100%.
+18:17:30: quiet- duplicate_free: 30 generations so far.
+18:17:30: quiet- duplicate_free: 352 evaluations so far.
+18:17:30: verbose- duplicate_free: 34 members in population so far.
+18:17:30: verbose- moga: Wrote designs file ".//population_30.dat".
+18:17:30: verbose- shuffle_random: 26 children created.
+18:17:30: verbose- replace_uniform: Performed 3 total mutations.
+18:17:30: verbose- duplicate_free: flushed 11 duplicate offspring designs after application of the variational operators.
+18:17:30: verbose- duplicate_free: flushed 15 offspring designs that duplicate existing population members.
+18:17:31: verbose- below_limit: Performed 37 total selections.
+18:17:31: verbose- moga: 0 of 34 population members were not selected to continue.  0 of 3 offspring were immediately rejected.
+18:17:31: verbose- metric_tracker: Operating on 37 total designs and 37 "best fitness" designs.
+18:17:31: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:31: verbose- metric_tracker: Population density increased by 8.824%.
+18:17:31: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:31: verbose- metric_tracker: Pushed metric value of 0.0882353 onto the convergence stack.
+18:17:31: verbose- metric_tracker: Current max percentage progress is 100%.
+18:17:31: quiet- duplicate_free: 31 generations so far.
+18:17:31: quiet- duplicate_free: 355 evaluations so far.
+18:17:31: verbose- duplicate_free: 37 members in population so far.
+18:17:31: verbose- moga: Wrote designs file ".//population_31.dat".
+18:17:31: verbose- shuffle_random: 28 children created.
+18:17:31: verbose- replace_uniform: Performed 4 total mutations.
+18:17:31: verbose- duplicate_free: flushed 11 duplicate offspring designs after application of the variational operators.
+18:17:31: verbose- duplicate_free: flushed 17 offspring designs that duplicate existing population members.
+18:17:33: verbose- below_limit: Performed 37 total selections.
+18:17:33: verbose- moga: 0 of 37 population members were not selected to continue.  4 of 4 offspring were immediately rejected.
+18:17:33: verbose- metric_tracker: Operating on 37 total designs and 37 "best fitness" designs.
+18:17:33: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:33: verbose- metric_tracker: Population density did not change this generation.
+18:17:33: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:33: verbose- metric_tracker: Pushed metric value of 0 onto the convergence stack.
+18:17:33: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:33: quiet- duplicate_free: 32 generations so far.
+18:17:33: quiet- duplicate_free: 359 evaluations so far.
+18:17:33: verbose- duplicate_free: 37 members in population so far.
+18:17:33: verbose- moga: Wrote designs file ".//population_32.dat".
+18:17:33: verbose- shuffle_random: 28 children created.
+18:17:33: verbose- replace_uniform: Performed 4 total mutations.
+18:17:33: verbose- duplicate_free: flushed 14 duplicate offspring designs after application of the variational operators.
+18:17:33: verbose- duplicate_free: flushed 14 offspring designs that duplicate existing population members.
+18:17:34: verbose- below_limit: Performed 38 total selections.
+18:17:34: verbose- moga: 0 of 37 population members were not selected to continue.  3 of 4 offspring were immediately rejected.
+18:17:34: verbose- metric_tracker: Operating on 38 total designs and 38 "best fitness" designs.
+18:17:34: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:34: verbose- metric_tracker: Population density increased by 2.703%.
+18:17:34: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:34: verbose- metric_tracker: Pushed metric value of 0.027027 onto the convergence stack.
+18:17:34: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:34: quiet- duplicate_free: 33 generations so far.
+18:17:34: quiet- duplicate_free: 363 evaluations so far.
+18:17:34: verbose- duplicate_free: 38 members in population so far.
+18:17:34: verbose- moga: Wrote designs file ".//population_33.dat".
+18:17:34: verbose- shuffle_random: 28 children created.
+18:17:34: verbose- replace_uniform: Performed 4 total mutations.
+18:17:34: verbose- duplicate_free: flushed 11 duplicate offspring designs after application of the variational operators.
+18:17:34: verbose- duplicate_free: flushed 17 offspring designs that duplicate existing population members.
+18:17:35: verbose- below_limit: Performed 40 total selections.
+18:17:35: verbose- moga: 0 of 38 population members were not selected to continue.  1 of 3 offspring were immediately rejected.
+18:17:35: verbose- metric_tracker: Operating on 40 total designs and 40 "best fitness" designs.
+18:17:35: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:35: verbose- metric_tracker: Population density increased by 5.263%.
+18:17:35: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:35: verbose- metric_tracker: Pushed metric value of 0.0526316 onto the convergence stack.
+18:17:35: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:35: quiet- duplicate_free: 34 generations so far.
+18:17:35: quiet- duplicate_free: 366 evaluations so far.
+18:17:35: verbose- duplicate_free: 40 members in population so far.
+18:17:35: verbose- moga: Wrote designs file ".//population_34.dat".
+18:17:35: verbose- shuffle_random: 30 children created.
+18:17:35: verbose- replace_uniform: Performed 4 total mutations.
+18:17:35: verbose- duplicate_free: flushed 13 duplicate offspring designs after application of the variational operators.
+18:17:35: verbose- duplicate_free: flushed 17 offspring designs that duplicate existing population members.
+18:17:36: verbose- below_limit: Performed 41 total selections.
+18:17:36: verbose- moga: 0 of 40 population members were not selected to continue.  2 of 3 offspring were immediately rejected.
+18:17:36: verbose- metric_tracker: Operating on 41 total designs and 41 "best fitness" designs.
+18:17:36: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:36: verbose- metric_tracker: Population density increased by 2.5%.
+18:17:36: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:36: verbose- metric_tracker: Pushed metric value of 0.025 onto the convergence stack.
+18:17:36: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:36: quiet- duplicate_free: 35 generations so far.
+18:17:36: quiet- duplicate_free: 369 evaluations so far.
+18:17:36: verbose- duplicate_free: 41 members in population so far.
+18:17:36: verbose- moga: Wrote designs file ".//population_35.dat".
+18:17:36: verbose- shuffle_random: 30 children created.
+18:17:36: verbose- replace_uniform: Performed 4 total mutations.
+18:17:36: verbose- duplicate_free: flushed 11 duplicate offspring designs after application of the variational operators.
+18:17:36: verbose- duplicate_free: flushed 19 offspring designs that duplicate existing population members.
+18:17:37: verbose- below_limit: Performed 42 total selections.
+18:17:37: verbose- moga: 0 of 41 population members were not selected to continue.  3 of 4 offspring were immediately rejected.
+18:17:37: verbose- metric_tracker: Operating on 42 total designs and 42 "best fitness" designs.
+18:17:37: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:37: verbose- metric_tracker: Population density increased by 2.439%.
+18:17:37: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:37: verbose- metric_tracker: Pushed metric value of 0.0243902 onto the convergence stack.
+18:17:37: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:37: quiet- duplicate_free: 36 generations so far.
+18:17:37: quiet- duplicate_free: 373 evaluations so far.
+18:17:37: verbose- duplicate_free: 42 members in population so far.
+18:17:37: verbose- moga: Wrote designs file ".//population_36.dat".
+18:17:37: verbose- shuffle_random: 32 children created.
+18:17:37: verbose- replace_uniform: Performed 4 total mutations.
+18:17:37: verbose- duplicate_free: flushed 17 duplicate offspring designs after application of the variational operators.
+18:17:37: verbose- duplicate_free: flushed 15 offspring designs that duplicate existing population members.
+18:17:39: verbose- below_limit: Performed 45 total selections.
+18:17:39: verbose- moga: 0 of 42 population members were not selected to continue.  1 of 4 offspring were immediately rejected.
+18:17:39: verbose- metric_tracker: Operating on 45 total designs and 45 "best fitness" designs.
+18:17:39: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:39: verbose- metric_tracker: Population density increased by 7.143%.
+18:17:39: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:39: verbose- metric_tracker: Pushed metric value of 0.0714286 onto the convergence stack.
+18:17:39: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:39: quiet- duplicate_free: 37 generations so far.
+18:17:39: quiet- duplicate_free: 377 evaluations so far.
+18:17:39: verbose- duplicate_free: 45 members in population so far.
+18:17:39: verbose- moga: Wrote designs file ".//population_37.dat".
+18:17:39: verbose- shuffle_random: 34 children created.
+18:17:39: verbose- replace_uniform: Performed 5 total mutations.
+18:17:39: verbose- duplicate_free: flushed 12 duplicate offspring designs after application of the variational operators.
+18:17:39: verbose- duplicate_free: flushed 22 offspring designs that duplicate existing population members.
+18:17:40: verbose- below_limit: Performed 48 total selections.
+18:17:40: verbose- moga: 0 of 45 population members were not selected to continue.  1 of 4 offspring were immediately rejected.
+18:17:40: verbose- metric_tracker: Operating on 48 total designs and 48 "best fitness" designs.
+18:17:40: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:40: verbose- metric_tracker: Population density increased by 6.667%.
+18:17:40: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:40: verbose- metric_tracker: Pushed metric value of 0.0666667 onto the convergence stack.
+18:17:40: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:40: quiet- duplicate_free: 38 generations so far.
+18:17:40: quiet- duplicate_free: 381 evaluations so far.
+18:17:40: verbose- duplicate_free: 48 members in population so far.
+18:17:40: verbose- moga: Wrote designs file ".//population_38.dat".
+18:17:40: verbose- shuffle_random: 36 children created.
+18:17:40: verbose- replace_uniform: Performed 5 total mutations.
+18:17:40: verbose- duplicate_free: flushed 14 duplicate offspring designs after application of the variational operators.
+18:17:40: verbose- duplicate_free: flushed 22 offspring designs that duplicate existing population members.
+18:17:42: verbose- below_limit: Performed 51 total selections.
+18:17:42: verbose- moga: 0 of 48 population members were not selected to continue.  2 of 5 offspring were immediately rejected.
+18:17:42: verbose- metric_tracker: Operating on 51 total designs and 51 "best fitness" designs.
+18:17:42: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:42: verbose- metric_tracker: Population density increased by 6.25%.
+18:17:42: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:42: verbose- metric_tracker: Pushed metric value of 0.0625 onto the convergence stack.
+18:17:42: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:42: quiet- duplicate_free: 39 generations so far.
+18:17:42: quiet- duplicate_free: 386 evaluations so far.
+18:17:42: verbose- duplicate_free: 51 members in population so far.
+18:17:42: verbose- moga: Wrote designs file ".//population_39.dat".
+18:17:42: verbose- shuffle_random: 38 children created.
+18:17:42: verbose- replace_uniform: Performed 5 total mutations.
+18:17:42: verbose- duplicate_free: flushed 15 duplicate offspring designs after application of the variational operators.
+18:17:42: verbose- duplicate_free: flushed 23 offspring designs that duplicate existing population members.
+18:17:44: verbose- below_limit: Performed 55 total selections.
+18:17:44: verbose- moga: 0 of 51 population members were not selected to continue.  1 of 5 offspring were immediately rejected.
+18:17:44: verbose- metric_tracker: Operating on 55 total designs and 55 "best fitness" designs.
+18:17:44: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:44: verbose- metric_tracker: Population density increased by 7.843%.
+18:17:44: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:44: verbose- metric_tracker: Pushed metric value of 0.0784314 onto the convergence stack.
+18:17:44: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:44: quiet- duplicate_free: 40 generations so far.
+18:17:44: quiet- duplicate_free: 391 evaluations so far.
+18:17:44: verbose- duplicate_free: 55 members in population so far.
+18:17:44: verbose- moga: Wrote designs file ".//population_40.dat".
+18:17:44: verbose- shuffle_random: 42 children created.
+18:17:44: verbose- replace_uniform: Performed 6 total mutations.
+18:17:44: verbose- duplicate_free: flushed 15 duplicate offspring designs after application of the variational operators.
+18:17:44: verbose- duplicate_free: flushed 27 offspring designs that duplicate existing population members.
+18:17:46: verbose- below_limit: Performed 57 total selections.
+18:17:46: verbose- moga: 0 of 55 population members were not selected to continue.  4 of 6 offspring were immediately rejected.
+18:17:46: verbose- metric_tracker: Operating on 57 total designs and 57 "best fitness" designs.
+18:17:46: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:46: verbose- metric_tracker: Population density increased by 3.636%.
+18:17:46: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:46: verbose- metric_tracker: Pushed metric value of 0.0363636 onto the convergence stack.
+18:17:46: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:46: quiet- duplicate_free: 41 generations so far.
+18:17:46: quiet- duplicate_free: 397 evaluations so far.
+18:17:46: verbose- duplicate_free: 57 members in population so far.
+18:17:46: verbose- moga: Wrote designs file ".//population_41.dat".
+18:17:46: verbose- shuffle_random: 42 children created.
+18:17:46: verbose- replace_uniform: Performed 6 total mutations.
+18:17:46: verbose- duplicate_free: flushed 16 duplicate offspring designs after application of the variational operators.
+18:17:46: verbose- duplicate_free: flushed 26 offspring designs that duplicate existing population members.
+18:17:47: verbose- below_limit: Performed 60 total selections.
+18:17:47: verbose- moga: 0 of 57 population members were not selected to continue.  1 of 4 offspring were immediately rejected.
+18:17:47: verbose- metric_tracker: Operating on 60 total designs and 60 "best fitness" designs.
+18:17:47: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:47: verbose- metric_tracker: Population density increased by 5.263%.
+18:17:47: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:47: verbose- metric_tracker: Pushed metric value of 0.0526316 onto the convergence stack.
+18:17:47: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:47: quiet- duplicate_free: 42 generations so far.
+18:17:47: quiet- duplicate_free: 401 evaluations so far.
+18:17:47: verbose- duplicate_free: 60 members in population so far.
+18:17:47: verbose- moga: Wrote designs file ".//population_42.dat".
+18:17:47: verbose- shuffle_random: 46 children created.
+18:17:47: verbose- replace_uniform: Performed 6 total mutations.
+18:17:47: verbose- duplicate_free: flushed 17 duplicate offspring designs after application of the variational operators.
+18:17:47: verbose- duplicate_free: flushed 29 offspring designs that duplicate existing population members.
+18:17:49: verbose- below_limit: Performed 63 total selections.
+18:17:49: verbose- moga: 0 of 60 population members were not selected to continue.  3 of 6 offspring were immediately rejected.
+18:17:49: verbose- metric_tracker: Operating on 63 total designs and 63 "best fitness" designs.
+18:17:49: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:49: verbose- metric_tracker: Population density increased by 5%.
+18:17:49: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:49: verbose- metric_tracker: Pushed metric value of 0.05 onto the convergence stack.
+18:17:49: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:49: quiet- duplicate_free: 43 generations so far.
+18:17:49: quiet- duplicate_free: 407 evaluations so far.
+18:17:49: verbose- duplicate_free: 63 members in population so far.
+18:17:49: verbose- moga: Wrote designs file ".//population_43.dat".
+18:17:49: verbose- shuffle_random: 48 children created.
+18:17:49: verbose- replace_uniform: Performed 6 total mutations.
+18:17:49: verbose- duplicate_free: flushed 20 duplicate offspring designs after application of the variational operators.
+18:17:49: verbose- duplicate_free: flushed 28 offspring designs that duplicate existing population members.
+18:17:51: verbose- below_limit: Performed 67 total selections.
+18:17:51: verbose- moga: 0 of 63 population members were not selected to continue.  2 of 6 offspring were immediately rejected.
+18:17:51: verbose- metric_tracker: Operating on 67 total designs and 67 "best fitness" designs.
+18:17:51: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:51: verbose- metric_tracker: Population density increased by 6.349%.
+18:17:51: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:51: verbose- metric_tracker: Pushed metric value of 0.0634921 onto the convergence stack.
+18:17:51: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:51: quiet- duplicate_free: 44 generations so far.
+18:17:51: quiet- duplicate_free: 413 evaluations so far.
+18:17:51: verbose- duplicate_free: 67 members in population so far.
+18:17:51: verbose- moga: Wrote designs file ".//population_44.dat".
+18:17:51: verbose- shuffle_random: 50 children created.
+18:17:51: verbose- replace_uniform: Performed 7 total mutations.
+18:17:51: verbose- duplicate_free: flushed 20 duplicate offspring designs after application of the variational operators.
+18:17:51: verbose- duplicate_free: flushed 30 offspring designs that duplicate existing population members.
+18:17:54: verbose- below_limit: Performed 71 total selections.
+18:17:54: verbose- moga: 0 of 67 population members were not selected to continue.  3 of 7 offspring were immediately rejected.
+18:17:54: verbose- metric_tracker: Operating on 71 total designs and 71 "best fitness" designs.
+18:17:54: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:54: verbose- metric_tracker: Population density increased by 5.97%.
+18:17:54: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:54: verbose- metric_tracker: Pushed metric value of 0.0597015 onto the convergence stack.
+18:17:54: verbose- metric_tracker: Current max percentage progress is 8.824%.
+18:17:54: quiet- duplicate_free: 45 generations so far.
+18:17:54: quiet- duplicate_free: 420 evaluations so far.
+18:17:54: verbose- duplicate_free: 71 members in population so far.
+18:17:54: verbose- moga: Wrote designs file ".//population_45.dat".
+18:17:54: verbose- shuffle_random: 54 children created.
+18:17:54: verbose- replace_uniform: Performed 7 total mutations.
+18:17:54: verbose- duplicate_free: flushed 23 duplicate offspring designs after application of the variational operators.
+18:17:54: verbose- duplicate_free: flushed 31 offspring designs that duplicate existing population members.
+18:17:57: verbose- below_limit: Performed 73 total selections.
+18:17:57: verbose- moga: 0 of 71 population members were not selected to continue.  5 of 7 offspring were immediately rejected.
+18:17:57: verbose- metric_tracker: Operating on 73 total designs and 73 "best fitness" designs.
+18:17:57: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:57: verbose- metric_tracker: Population density increased by 2.817%.
+18:17:57: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:57: verbose- metric_tracker: Pushed metric value of 0.028169 onto the convergence stack.
+18:17:57: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:17:57: quiet- duplicate_free: 46 generations so far.
+18:17:57: quiet- duplicate_free: 427 evaluations so far.
+18:17:57: verbose- duplicate_free: 73 members in population so far.
+18:17:57: verbose- moga: Wrote designs file ".//population_46.dat".
+18:17:57: verbose- shuffle_random: 54 children created.
+18:17:57: verbose- replace_uniform: Performed 7 total mutations.
+18:17:57: verbose- duplicate_free: flushed 24 duplicate offspring designs after application of the variational operators.
+18:17:57: verbose- duplicate_free: flushed 30 offspring designs that duplicate existing population members.
+18:17:59: verbose- below_limit: Performed 76 total selections.
+18:17:59: verbose- moga: 0 of 73 population members were not selected to continue.  3 of 6 offspring were immediately rejected.
+18:17:59: verbose- metric_tracker: Operating on 76 total designs and 76 "best fitness" designs.
+18:17:59: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:17:59: verbose- metric_tracker: Population density increased by 4.11%.
+18:17:59: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:17:59: verbose- metric_tracker: Pushed metric value of 0.0410959 onto the convergence stack.
+18:17:59: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:17:59: quiet- duplicate_free: 47 generations so far.
+18:17:59: quiet- duplicate_free: 433 evaluations so far.
+18:17:59: verbose- duplicate_free: 76 members in population so far.
+18:17:59: verbose- moga: Wrote designs file ".//population_47.dat".
+18:17:59: verbose- shuffle_random: 58 children created.
+18:17:59: verbose- replace_uniform: Performed 8 total mutations.
+18:17:59: verbose- duplicate_free: flushed 23 duplicate offspring designs after application of the variational operators.
+18:17:59: verbose- duplicate_free: flushed 35 offspring designs that duplicate existing population members.
+18:18:02: verbose- below_limit: Performed 80 total selections.
+18:18:02: verbose- moga: 0 of 76 population members were not selected to continue.  4 of 8 offspring were immediately rejected.
+18:18:02: verbose- metric_tracker: Operating on 80 total designs and 80 "best fitness" designs.
+18:18:02: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:18:02: verbose- metric_tracker: Population density increased by 5.263%.
+18:18:02: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:18:02: verbose- metric_tracker: Pushed metric value of 0.0526316 onto the convergence stack.
+18:18:02: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:18:02: quiet- duplicate_free: 48 generations so far.
+18:18:02: quiet- duplicate_free: 441 evaluations so far.
+18:18:02: verbose- duplicate_free: 80 members in population so far.
+18:18:02: verbose- moga: Wrote designs file ".//population_48.dat".
+18:18:02: verbose- shuffle_random: 60 children created.
+18:18:02: verbose- replace_uniform: Performed 8 total mutations.
+18:18:02: verbose- duplicate_free: flushed 24 duplicate offspring designs after application of the variational operators.
+18:18:02: verbose- duplicate_free: flushed 36 offspring designs that duplicate existing population members.
+18:18:04: verbose- below_limit: Performed 85 total selections.
+18:18:04: verbose- moga: 0 of 80 population members were not selected to continue.  3 of 8 offspring were immediately rejected.
+18:18:04: verbose- metric_tracker: Operating on 85 total designs and 85 "best fitness" designs.
+18:18:04: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:18:04: verbose- metric_tracker: Population density increased by 6.25%.
+18:18:04: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:18:04: verbose- metric_tracker: Pushed metric value of 0.0625 onto the convergence stack.
+18:18:04: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:18:04: quiet- duplicate_free: 49 generations so far.
+18:18:04: quiet- duplicate_free: 449 evaluations so far.
+18:18:04: verbose- duplicate_free: 85 members in population so far.
+18:18:04: verbose- moga: Wrote designs file ".//population_49.dat".
+18:18:04: verbose- shuffle_random: 64 children created.
+18:18:04: verbose- replace_uniform: Performed 9 total mutations.
+18:18:04: verbose- duplicate_free: flushed 24 duplicate offspring designs after application of the variational operators.
+18:18:04: verbose- duplicate_free: flushed 40 offspring designs that duplicate existing population members.
+18:18:07: verbose- below_limit: Performed 90 total selections.
+18:18:07: verbose- moga: 0 of 85 population members were not selected to continue.  4 of 9 offspring were immediately rejected.
+18:18:07: verbose- metric_tracker: Operating on 90 total designs and 90 "best fitness" designs.
+18:18:07: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:18:07: verbose- metric_tracker: Population density increased by 5.882%.
+18:18:07: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:18:07: verbose- metric_tracker: Pushed metric value of 0.0588235 onto the convergence stack.
+18:18:07: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:18:07: quiet- duplicate_free: 50 generations so far.
+18:18:07: quiet- duplicate_free: 458 evaluations so far.
+18:18:07: verbose- duplicate_free: 90 members in population so far.
+18:18:07: verbose- moga: Wrote designs file ".//population_50.dat".
+18:18:07: verbose- shuffle_random: 68 children created.
+18:18:07: verbose- replace_uniform: Performed 9 total mutations.
+18:18:07: verbose- duplicate_free: flushed 32 duplicate offspring designs after application of the variational operators.
+18:18:07: verbose- duplicate_free: flushed 36 offspring designs that duplicate existing population members.
+18:18:10: verbose- below_limit: Performed 96 total selections.
+18:18:10: verbose- moga: 0 of 90 population members were not selected to continue.  2 of 8 offspring were immediately rejected.
+18:18:10: verbose- metric_tracker: Operating on 96 total designs and 96 "best fitness" designs.
+18:18:10: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:18:10: verbose- metric_tracker: Population density increased by 6.667%.
+18:18:10: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:18:10: verbose- metric_tracker: Pushed metric value of 0.0666667 onto the convergence stack.
+18:18:10: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:18:10: quiet- duplicate_free: 51 generations so far.
+18:18:10: quiet- duplicate_free: 466 evaluations so far.
+18:18:10: verbose- duplicate_free: 96 members in population so far.
+18:18:10: verbose- moga: Wrote designs file ".//population_51.dat".
+18:18:10: verbose- shuffle_random: 72 children created.
+18:18:10: verbose- replace_uniform: Performed 10 total mutations.
+18:18:10: verbose- duplicate_free: flushed 28 duplicate offspring designs after application of the variational operators.
+18:18:10: verbose- duplicate_free: flushed 44 offspring designs that duplicate existing population members.
+18:18:13: verbose- below_limit: Performed 100 total selections.
+18:18:13: verbose- moga: 0 of 96 population members were not selected to continue.  4 of 8 offspring were immediately rejected.
+18:18:13: verbose- metric_tracker: Operating on 100 total designs and 100 "best fitness" designs.
+18:18:13: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:18:13: verbose- metric_tracker: Population density increased by 4.167%.
+18:18:13: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:18:13: verbose- metric_tracker: Pushed metric value of 0.0416667 onto the convergence stack.
+18:18:13: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:18:13: quiet- duplicate_free: 52 generations so far.
+18:18:13: quiet- duplicate_free: 474 evaluations so far.
+18:18:13: verbose- duplicate_free: 100 members in population so far.
+18:18:13: verbose- moga: Wrote designs file ".//population_52.dat".
+18:18:13: verbose- shuffle_random: 76 children created.
+18:18:13: verbose- replace_uniform: Performed 10 total mutations.
+18:18:13: verbose- duplicate_free: flushed 33 duplicate offspring designs after application of the variational operators.
+18:18:13: verbose- duplicate_free: flushed 43 offspring designs that duplicate existing population members.
+18:18:16: verbose- below_limit: Performed 104 total selections.
+18:18:16: verbose- moga: 0 of 100 population members were not selected to continue.  6 of 10 offspring were immediately rejected.
+18:18:16: verbose- metric_tracker: Operating on 104 total designs and 104 "best fitness" designs.
+18:18:16: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:18:16: verbose- metric_tracker: Population density increased by 4%.
+18:18:16: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:18:16: verbose- metric_tracker: Pushed metric value of 0.04 onto the convergence stack.
+18:18:16: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:18:16: quiet- duplicate_free: 53 generations so far.
+18:18:16: quiet- duplicate_free: 484 evaluations so far.
+18:18:16: verbose- duplicate_free: 104 members in population so far.
+18:18:16: verbose- moga: Wrote designs file ".//population_53.dat".
+18:18:16: verbose- shuffle_random: 78 children created.
+18:18:16: verbose- replace_uniform: Performed 10 total mutations.
+18:18:16: verbose- duplicate_free: flushed 28 duplicate offspring designs after application of the variational operators.
+18:18:16: verbose- duplicate_free: flushed 50 offspring designs that duplicate existing population members.
+18:18:19: verbose- below_limit: Performed 109 total selections.
+18:18:19: verbose- moga: 0 of 104 population members were not selected to continue.  5 of 10 offspring were immediately rejected.
+18:18:19: verbose- metric_tracker: Operating on 109 total designs and 109 "best fitness" designs.
+18:18:19: verbose- metric_tracker: No "best fitness" expansion or contraction occured this generation.
+18:18:19: verbose- metric_tracker: Population density increased by 4.808%.
+18:18:19: verbose- metric_tracker: No "best fitness" designs from the previous population are dominated by "best fitness" designs in the current population.
+18:18:19: verbose- metric_tracker: Pushed metric value of 0.0480769 onto the convergence stack.
+18:18:19: verbose- metric_tracker: Current max percentage progress is 7.843%.
+18:18:19: quiet- duplicate_free: 54 generations so far.
+18:18:19: quiet- duplicate_free: 494 evaluations so far.
+18:18:19: verbose- duplicate_free: 109 members in population so far.
+18:18:19: verbose- moga: Wrote designs file ".//population_54.dat".
+18:18:19: verbose- shuffle_random: 82 children created.
+18:18:19: verbose- replace_uniform: Performed 11 total mutations.
+18:18:19: verbose- duplicate_free: flushed 32 duplicate offspring designs after application of the variational operators.
+18:18:19: verbose- duplicate_free: flushed 50 offspring designs that duplicate existing population members.
+18:18:21: quiet- duplicate_free: Errors were encountered while evaluating the offspring designs
+18:18:21: quiet- moga: Design Variable Values for Illconditioned Designs:
+0.48567 2.62836
+0.48567 4.04697
+0.895965 3.52887
+2.7939 3.29591
+
+18:18:21: quiet- duplicate_free: encountered and flushed 4 illconditioned designs after evaluation of children.
+18:18:21: verbose- below_limit: Performed 109 total selections.
+18:18:21: verbose- moga: 0 of 109 population members were not selected to continue.  6 of 6 offspring were immediately rejected.
+18:18:21: verbose- metric_tracker: maximum allowable number of evaluations has been reached.
+18:18:21: verbose- metric_tracker: Convergence attained.
+18:18:21: quiet- duplicate_free: 55 generations so far.
+18:18:21: quiet- duplicate_free: 500 evaluations so far.
+18:18:21: verbose- duplicate_free: 109 members in population so far.
+18:18:21: verbose- moga: Wrote designs file ".//population_55.dat".
+18:18:21: verbose- moga: Relcaimed 0 optimal designs from the discards.
+18:18:21: quiet- moga: Reclaimed 0 optimal designs that had been selected out.
+18:18:21: verbose- moga: Flushed 0 dominated designs from the population.
+18:18:21: quiet- moga: Ran 55 total generations.
+18:18:21: quiet- moga: Final population size = 109
+18:18:21: verbose- moga: Wrote designs file ".//finaldata1.dat".
+18:18:21: verbose- moga: Wrote designs file ".//discards.dat".
+18:18:21: quiet- JEGA Front End: moga execution took 0.919888 seconds.
+18:18:21: quiet- JEGA Front End: Execution took 0.919888 seconds.
+18:18:21: verbose- moga: algorithm execution completed. 109 solutions found. Passing them back to DAKOTA.
+18:18:21: quiet- moga: find optimum completed and all results have been passed back to DAKOTA.
+
+
+18:18:21: quiet- moga: goodbye!
+
+

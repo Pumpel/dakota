@@ -1,0 +1,65 @@
+%READ SURFPACK RESPONSE SURFACE
+load -ascii coeffs.txt
+
+x1 =coeffs(:,1);
+x2 =coeffs(:,2);
+L =coeffs(:,3);
+D =coeffs(:,4);
+M =coeffs(:,5);
+
+x=unique(x1);  % turn x1 into a unique range of values
+y=unique(x2);  % turn y1 into a unique range of values
+
+zl=zeros(length(y),length(x)); % preallocate space for the z surface
+
+  for m=1:length(x)
+   for n=1:length(y)
+     zl(n,m)=L(find(x1==x(m) & x2==y(n)));
+     % reorder the z1 column into a rectangular matrix
+   end
+  end
+
+zd=zeros(length(y),length(x)); % preallocate space for the z surface
+
+  for m=1:length(x)
+   for n=1:length(y)
+     zd(n,m)=D(find(x1==x(m) & x2==y(n)));
+     % reorder the z1 column into a rectangular matrix
+   end
+  end
+
+zm=zeros(length(y),length(x)); % preallocate space for the z surface
+
+  for m=1:length(x)
+   for n=1:length(y)
+     zd(n,m)=M(find(x1==x(m) & x2==y(n)));
+     % reorder the z1 column into a rectangular matrix
+   end
+  end
+
+
+
+%PLOT SURFPACK RESPONSE SURFACE
+%mesh(x,y,z)
+%surf(x,y,z,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+%contourf(x,y,z,50)
+%h = colorbar;
+%title(h,'QoI')
+
+
+
+
+%TO PLOT BOTH SOLUTIONS
+figure(1)
+contourf(x,y,zl,50)
+hold on;
+%plot3(xx1,xx2,ff,'ok','MarkerFaceColor','red','MarkerSize',6)
+plot(x1,x2,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+%title('Surrogate')
+%legend('Sampling points')
+xlabel('Design variable 1 (Curvature)')
+ylabel('Design variable 2 (Position of maximum curvature)')
+
+h = colorbar;
+title(h,'QoI')
+%TO PLOT BOTH SOLUTIONS

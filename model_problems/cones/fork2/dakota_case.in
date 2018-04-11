@@ -1,0 +1,144 @@
+
+################################################################################
+environment
+  	#graphics
+  	tabular_data
+    	tabular_data_file = 'table_out.dat'
+	#custom_annotated header eval_id	#No interface column
+################################################################################
+  
+
+
+################################################################################  
+method
+        
+  	moga
+  
+  	#output silent
+   	output verbose
+
+  	#max_function_evaluations = 50000
+  	#seed = 12257815
+  	#population_size = 5000
+  
+   	#max_function_evaluations = 10000
+   	#seed = 12257815
+   	#population_size = 1000
+
+  	# max_function_evaluations = 10000
+  	# seed = 081075
+  	# population_size = 500
+
+   	max_function_evaluations = 2500
+   	seed = 1234
+   	population_size = 2000
+
+   	#max_function_evaluations = 5000
+   	#seed = 12340
+   	#population_size = 50
+  
+  	#Specific to Surrogate-Based Global Method
+  	#final_solutions = 100
+   
+   	initialization_type unique_random
+   	print_each_pop
+
+  	##############################
+  	#crossover_type multi_point_parameterized_binary = 2
+  	#crossover_rate = 0.8
+  	#mutation_type offset_normal
+  	#mutation_scale = 0.1
+  	##############################
+
+  	##############################
+  	#crossover_type shuffle_random
+  	#num_offspring = 2 
+  	#num_parents = 2
+  	#crossover_rate = 0.8
+    
+  	#mutation_type replace_uniform
+ 	#mutation_rate = 0.1
+  	##############################
+
+     
+#SET HERE PARAMETERS FOR MOGA   
+     	#fitness_type domination_count
+     	#replacement_type below_limit = 6
+     	#shrinkage_percentage = 0.9
+
+     	#convergence_type metric_tracker
+     	#percent_change = 0.05
+     	#num_generations = 40
+
+	#    niching_type distance 0.05 0.05
+	#   #replacement_type roulette_wheel
+	#    postprocessor_type orthogonal_distance 0.05 0.05     
+     
+            
+         #linear_inequality_constraint_matrix  1 0
+	 #				      0 1
+					      
+         #linear_inequality_lower_bounds 1 1
+         #linear_inequality_upper_bounds 9 6
+################################################################################
+
+
+
+################################################################################
+variables
+  	continuous_design = 2
+    	#initial_point    	0 		0        
+    	upper_bounds     	10		20   
+    	lower_bounds     	0   		0
+    	descriptors      	'x1'   		'x2'
+################################################################################
+
+
+
+################################################################################
+interface
+	fork
+	asynchronous
+	evaluation_concurrency = 4
+	analysis_driver = 'simulator_script'
+	parameters_file = 'params.in'
+	results_file    = 'results.out'
+	work_directory directory_tag
+
+        copy_files = 'templatedir/*'
+
+
+# uncomment to leave params.in and results.out files in work_dir subdirectories
+ 	#named 'workdir' file_save  directory_save
+
+	aprepro
+
+# when using conmin_frcg (above) with analytic_gradients (below), 
+# need to turn off the active set vector as the inteface does not parse it.
+## 	  deactivate active_set_vector
+################################################################################
+
+
+
+################################################################################  
+responses
+  	objective_functions = 2
+  	nonlinear_inequality_constraints = 1
+
+	upper_bounds = 1000000000
+	lower_bounds = 200
+
+	no_gradients
+
+
+# to instead use analytic gradients returned by the simulator comment the
+# preceding two lines and uncomment the following:
+##	analytic_gradients
+
+	no_hessians
+
+
+	sense 'min' 'min'		 
+################################################################################
+
+

@@ -1,0 +1,33 @@
+IT WILL READ THE RESTART FILE
+
+dakota_restart_util print dakota.rst
+
+
+
+IT WILL RESTART THE CASE FROM dakota.rst WILL WRITE A NEW RESTART FILE dakota1.rst
+
+dakota -i dakota_of.in -r dakota.rst -w dakota1.rst -o run1.out > stdout1.out
+
+
+
+IF YOU RUN THIS CASE USIGN A MAX CURVATURE BOUND OF 9, USUALLY THE MESHING WILL FAIL WHEN EVALUATION
+AN AIRFOIL SHAPE OF CURVATURE 9 (ABOUT EVALUATION 27 OR workdir.27
+IN ORDER TO CONITUNE THE CASE FROM WHERE IT STOP YOU WILL NEED TO EDIT THE .rst FILE
+FIRST YOU WILL NEED TO CONVERT THE RESTART FILE SO YOU CAN EDITED IT BY HAND:
+
+dakota_restart_util to_neutral dakota.rst dakota.neu
+
+
+
+
+THEN OPEN THE .neu FILE AND ADD THE MISSING ENTRIES BY HAND YOU WILL NEED TO ADD THE VALUES OF x1,
+x2, and obj_fn.  FOR THE FAILED CASE ADD ANY VALUE (1 IS A GOOD CHOICE)
+AFTER YOU ARE DONE WITH EDITING YOU WILL NEED TO CONVERT THE NEW FILE TO BINARY FORMAT
+
+dakota_restart_util from_neutral dakota.neu dakota_mod.rst
+
+
+
+AND NOW YOU CAN RESTART USING THE NEW FILE
+
+dakota -i dakota_of.in -r dakota_mod.rst -w dakota1.rst -o run1.out > stdout1.out

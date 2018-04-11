@@ -1,0 +1,93 @@
+#  DAKOTA INPUT FILE - dakota_rosenbrock.in
+#  This sample Dakota input file optimizes the Rosenbrock function.
+#  See p. 95 in Practical Optimization by Gill, Murray, and Wright.
+
+
+
+################################################################################
+environment
+  	graphics
+  	tabular_data
+    	tabular_data_file = 'dakota_output.dat'
+	#custom_annotated header eval_id	#No interface column
+################################################################################
+  
+  
+################################################################################
+method
+#	npsol_sqp
+# if NPSOL is not available, comment the above and try the following instead:
+	conmin_frcg
+
+        #optpp_cg
+        #optpp_fd_newton
+        #optpp_g_newton
+        #optpp_newton
+        #optpp_pds
+        #optpp_q_newton
+################################################################################
+
+
+################################################################################
+variables,
+	continuous_design = 2
+	  cdv_initial_point   -1.2      1.0
+	  cdv_lower_bounds    -2.0     -2.0
+	  cdv_upper_bounds     2.0      2.0
+	  cdv_descriptor       'x1'     'x2'
+################################################################################
+
+
+################################################################################
+interface
+	fork
+#	  asynchronous
+#	  evaluation_concurrency = 4
+	  analysis_driver = 'simulator_script'
+	  parameters_file = 'params.in'
+	  results_file    = 'results.out'
+	  work_directory 
+	  directory_tag
+	  directory_save
+ 	  named 'workdir' 
+	  file_save 
+	  #file_tag
+
+          copy_files = 'templatedir/*'
+          #link_files = 'templatedir/*'
+
+	  aprepro
+
+# when using conmin_frcg (above) with analytic_gradients (below), 
+# need to turn off the active set vector as the interface does not parse it.
+## 	  deactivate active_set_vector
+################################################################################
+
+
+################################################################################	  
+responses
+	num_objective_functions = 1
+
+ 	#analytic_gradients
+ 	
+	numerical_gradients
+ 	
+ 	  method_source dakota
+	  ##interval_type forward
+	  interval_type central
+    
+	  fd_gradient_step_size = 1.e-5
+	  ##fd_gradient_step_size = 1.e-4
+	  ##fd_gradient_step_size = 1.e-3
+	  ##fd_gradient_step_size = 1.e-2
+	  ##fd_gradient_step_size = 1.e-1
+
+# to instead use analytic gradients returned by the simulator comment the
+# preceding two lines and uncomment the following:
+##	analytic_gradients
+
+	no_hessians
+	#numerical_hessians
+################################################################################
+
+

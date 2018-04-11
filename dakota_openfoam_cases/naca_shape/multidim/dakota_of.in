@@ -1,0 +1,59 @@
+# Usage:
+#   dakota -i dakota_of.in -o run.out > stdout.out
+
+
+
+environment
+    #graphics
+    tabular_graphics_data
+        tabular_graphics_file = 'table_out.dat'
+
+    
+    
+method
+  multidim_parameter_study
+    partitions = 8 5
+    
+model
+  single
+
+  
+variables,
+  continuous_design = 2
+    lower_bounds      1.0    1.0  
+    upper_bounds      9.0    6.0
+    descriptors       'x1'   'x2'
+	  
+	  
+
+interface
+	fork
+	  asynchronous
+#	  evaluation_concurrency = 8
+	  evaluation_concurrency = 4
+	  analysis_driver = 'simulator_script'
+	  parameters_file = 'params.in'
+	  results_file    = 'results.out'
+	  work_directory directory_tag
+	 
+
+	 #version 6.0.0 
+         #template_directory = 'templatedir'
+         #version 6.1.0
+          copy_files = 'templatedir/*'
+
+ 
+# uncomment to leave params.in and results.out files in work_dir subdirectories
+	  named 'workdir' file_save  directory_save
+	  aprepro
+	  
+## when using conmin_frcg (above) with analytic_gradients (below), 
+## need to turn off the active set vector as rosenbrock_bb does not parse it.
+ 	  deactivate active_set_vector
+	
+	
+responses
+  num_objective_functions = 1
+  no_gradients
+  no_hessians
+

@@ -1,0 +1,3 @@
+evaluation_concurrency = 4
+
+openfoam serial

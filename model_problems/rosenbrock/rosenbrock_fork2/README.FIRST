@@ -1,0 +1,16 @@
+This is an optimization case using a gradient based method with fork interface.
+Here we use conmin_fcrg method.
+
+To compute the rosenbrock function we use a python script.  The script is located in the directory templatedir.
+
+
+
+
+
+
+
+
+
+
+
+

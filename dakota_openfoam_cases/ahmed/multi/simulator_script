@@ -1,0 +1,66 @@
+#!/bin/bash
+# Sample simulator to Dakota system call script
+# See Advanced Simulation Code Interfaces chapter in Users Manual
+
+# $1 is params.in FROM Dakota
+# $2 is results.out returned to Dakota
+
+# --------------
+# PRE-PROCESSING
+# --------------
+# Incorporate the parameters from DAKOTA into the template, writing ros.in
+# Use the following line if SNL's APREPRO utility is used instead of DPrePro.
+# ../aprepro -c '*' -q --nowarning ros.template ros.in
+
+
+#dprepro $1 mesh.template mesh.in
+dprepro $1 run_simulation.template run_simulation
+dprepro $1 input.template input.txt
+
+# --------
+# ANALYSIS
+# --------
+
+pwd
+cp -r ../casebase/* .
+#cp U.in 0/U
+
+sh run_simulation
+
+#blockMesh > log.blockmesh
+#icoFoam > log.icofoam
+#probeLocations -latestTime > log.probes
+
+# ---------------
+# POST-PROCESSING
+# ---------------
+
+
+#THIS IS A DUMMY FILE TO RUN THE PARAMETER STUDY IF YOU DONT HAVE THE POSTPROCESS TO GET THE REUSLTS
+#YOU CAN ALSO LEAVE IT IT WILL ONLY INITIALIZE THE VARIABLE
+#touch results.out
+#cp ../casebase/dummy_results.out .
+#mv dummy_results.out results.out
+
+
+#PRINT LAST LINE
+#awk 'END { print $3 }' postProcessing/forceCoeffs1/0/forceCoeffs.dat > drag.txt
+
+#MEAN DRAG
+awk 'NR>=408 && NR<=508 {  total += $3; count++ }  END { print "Mean_drag " total/count}' postProcessing/forceCoeffs1/0/forceCoeffs.dat > drag_coe.txt
+
+#STANDARD DEVIATION DRAG
+#I AM NOT SURE IF IT IS COMPUTED IN THE RIGHT WAY
+#
+#awk 'NR>=408 && NR<=508 { total += $3; totalsq += $3*$3; count++} END {print "Std_dev " sqrt(totalsq/#count - (total/count)^2)}' postProcessing/forceCoeffs1/0/forceCoeffs.dat >> drag_coe.txt
+
+awk 'NR>=408 && NR<=508 { total += $3; totalsq += $3*$3; count++} END {print "Std_dev " sqrt(1/count*(totalsq - (total/count)^2))}' postProcessing/forceCoeffs1/0/forceCoeffs.dat >> drag_coe.txt
+
+
+
+#GET VALUE OF MEAN DRAG FROM drag.txt
+awk 'NR==1 {print $2}' drag_coe.txt > tmp.txt
+
+mv tmp.txt $2
+
+#rm tmp.txt

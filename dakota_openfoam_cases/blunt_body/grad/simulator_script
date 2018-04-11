@@ -1,0 +1,120 @@
+#!/bin/bash
+# Sample simulator to Dakota system call script
+# See Advanced Simulation Code Interfaces chapter in Users Manual
+
+# $1 is params.in FROM Dakota
+# $2 is results.out returned to Dakota
+
+# --------------
+# PRE-PROCESSING
+# --------------
+# Incorporate the parameters from DAKOTA into the template, writing ros.in
+# Use the following line if SNL's APREPRO utility is used instead of DPrePro.
+# ../aprepro -c '*' -q --nowarning ros.template ros.in
+
+dprepro $1 input.template input.txt
+dprepro $1 profile4points.py.template profile4points.py.in
+
+# --------
+# ANALYSIS
+# --------
+
+echo "************************************"
+echo "Running in directory: "
+pwd
+echo "************************************"
+
+cp -r ../casebase/* .
+
+cp profile4points.py.in profile4points.py
+
+#/home/joegi/salome/appli_V7_7_1/runAppli -t --killall
+/home/joegi/salome/appli_V7_7_1/runAppli -t profile4points.py
+/home/joegi/salome/appli_V7_7_1/runAppli -t --portkill
+
+ideasUnvToFoam mesh4points.unv
+sed -i '46s/patch/empty/' ./constant/polyMesh/boundary
+simpleFoam > log.simplefoam
+
+
+
+# ---------------
+# POST-PROCESSING
+# ---------------
+
+#THIS IS A DUMMY FILE TO RUN THE PARAMETER STUDY IF YOU DONT POSTPROCESS THE RESULTS
+#IT IS ALSO USEFUL TO LEAVE LIKE THIS
+#IN THIS WAY YOU WILL ALWAYS HAVE A DUMMY VALUE EVEN IS THE SIMULATION FAILS
+#touch results.out
+#cp ../casebase/dummy_results.out .
+#mv dummy_value.out $2
+
+
+
+#MEAN DRAG
+awk 'NR>=808 && NR<=1008 {  total += $3; count++ }  END { print "Mean_drag " total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat > drag_coe.txt
+#awk 'NR>=100 && NR<=209 {  total += $3; count++ }  END { print "Mean_drag " total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat > drag_coe.txt
+
+#MEAN LIFT
+awk 'NR>=808 && NR<=1008 {  total += $4; count++ }  END { print "Mean_lift " total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat > lift_coe.txt
+#awk 'NR>=100 && NR<=209 {  total += $4; count++ }  END { print "Mean_lift " total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat > lift_coe.txt
+
+#GET MEAN VALUES AND COPY IT TO THE RESULTS FILE FOR DAKOTA
+awk 'NR==1 {print $2}' drag_coe.txt > tmp.txt
+#awk 'NR==1 {print $2}' lift_coe.txt > tmp.txt
+mv tmp.txt $2
+#rm tmp.txt
+
+
+#THESE LINES COMPUTE THE MEAN VALUE OF THE LAST 200 ENTRIES OF forceCoeffs.dat
+#LIFT
+awk 'NR>=808 && NR<=1008 {  total += $4; count++ }  END { print total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat > ldm.txt
+#awk 'NR>=100 && NR<=209 {  total += $4; count++ }  END { print total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat > ldm.txt
+
+#DRAG
+awk 'NR>=808 && NR<=1008 {  total += $3; count++ }  END { print total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat >> ldm.txt
+#awk 'NR>=100 && NR<=209 {  total += $3; count++ }  END { print total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat >> ldm.txt
+
+#MOMENT
+awk 'NR>=808 && NR<=1008 {  total += $2; count++ }  END { print total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat >> ldm.txt
+#awk 'NR>=100 && NR<=209 {  total += $2; count++ }  END { print total/count}' postProcessing/forceCoeffs/0/forceCoeffs.dat >> ldm.txt
+
+touch ldm1.txt
+paste -s ldm.txt > ldm1.txt
+
+
+
+paste -d ' ' input.txt ldm1.txt  > outldm.txt
+
+#IN COEFFS.TXT:
+#X1 X2 X3 X4 CL CD CM
+tail -n 1 outldm.txt >> ../coeffs.txt
+
+#rm outldm.txt
+
+
+
+#CHECK IS results.out is empty
+if [ -s "results.out" ]
+then
+        echo "************************************"
+	echo "results.out OK (not empty)"
+	pwd
+	echo "Is the current directory: "
+	echo "************************************"
+        # do something as file has data
+
+else
+	echo "************************************"
+	echo "results.out is empty"
+	echo "Creating dummy file"
+	echo "Check directory: "
+	pwd
+	echo "to track the problem "
+	echo "************************************"
+        # do something as file is empty 
+
+	#cp ../casebase/dummy_value.out .
+	mv dummy_value.out $2
+fi 
+

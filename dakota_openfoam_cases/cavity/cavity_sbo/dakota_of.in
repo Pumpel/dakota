@@ -1,0 +1,186 @@
+# Usage:
+#   dakota -i dakota_of.in -o run.out > stdout.out
+
+
+
+#*************************************************************************************
+environment
+    	graphics
+    	tabular_data
+        tabular_data_file = 'table_out.dat'
+	#custom_annotated header eval_id	#Do not save interface column
+
+	#results_output		#experimental
+
+	method_pointer = 'METHOD_ON_SURR'  
+#*************************************************************************************    
+     
+  
+  
+#*************************************************************************************        
+method
+        id_method = 'METHOD_ON_SURR'                            
+        model_pointer = 'SURR_MODEL'    
+
+	#npsol_sqp
+	#if NPSOL is not available, comment the above and try the following instead:
+       	#conmin_frcg
+        conmin_mfd
+			    
+		max_iterations = 100
+		convergence_tolerance = 1e-4
+		max_function_evaluations = 20
+		
+        linear_inequality_constraint_matrix 1 
+        linear_inequality_lower_bounds -2 
+        linear_inequality_upper_bounds 2.8
+    
+
+
+	#linear_inequality_constraint_matrix 0 1 1 0
+        #linear_inequality_lower_bounds -2 -2
+        #linear_inequality_upper_bounds  1.5 1
+#*************************************************************************************  
+
+
+	  
+
+
+    
+#*************************************************************************************        
+model                                                  
+       	id_model = 'SURR_MODEL'                                
+       	surrogate global                                                        
+       	dace_method_pointer = 'DACE'  
+       
+       	#reuse_samples all 
+       
+	#samples_file = 'table_out.dat'
+       	samples_file = 'data1.txt'
+       	#custom_annotated header eval_id		#No interface column in input file
+       	custom_annotated header eval_id interface_id		#Interface column in input file
+
+        #polynomial linear
+        #polynomial quadratic
+        #polynomial cubic  
+        #polynomial basis_order 6
+                          
+        #mars
+        #moving_least_squares
+        #neural_network
+        #radial_basis
+       
+       	#kriging
+        #gaussian_process dakota trend constant   
+ 	gaussian_process surfpack 
+		find_nugget 2
+		#max_trials 100
+		#trend quadratic
+
+	export_model
+	filename_prefix = 'my_surrofate.txt'
+	formats
+		algebraic_file
+		text_archive
+
+
+	export_points_file 'surrogate_evaluations.txt' freeform
+
+	#minimum_points 
+	#recommended_points
+	#total_points 10
+
+	#reuse_points all
+	#use_derivatives
+
+	metrics 'rsquared' 'mean_abs' 'sum_squared' 'mean_squared' 'sum_abs' 'max_abs'
+
+	challenge_points_file 'challenge_data.txt' freeform 
+
+	#correction first_order additive
+#*************************************************************************************    
+ 	  
+ 	  
+
+#*************************************************************************************
+
+method                                                 
+        id_method = 'DACE'                              
+        model_pointer = 'DACE_M'     
+            
+        #nond_sampling  
+        sampling
+
+        #use sampling equal to 0 when you read in the points from a file
+        samples = 0 
+        #seed = 5037 
+           
+        #samples = 25                                 
+        #seed = 5037    sample_type lhs  all_variables      
+        #seed = 5037    sample_type lhs
+
+#*************************************************************************************
+
+
+
+#*************************************************************************************
+
+model                                                 
+        id_model = 'DACE_M'                             
+        single                                                   
+        variables_pointer = 'V1' 
+        interface_pointer = 'I1'                     
+        responses_pointer = 'R1' 
+
+#*************************************************************************************
+
+
+
+  
+#*************************************************************************************      
+variables
+  	id_variables = 'V1'  
+
+	continuous_design = 1
+	cdv_initial_point   -1.8     
+	cdv_lower_bounds    -2.0    
+	cdv_upper_bounds     3.0     
+	cdv_descriptor       'x1'  
+#*************************************************************************************     
+    
+	
+	
+
+#*************************************************************************************        
+interface						
+        id_interface = 'I1'           
+	  
+	fork
+	asynchronous			#use all resources at once
+	#evaluation_concurrency 2
+
+	analysis_driver = 'simulator_script'
+#*************************************************************************************  
+
+
+
+
+#*************************************************************************************    	
+responses						
+        id_responses = 'R1' 
+                            
+	num_objective_functions = 1
+
+ 	numerical_gradients			
+		method_source dakota
+		interval_type forward
+		#fd_gradient_step_size = .000001
+		#fd_gradient_step_size =  1.e-5
+
+	#no_gradients		 	
+	no_hessians
+	
+	sense 'max'
+#*************************************************************************************  
+
+

@@ -1,0 +1,12 @@
+How to run me:
+
+
+
+dakota -i dakota_of_ahmed_multi.in -o run.out > stdout.out
+
+
+
+This case will run a multidimensional parametric study.  
+
+This case is computational expensive.
+

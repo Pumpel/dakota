@@ -1,0 +1,53 @@
+How to run me:
+
+dakota -i dakota_of_cavity.in -o run.out 
+
+or
+
+dakota -i dakota_of_cavity.in -o run.out > stdout.out | tail -f stdout.out
+
+
+
+This case will run a parametric study.
+
+There is only one design variable.
+
+
+
+
+
+Dakota will first read the dakota_of_cavity.in input file, in this file we setup the case.
+
+
+For this specific case we use vector_parameter_study method.  The case runs 12 steps and the
+final value is 3 (method section)
+
+
+The case consist of only one design variable named x1 and the initial value is equal to -2 (variables section)
+
+
+Dakota interface with openfoam using the fork script system, where it calls the script simulator_script, where we define how to run the simulation and what to do or in other words, pre-processing, solution and post-processing (interface section).
+
+
+As this is a parametric study we do not compute the gradients (responses section)
+
+
+The script simulator_script first invoke the utility dprepro which manage dakota and the template files to run the study.  dprepro will create the params.in file used by dakota and will copy the template U.template (located in the directory templatedir), into U.in and it will replace any appearance of x1 in U.in by the design variable value used in dakota.  
+
+
+Notice that in the file U.template, we defined for the movingWall bc, the variable {x1} (which has the same name as in the dakota_of_cavity.in).  For each iteration, dprepro do the same.
+
+
+After invoking dprepro in the script simulator_script, we proceed to run the case and do some post-processing.  Each case is run on its own directory (workdir.#, as dfined in dakota_of_cavity.in).
+
+
+In the casebase folder we have the predefined case, this folder is copied into each directory created by dakota and the simulation is run there.  Notice that we also copy U.in into the case so we always get the updated value of design variable.
+
+
+All the values used in each evaluation are saved in the file table_out.dat.  That is:  design variables and objective function values (in and out).  This is defined in the entry environment in the file dakota_of_cavity.in
+
+
+At the end of the simulation, dakota will give you the information of the objective function and design variables (do not forget, this info is also saved in table_out.dat). 
+
+
+The script dakota_cleanup, will erase all the files and directories created during this simulation.

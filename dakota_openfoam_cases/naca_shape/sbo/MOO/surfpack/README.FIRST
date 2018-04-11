@@ -1,0 +1,53 @@
+How to run me:
+
+
+surfpack rsm.spk
+
+
+
+Build the surrogate or response surface using data from the DACE experiment.
+
+the data is in the file input.spd.
+
+The response surface will be saved in the file test_data.spd
+
+
+
+
+
+How to plot using gnuplot
+
+reset
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Drag coe."
+splot 'input.spd' u 1:2:3 pt 7 ps 1 title 'Multidimensional experiment', 'test_data_kriging_noisy.spd' u 1:2:3 pt 7 ps 0.1 title 'Surrogate - Kriging', 'test_data_smooth.spd' u 1:2:3 pt 7 ps 0.1 title 'Surrogate - Quadratic/Smooth'
+
+reset
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Drag coe."
+splot 'input.spd' u 1:2:3 pt 7 ps 1 title 'Multidimensional experiment', 'test_data_kriging_noisy.spd' u 1:2:3 pt 7 ps 0.1 title 'Surrogate - Kriging'
+
+reset
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Drag coe."
+splot 'input.spd' u 1:2:3 pt 7 ps 1 title 'Multidimensional experiment', 'test_data_kriging_filtered.spd' u 1:2:3 pt 7 ps 0.1 title 'Surrogate - Kriging - Filteret, nugget = 0.001'
+
+reset
+set dgrid3d 100,100,1
+set xlabel "Curvature"
+set ylabel "Pos. Max. curvature"
+set zlabel "Drag coe."
+set style data lines
+splot 'test_data_kriging_filtered.spd' u 1:2:3 title 'Surrogate - Kriging - Filteret, nugget = 0.001'
+
+
+
+
+NOTE:
+
+coeffs.txt columns:
+
+Curvature - Pos. Max. curvature - Lift - Drag - Moment

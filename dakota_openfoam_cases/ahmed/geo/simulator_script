@@ -1,0 +1,43 @@
+#!/bin/bash
+# Sample simulator to Dakota system call script
+# See Advanced Simulation Code Interfaces chapter in Users Manual
+
+# $1 is params.in FROM Dakota
+# $2 is results.out returned to Dakota
+
+# --------------
+# PRE-PROCESSING
+# --------------
+# Incorporate the parameters from DAKOTA into the template, writing ros.in
+# Use the following line if SNL's APREPRO utility is used instead of DPrePro.
+# ../aprepro -c '*' -q --nowarning ros.template ros.in
+
+
+
+dprepro $1 geo.template geo.in
+#dprepro $1 input.template input.txt
+
+# --------
+# ANALYSIS
+# --------
+
+pwd
+cp -r ../casebase/* .
+#cp U.in 0/U
+
+sh geo.in
+
+
+
+# ---------------
+# POST-PROCESSING
+# ---------------
+
+
+#THIS IS A DUMMY FILE TO RUN THE PARAMETER STUDY IF YOU DONT HAVE THE POSTPROCESS TO GET THE REUSLTS
+#YOU CAN ALSO LEAVE IT IT WILL ONLY INITIALIZE THE VARIABLE
+
+#mv dummy_results.out results.out
+mv dummy_results.out $2
+
+

@@ -1,0 +1,148 @@
+#!/bin/bash
+# Sample simulator to Dakota system call script
+# See Advanced Simulation Code Interfaces chapter in Users Manual
+
+# $1 is params.in FROM Dakota
+# $2 is results.out returned to Dakota
+
+# --------------
+# PRE-PROCESSING
+# --------------
+# Incorporate the parameters from DAKOTA into the template, writing ros.in
+# Use the following line if SNL's APREPRO utility is used instead of DPrePro.
+# ../aprepro -c '*' -q --nowarning ros.template ros.in
+
+
+#dprepro $1 mesh.template mesh.in
+dprepro $1 run_simulation.template run_simulation
+dprepro $1 input.template input.txt
+
+# --------
+# ANALYSIS
+# --------
+
+echo "************************************"
+echo "Running in directory: "
+pwd
+echo "************************************"
+
+cp -r ../casebase/* .
+#cp U.in 0/U
+
+sh run_simulation
+
+#blockMesh > log.blockmesh
+#icoFoam > log.icofoam
+#probeLocations -latestTime > log.probes
+
+# ---------------
+# POST-PROCESSING
+# ---------------
+
+
+#THIS IS A DUMMY FILE TO RUN THE PARAMETER STUDY IF YOU DONT POSTPROCESS THE RESULTS
+#IT IS ALSO USEFUL TO LEAVE LIKE THIS
+#IN THIS WAY YOU WILL ALWAYS HAVE A DUMMY VALUE EVEN IS THE SIMULATION FAILS
+#touch results.out
+#cp ../casebase/dummy_results.out .
+#mv dummy_results.out $2
+
+
+
+
+
+#PRINT LAST LINE
+#awk 'END { print $3 }' postProcessing/forceCoeffs1/0/forceCoeffs.dat > drag.txt
+
+#MEAN DRAG
+awk 'NR>=808 && NR<=1008 {  total += $3; count++ }  END { print "Mean_drag " total/count}' postProcessing/forceCoeffs1/0/forceCoeffs.dat > drag_coe.txt
+
+#STANDARD DEVIATION DRAG
+#I AM NOT SURE IF IT IS COMPUTED IN THE RIGHT WAY
+#
+#awk 'NR>=408 && NR<=508 { total += $3; totalsq += $3*$3; count++} END {print "Std_dev " sqrt(totalsq/#count - (total/count)^2)}' postProcessing/forceCoeffs1/0/forceCoeffs.dat >> drag_coe.txt
+#
+#awk 'NR>=408 && NR<=508 { total += $3; totalsq += $3*$3; count++} END {print "Std_dev " sqrt(1/count*(totalsq - (total/count)^2))}' postProcessing/forceCoeffs1/0/forceCoeffs.dat >> drag_coe.txt
+#
+
+
+
+#GET VALUE OF MEAN DRAG FROM drag.txt
+awk 'NR==1 {print $2}' drag_coe.txt > tmp.txt
+
+mv tmp.txt $2
+
+
+
+
+
+#THESE LINES COMPUTE THE MEAN VALUE OF THE LAST 100 ENTRIES OF forceCoeffs.dat
+#LIFT
+awk 'NR>=808 && NR<=1008 {  total += $4; count++ }  END { print total/count}' postProcessing/forceCoeffs1/0/forceCoeffs.dat > ldm.txt
+#DRAG
+awk 'NR>=808 && NR<=1008 {  total += $3; count++ }  END { print total/count}' postProcessing/forceCoeffs1/0/forceCoeffs.dat >> ldm.txt
+#MOMENT
+awk 'NR>=808 && NR<=1008 {  total += $2; count++ }  END { print total/count}' postProcessing/forceCoeffs1/0/forceCoeffs.dat >> ldm.txt
+
+
+paste -s ldm.txt >  ldm1.txt
+
+
+#LIFT
+#tail -n 1 ld.txt|awk '{print $1}' > tmp.txt
+
+#DRAG
+#tail -n 1 ld.txt|awk '{print $2}' > tmp.txt
+
+#LD RATIO
+#tail -n 1 ld.txt|awk '{print $1/$2}' > tmp.txt
+
+#MOMENT
+#tail -n 1 ldm1.txt|awk '{print $3}' > tmp.txt
+#tail -n 1 ldm1.txt|awk '{print 100*$2+100*($1-0.26)^2+100*($3+0.037)^2 }' > tmp.txt
+
+#mv tmp.txt $2
+
+
+paste -s input.txt > tmp1.txt
+awk 'NR==1 {print $2; print $4}' tmp1.txt | paste -s > tmp2.txt
+paste -d ' ' tmp2.txt ldm1.txt > tmp3.txt
+
+#coeffs curvature curvature position lift drag moment
+tail -n 1 tmp3.txt >> ../coeffs.txt
+
+
+
+rm tmp1.txt
+rm tmp2.txt
+rm tmp3.txt
+rm ldm.txt
+
+mv ldm1.txt mean_ldm.txt
+
+
+#CHECK IS results.out is empty
+if [ -s "results.out" ]
+then
+        echo "************************************"
+	echo "results.out OK (not empty)"
+	pwd
+	echo "Is the current directory: "
+	echo "************************************"
+        # do something as file has data
+
+else
+	echo "************************************"
+	echo "results.out is empty"
+	echo "Creating dummy file"
+	echo "Check directory: "
+	pwd
+	echo "to track the problem "
+	echo "************************************"
+        # do something as file is empty 
+
+	#cp ../casebase/dummy_results.out .
+	mv dummy_results.out $2
+fi 
+
+

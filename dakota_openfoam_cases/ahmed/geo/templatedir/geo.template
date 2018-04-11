@@ -1,0 +1,4 @@
+#!/bin/bash
+
+openscad -o geo/ab.stl -D angle={x1} geo/ahmed_body2.scad
+#openscad -o geo/ab.stl -D angle=25 geo/ahmed_body2.scad

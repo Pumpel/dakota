@@ -1,0 +1,29 @@
+Here we use surfpack (which is compiled with dakota), to generate the surrogate.  To do so:
+
+cp data/* .
+surfpack rsm.spk
+ 
+
+This will save the response surface in the file test_data.spd.  
+
+
+
+
+
+To plot in gnuplot:
+
+
+
+splot [][][] 'test_data.spd' u 1:2:3 w p pt 7 ps 0.2
+
+reset
+set dgrid3d 100,100,1
+set xlabel " x-axis "
+set ylabel " y-axis "
+set zlabel " z-axis "
+set style data lines
+splot [][][] 'test_data.spd' u 1:2:3
+
+
+
+

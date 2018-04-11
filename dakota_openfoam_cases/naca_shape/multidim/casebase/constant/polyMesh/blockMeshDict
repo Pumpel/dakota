@@ -1,0 +1,121 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+//convertToMeters 0.1;
+
+vertices        
+(
+    (-10 -10 -0.5)
+    (20 -10 -0.5)
+    (20 10 -0.5)
+    (-10 10 -0.5)
+    (-10 -10 0.5)
+    (20 -10 0.5)
+    (20 10 0.5)
+    (-10 10 0.5)
+);
+
+blocks          
+(
+    hex (0 1 2 3 4 5 6 7) (75 50 1) simpleGrading (1 1 1)
+);
+
+edges           
+(
+);
+
+/*
+patches         
+(
+    wall topAndBottom 
+    (
+        (3 7 6 2)
+	(1 5 4 0)
+    )
+    patch inlet
+    (
+        (0 4 7 3)
+    )
+    patch outlet
+    (
+        (2 6 5 1)
+    )
+    empty back 
+    (
+        (0 3 2 1)
+    )
+    empty front
+    (
+        (4 5 6 7)
+    )
+);
+*/
+
+boundary        
+(
+    topAndBottom 
+    {
+	type symmetry;
+	faces
+	(
+        (3 7 6 2)
+	(1 5 4 0)
+	);
+    }
+
+    inlet
+    {
+	type patch;
+	faces
+	(
+        (0 4 7 3)
+	);
+    }
+
+    outlet
+    {
+	type patch;
+	faces
+	(
+        (2 6 5 1)
+    	);
+     }
+
+    back 
+    {
+	type empty;
+	faces
+	(
+        (0 3 2 1)
+	);
+    }
+
+    front 
+    {
+	type empty;
+	faces
+	(
+        (4 5 6 7)
+	);
+    }
+
+);
+
+mergePatchPairs 
+(
+);
+
+// ************************************************************************* //

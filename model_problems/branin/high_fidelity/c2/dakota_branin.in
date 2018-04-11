@@ -1,0 +1,148 @@
+# Usage:
+#   dakota -i dakota_of.in -o run.out > stdout.out
+
+
+################################################################################
+environment
+    #graphics
+    tabular_data
+        tabular_data_file = 'table_out.dat'
+	#custom_annotated header eval_id	#No interface column
+
+    method_pointer = 'MS' 
+################################################################################
+
+
+
+################################################################################
+method
+
+    	id_method = 'MS'
+	method_pointer = 'OPT' 
+
+    	multi_start
+    	starting_points =
+     	9  4.2
+    	-4  1
+     	7  15
+     	2  9
+    	-4.8  13.5 
+
+#random_starts = 3 
+#seed = 081075
+################################################################################
+
+
+
+################################################################################    
+method						    
+	id_method = 'OPT'
+
+	#list_parameter_study
+        #list_of_points = 	
+	#-0.4546505377   0.4844000779   
+	#-1.035027653    2.271103152   
+
+        #if you use the same seed and number of samples as used in the 
+        #DACE block to build the surrogate, you will get the surrogate 
+        #response at the build points.  Otherwise, you will get the 
+        #surrogate response at a new set of points, in this example 
+        #at 1000 new LHS points
+        #seed = 98244
+        #samples = 1000
+        #seed = 5037                                       
+        #samples = 10 
+        
+	output verbose     
+	        
+	#conmin_frcg
+	conmin_mfd
+	        
+	#optpp_cg
+	#optpp_fd_newton
+	#optpp_g_newton
+	#optpp_newton
+	#optpp_pds
+	#optpp_q_newton
+
+	#max_function_evaluations = 500
+	#max_iterations = 10
+	#convergence_tolerance 0.00001
+	       
+        #linear_inequality_constraint_matrix  1 0
+	#				      0 1
+					      
+        #linear_inequality_lower_bounds 1 1
+        #linear_inequality_upper_bounds 8 6
+
+################################################################################
+
+
+    
+################################################################################
+model
+  single
+################################################################################	  
+ 	  
+
+
+################################################################################
+variables  
+  continuous_design = 2
+   #cdv_initial_point     6.0    4.0 
+   #cdv_initial_point     4.0    6.0   
+    upper_bounds      	 10.0  15.0
+    lower_bounds         -5.0  0.0
+    cdv_descriptors       'x1'   'x2'
+################################################################################    
+	
+		
+
+
+################################################################################         
+interface						                           
+          fork
+
+	  #asynchronous
+	  #evaluation_concurrency = 2
+	  analysis_driver = 'simulator_script'
+	  parameters_file = 'params.in'
+	  results_file    = 'results.out'
+	  work_directory directory_tag
+
+          copy_files = 'templatedir/*'
+
+
+# uncomment to leave params.in and results.out files in work_dir subdirectories
+ 	  named 'workdir' file_save  directory_save
+	  aprepro
+
+# when using conmin_frcg (above) with analytic_gradients (below), 
+# need to turn off the active set vector as the interface does not parse it.
+## 	  deactivate active_set_vector
+################################################################################
+	  
+
+
+################################################################################	  
+responses						
+      
+	num_objective_functions= 1			
+	
+	#no_gradients	
+	 numerical_gradients
+	 method_source dakota 
+	#interval_type central
+	#interval_type forward
+	    
+	#fd_gradient_step_size =  1.e-6
+	#fd_gradient_step_size =  1.e-5
+	#fd_gradient_step_size =  1.e-4
+	#fd_gradient_step_size =  1.e-3
+	#fd_gradient_step_size =  0.01
+	#fd_gradient_step_size =  0.1
+	
+	no_hessians
+
+	sense 'min'
+################################################################################

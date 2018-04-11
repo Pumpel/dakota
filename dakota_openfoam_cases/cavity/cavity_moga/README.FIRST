@@ -1,0 +1,16 @@
+How to run me:
+
+dakota -i dakota_cavity_ga.in -o run.out > stdout.out | tail -f stdout.out
+
+or
+
+dakota -i dakota_cavity_ga.in -o run.out 
+
+
+
+This case will run a genetic algorithm to find the optimal value.  
+
+There are two design variables defined but only one is used.
+
+
+

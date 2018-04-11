@@ -1,0 +1,16 @@
+This is a multi objective optimization case using a derivative free method with fork interface.
+Here we use MOGA method.
+
+The functions to optimize:
+x^2
+(x-2)^2
+
+
+
+
+
+
+
+
+
+

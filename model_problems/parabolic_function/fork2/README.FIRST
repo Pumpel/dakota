@@ -1,0 +1,20 @@
+This is an optimization case using a gradient based method with fork interface.
+Here we use conmin_fcrg method and multi_objective_weight_sets (pareto set method).
+
+The functions to optimize:
+x0^2
+(x1-2)^2
+
+
+
+Attention, the two functions are independent.  
+Compare this with the previous case, where the functions are dependent.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+Here we run the DACE experiment, to do so:
+
+dakota -i test.in
+
+This will generate your experiment and will write a file named table_out.dat, in this file you have the values for the design parameters.  The value of the objective function is 1, because we haven't computed it yet.
+
+
+
+
+To plot using gnuplot
+
+reset
+set isosample 40
+#set hidden3d
+set xrange [-5:10]
+set yrange [0:15]
+
+splot (y-(5.1/(4*3.14159*3.14159))*x**2 + (5/3.14159)*x - 6)**2 + 10*(1-1/(8*3.14159))*cos(x)+10

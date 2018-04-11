@@ -1,0 +1,274 @@
+%READ SURFPACK RESPONSE SURFACE
+load -ascii test_data.spd
+%load -ascii data/test_data.spd
+ 
+x1 =test_data(:,1);
+x2 =test_data(:,2);
+fs =test_data(:,3);
+
+x=unique(x1);  % turn x1 into a unique range of values
+y=unique(x2);  % turn y1 into a unique range of values
+
+z=zeros(length(y),length(x)); % preallocate space for the z surface
+
+  for m=1:length(x)
+   for n=1:length(y)
+     z(n,m)=fs(find(x1==x(m) & x2==y(n)));
+     % reorder the z1 column into a rectangular matrix
+   end
+  end
+  
+%PLOT SURFPACK RESPONSE SURFACE
+%mesh(x,y,z)
+%surf(x,y,z,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+%contourf(x,y,z,50)
+
+
+
+%COMPUTE THE BRANIN FUNCTION
+minX = -5; maxX = 10;
+minY = 0; maxY = 15;
+
+xa = linspace(minX,maxX,100);
+ya = linspace(minY,maxY,100);
+
+[xa1,xa2] = meshgrid(xa,ya);
+
+fa = ( xa2 - 5 ./ ( 4 * pi^2 ) * xa1 .^ 2 + ( 5 / pi ) .* xa1 - 6 ) .^ 2 + 10 * ( 1 - 1 / ( 8 * pi ) ) .* cos( xa1 ) + 10;
+
+
+
+%READ THE SAMPLING POINTS AND PLOT SURFPACK RESPONSE SURFACE WITH THE POINTS
+%load -ascii data/table_out.dat;
+load -ascii table_out.dat;
+xx1=table_out(:,2);
+xx2=table_out(:,3);
+ff = ( xx2 - 5.1 ./ ( 4 * pi^2 ) * xx1 .^ 2 + ( 5 / pi ) .* xx1 - 6 ) .^ 2 + 10 * ( 1 - 1 / ( 8 * pi ) ) .* cos( xx1 ) + 10;
+
+
+
+
+%TO PLOT BOTH SOLUTIONS
+figure(1)
+contourf(x,y,z,50)
+hold on;
+%plot3(xx1,xx2,ff,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot(xx1,xx2,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+%title('Surrogate')
+%legend('Sampling points')
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+
+%contourcmap('jet', 'Colorbar', 'on', 'Location', 'horizontal', 'TitleString', 'Contour Intervals in Meters')
+%contourcmap('jet', 'Colorbar', 'on', 'TitleString', 'QoI')
+%contourcmap('parula','Colorbar', 'off', 'TitleString', 'QoI')
+%colormap(parula(50))
+%colorbar()
+h = colorbar;
+title(h,'QoI')
+
+figure(2)
+contourf(xa1,xa2,fa,50);
+hold on;
+%plot3(xx1,xx2,ff,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot(xx1,xx2,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+%title('Analytical solution')
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+h = colorbar;
+title(h,'QoI')
+%TO PLOT BOTH SOLUTIONS
+
+
+
+%sampling
+figure(1)
+%plot3(xx1,xx2,ff,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot(xx1,xx2,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+%title('Analytical solution')
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+grid on
+%sampling
+
+
+
+%branin function with minimum point
+figure(1)
+contourf(xa1,xa2,fa,50);
+hold on;
+plot(-3.14159,12.275,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot(3.14159,2.275,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot(9.42478,2.475,'ok','MarkerFaceColor','red','MarkerSize',8)
+%title('Contour plot of Branin function and optimal values (minimum)')
+%title('Branin function')
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+h = colorbar;
+title(h,'QoI')
+%branin function with minimum point
+
+
+
+%branin function 3d surface
+figure(1)
+surf(xa1,xa2,fa,'EdgeColor','none','FaceColor','interp','FaceLighting','phong');
+%title('Contour plot of Branin function and optimal values (minimum)')
+%title('Branin function')
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+zlabel('QoI')
+%h = colorbar;
+%title(h,'QoI')
+%branin function 3d surface
+
+
+
+%surrogate surface and gradient serach on surrogate
+load -ascii out1.dat
+optx1 =out1(:,2);
+opty1 =out1(:,3);
+optz1 =out1(:,4);
+
+load -ascii out2.dat
+optx2 =out2(:,2);
+opty2 =out2(:,3);
+optz2 =out2(:,4);
+
+load -ascii out3.dat
+optx3 =out3(:,2);
+opty3 =out3(:,3);
+optz3 =out3(:,4);
+
+load -ascii out4.dat
+optx4 =out4(:,2);
+opty4 =out4(:,3);
+optz4 =out4(:,4);
+
+load -ascii out5.dat
+optx5 =out5(:,2);
+opty5 =out5(:,3);
+optz5 =out5(:,4);
+
+figure(1)
+%surf(x,y,z,'EdgeColor','none','FaceColor','interp','FaceLighting','phong');
+contourf(x,y,z,50)
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+hold on
+
+plot(-3.14159,12.275,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot(3.14159,2.275,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot(9.42478,2.475,'ok','MarkerFaceColor','red','MarkerSize',8)
+
+plot(optx1,opty1,'ok','MarkerFaceColor','yellow','MarkerSize',4)
+plot(optx2,opty2,'ok','MarkerFaceColor','magenta','MarkerSize',4)
+plot(optx3,opty3,'ok','MarkerFaceColor','cyan','MarkerSize',4)
+plot(optx4,opty4,'ok','MarkerFaceColor','white','MarkerSize',4)
+plot(optx5,opty5,'ok','MarkerFaceColor','green','MarkerSize',4)
+%surrogate surface and gradient serach on surrogate
+
+
+
+%surrogate 3d surface and gradient serach on surrogate
+figure(1)
+surf(x,y,z,'EdgeColor','none','FaceColor','interp','FaceLighting','phong');
+%contourf(x,y,z,50)
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+zlabel('QoI')
+alpha(0.5)
+hold on
+
+plot3(-3.14159,12.275,0.397887,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot3(3.14159,2.275,0.397887,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot3(9.42478,2.475,0.397887,'ok','MarkerFaceColor','red','MarkerSize',8)
+
+plot3(optx1,opty1,optz1,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot3(optx2,opty2,optz2,'ok','MarkerFaceColor','magenta','MarkerSize',6)
+plot3(optx3,opty3,optz3,'ok','MarkerFaceColor','cyan','MarkerSize',6)
+plot3(optx4,opty4,optz4,'ok','MarkerFaceColor','white','MarkerSize',6)
+plot3(optx5,opty5,optz5,'ok','MarkerFaceColor','green','MarkerSize',6)
+%surrogate 3d surface and gradient serach on surrogate
+
+
+%surrogate surface and minimum
+figure(1)
+%surf(xa1,xa2,fa,'EdgeColor','none','FaceColor','interp','FaceLighting','phong');
+contourf(x,y,z,50)
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+hold on
+
+plot(-3.14159,12.275,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot(3.14159,2.275,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot(9.42478,2.475,'ok','MarkerFaceColor','red','MarkerSize',8)
+
+plot(9.420233261 ,2.31283357,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot(3.144602948 ,2.276582031,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot(9.42087886  ,2.312111754,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot(3.144575898 ,2.279563563,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot(-3.144646306 ,12.29320921 ,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+%surrogate surface and minimum
+
+
+%surrogate 3d surface and minimum
+figure(1)
+surf(xa1,xa2,fa,'EdgeColor','none','FaceColor','interp','FaceLighting','phong');
+%contourf(x,y,z,50)
+xlabel('Design variable 1 (x_1)')
+ylabel('Design variable 2 (x_2)')
+zlabel('QoI')
+hold on
+
+plot3(-3.14159,12.275,0.397887,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot3(3.14159,2.275,0.397887,'ok','MarkerFaceColor','red','MarkerSize',8)
+plot3(9.42478,2.475,0.397887,'ok','MarkerFaceColor','red','MarkerSize',8)
+
+plot3(9.420233261 ,2.31283357,-0.1931076134,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot3(3.144602948 ,2.276582031,0.4190460013,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot3(9.42087886  ,2.312111754,-0.1931402573,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot3(3.144575898 ,2.279563563,0.4190394081,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+plot3(-3.144646306 ,12.29320921 ,-0.264477049,'ok','MarkerFaceColor','yellow','MarkerSize',6)
+%surrogate 3d surface and minimum
+
+
+
+
+%ADDITIONAL PLOTS
+
+%analytical
+%surf(xa1,xa2,fa);
+%surf(xa1,xa2,fa,'EdgeColor','none')
+%surf(xa1,xa2,fa,'EdgeColor','none','FaceColor','interp')
+%surf(xa1,xa2,fa,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+%contour(xa1,xa2,fa,50);
+%contour3(xa1,xa2,fa,50);
+
+
+
+%surrogate
+%surf(x,y,z);
+%surf(x,y,z,'EdgeColor','none')
+%surf(x,y,z,'EdgeColor','none','FaceColor','interp')
+%surf(x,y,z,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+%contour(x,y,z,50);
+%contour3(x,y,z,50);
+
+
+
+%contourf(x,y,z,50);
+%hold on;
+%plot(xx1,xx2,'ok','MarkerFaceColor','black','MarkerSize',6)
+
+
+
+%surrogate
+%surf(x,y,z,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
+%hold on;
+%plot3(xx1,xx2,ff,'ok','MarkerFaceColor','black','MarkerSize',6)
+
+
+
+%analytical
+%surf(xa1,xa2,fa,'EdgeColor','none','FaceColor','interp','FaceLighting','phong')
