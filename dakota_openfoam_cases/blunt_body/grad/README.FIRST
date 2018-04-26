@@ -1,17 +1,7 @@
 How to run me:
 
-
-
 dakota -i dakota_of.in -o run.out > stdout.out
-
 
 
 This case will run a gradient based optimization with 4 design variables.
 
-
-
-NOTE.
-
-In the scripts you should point to the right location of SALOME, for this case SALOME is locate in:
-
-$HOME/salome/appli_V7_7_1/runAppli

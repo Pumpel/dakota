@@ -29,8 +29,8 @@ cp -r ../casebase/* .
 cp profile4points.py.in profile4points.py
 
 #/home/joegi/salome/appli_V7_7_1/runAppli -t --killall
-/home/joegi/salome/appli_V7_7_1/runAppli -t profile4points.py
-/home/joegi/salome/appli_V7_7_1/runAppli -t --portkill
+salome -t profile4points.py
+salome -t --portkill
 
 ideasUnvToFoam mesh4points.unv
 sed -i '46s/patch/empty/' ./constant/polyMesh/boundary

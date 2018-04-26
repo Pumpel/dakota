@@ -40,7 +40,7 @@ purgeWrite      0;
 // ************************************************************************* //
 
 functions
-(
+{
 
 ///////////////////////////////////////////////////////////////////////////
 minmaxdomainCyl
@@ -67,8 +67,8 @@ minmaxdomainCyl
 forceCoeffs
 {
     type        forceCoeffs;
-
-    functionObjectLibs ( "libforces.so" );
+    libs ( "libforces.so" );
+    patches     ( prof_extruded );
 
     //outputControl   outputTime;
 
@@ -77,9 +77,10 @@ forceCoeffs
 
     log         yes;
 
-    patches     ( prof_extruded );
+
     pName       p;
     UName       U;
+    rho			rhoInf;
     rhoName     rhoInf;      // Indicates incompressible
     log         true;
     rhoInf      1;           // Redundant for incompressible
@@ -91,15 +92,15 @@ forceCoeffs
     lRef        1;        // Wheelbase length
     Aref        1;        // Estimated
 
-/* - Uncomment to have forceCoeffs calculated in 20 bins
-    binData
-    {
-        nBin        20;          // output data into 20 bins
-        direction   (1 0 0);     // bin direction
-        format      gnuplot;
-        cumulative  yes;
-    }
-*/
-}
+/*/* - Uncomment to have forceCoeffs calculated in 20 bins*/
+/*    binData*/
+/*    {*/
+/*        nBin        20;          // output data into 20 bins*/
+/*        direction   (1 0 0);     // bin direction*/
+/*        format      gnuplot;*/
+/*        cumulative  yes;*/
+/*    }*/
+/**/*/
+/*}*/
 
-);
+};
